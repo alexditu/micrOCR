@@ -1,0 +1,51 @@
+<map id="gestionEvenement" name="gestionEvenement">
+<area shape="rect" id="node3" href="$projet_8c.html#a23718f32d68bd37ed3b3053cb01831ee" title="Détecte la couleur de fond et la couleur du texte d&#39;une image donnée." alt="" coords="184,40,373,69"/>
+<area shape="rect" id="node9" href="$projet_8c.html#a59cb7bd568b148ea96186113c013b595" title="Effectue le prétraitement de l&#39;image à analyser en améliorant certains de ses aspects." alt="" coords="465,128,569,157"/>
+<area shape="rect" id="node20" href="$projet_8c.html#a5fd1e6347eda0b248ac5e5269fc32b21" title="Crée une copie de l&#39;image source (DonneesImageRGB) affectée d&#39;une rotation d&#39;un angle donné..." alt="" coords="472,288,563,317"/>
+<area shape="rect" id="node23" href="$projet_8c.html#a69f5e0e04dc084dcfd8f11da497290d8" title="Dessine un rectangle vide défini par ses sommets haut&#45;gauche et bas&#45;droit." alt="" coords="479,555,556,584"/>
+<area shape="rect" id="node25" href="$projet_8c.html#aa706756cb0a7d118ed0e9d9c660b74d5" title="Crée une copie redimensionnée d&#39;une image (DonneesImageRGB) à des dimensions données." alt="" coords="232,659,325,688"/>
+<area shape="rect" id="node27" href="$projet_8c.html#a8eabd18099e8d0bc447d01f6ab731011" title="Dessine un bouton." alt="" coords="233,605,324,635"/>
+<area shape="rect" id="node30" href="$projet_8c.html#abe9732818bf9189c734f2b4fc979a64b" title="Détermine le plus petit rectangle contenant l&#39;intégralité des pixels formant le texte." alt="" coords="473,235,561,264"/>
+<area shape="rect" id="node35" href="$projet_8c.html#ab03a7fb3517aa7ea2061e49543038506" title="Crée une copie rognée d&#39;une image (DonneesImageRGB) à une zone donnée." alt="" coords="439,181,596,211"/>
+<area shape="rect" id="node38" href="$projet_8c.html#ac18d865dd505d2097a8542c58e4f1706" title="Détermine le meilleur angle de rotation d&#39;une image pour &quot;horizontaliser&quot; au mieux le texte à reconna..." alt="" coords="228,349,329,379"/>
+<area shape="rect" id="node44" href="$projet_8c.html#a3d15ac2fee57bdb7e0538e944d88a5a8" title="detectNbrLines" alt="" coords="463,448,572,477"/>
+<area shape="rect" id="node48" href="$projet_8c.html#ac8b4d5ddbaa4460b2b418d9931c80415" title="Initialise et alloue un tableau de mots." alt="" coords="231,712,327,741"/>
+<area shape="rect" id="node50" href="$projet_8c.html#af2d545606e4d53631f08f37fede71e8b" title="Détecte les mots et lettres constituant une partie de l&#39;image." alt="" coords="439,395,596,424"/>
+<area shape="rect" id="node54" href="$projet_8c.html#a8a5d8b65cc8be60c9ccf4ec4eb518051" title="separateLetters" alt="" coords="223,144,335,173"/>
+<area shape="rect" id="node59" href="$projet_8c.html#acc99d2a8c679ec1e7e8b13023b427168" title="Crée une image matricielle à partir d&#39;une image RGB source, connaissant la couleur du fond de l&#39;image..." alt="" coords="451,501,584,531"/>
+<area shape="rect" id="node63" href="$projet_8c.html#a2344579636b413f9731714b3241cd41b" title="Compare une lettre reconnu dans l&#39;image source à une lettre de la police, avec un indice de ressembla..." alt="" coords="223,765,335,795"/>
+<area shape="rect" id="node65" href="$spell_8c.html#a96087d7ed6e749aa5f209286d88e549d" title="correct" alt="" coords="487,608,548,637"/>
+<area shape="rect" id="node67" href="$spell_check_8c.html#a21f5a3581aaf1b70042db02dadf32850" title="spellCheck" alt="" coords="236,875,321,904"/>
+<area shape="rect" id="node104" href="$projet_8c.html#aa7757aa0de1f179dc18d39b273104260" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="463,1243,572,1272"/>
+<area shape="rect" id="node106" href="$projet_8c.html#a307e2a7d44b20a288d78685c13beb453" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="691,1345,792,1375"/>
+<area shape="rect" id="node108" href="$projet_8c.html#a2e65c614e4c5ec4801b3c4e42701b08a" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="249,1241,308,1271"/>
+<area shape="rect" id="node112" href="$projet_8c.html#aadcb6b081fb4c088f91cb594e2272ba9" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="244,1345,313,1375"/>
+<area shape="rect" id="node117" href="$projet_8c.html#a916494ce6dbfc55a6a04dc047721c03b" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="245,1399,312,1428"/>
+<area shape="rect" id="node120" href="$projet_8c.html#a7b03a219f0159c267666e780db756065" title="Vérifie si le clic de coordonées (x,y) est dans le rectangle rect." alt="" coords="239,1452,319,1481"/>
+<area shape="rect" id="node122" href="$projet_8c.html#a955b06539ece628f265d1331c643ecd1" title="Vérifie si le rectangle de rogange est valide par rapport à l&#39;image à analyser." alt="" coords="216,1505,341,1535"/>
+<area shape="rect" id="node5" href="$projet_8c.html#adce0e7db88df64d3d202ddbea54960f1" title="Renvoie la fréquence maximale d&#39;un tableau de fréquence de couleur." alt="" coords="464,59,571,88"/>
+<area shape="rect" id="node7" href="$projet_8c.html#a92ac43bb654d32dd72629efd08d0ca2b" title="Renvoie la 2ème fréquence maximale d&#39;un tableau de fréquence de couleur." alt="" coords="449,5,585,35"/>
+<area shape="rect" id="node11" href="$projet_8c.html#a96ff91afd8ebc974f4a6365fb9d7bef1" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon ses coordonées." alt="" coords="700,288,783,317"/>
+<area shape="rect" id="node13" href="$projet_8c.html#a497be886110dddd526cf5b01b0c6bb71" title="Convertit des coordonées (x,y) en indice (index du tableau de données de l&#39;image RGB)" alt="" coords="871,207,1004,236"/>
+<area shape="rect" id="node18" href="$projet_8c.html#acec0a4945773204a14c4143e7045af4b" title="Renvoie la médiane du tableau de valeur donnée." alt="" coords="695,155,788,184"/>
+<area shape="rect" id="node15" href="$projet_8c.html#ab3d10ec2e7a27ae13da109343210f55d" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon son index." alt="" coords="893,387,981,416"/>
+<area shape="rect" id="node32" href="$projet_8c.html#af44cb7c9123d823447add912cef4712f" title="Teste si les couleurs RGB en paramètres sont égales." alt="" coords="684,408,799,437"/>
+<area shape="rect" id="node42" href="$projet_8c.html#a588da025664b440700dab1bf630a52db" title="Calcule la surface du rectangle donné." alt="" coords="445,341,589,371"/>
+<area shape="rect" id="node69" href="$spell_check_8c.html#a5b18e9add1432accc49934d536b8de39" title="OuvreDictionnaire" alt="" coords="455,661,580,691"/>
+<area shape="rect" id="node75" href="$spell_8c.html#a73f5320614449925020c563a2ec8c0ee" title="initSpellCheck" alt="" coords="464,928,571,957"/>
+<area shape="rect" id="node77" href="$spell_check_8c.html#a03cd841d09ff12bfe755aae69781bf23" title="copieChaineCaractere" alt="" coords="667,1044,816,1073"/>
+<area shape="rect" id="node79" href="$spell_check_8c.html#ac7f68bdcc0bbb1bc652214dac2fed71c" title="estUnNombre" alt="" coords="467,1083,568,1112"/>
+<area shape="rect" id="node81" href="$spell_check_8c.html#a2b45c492e7e9c250eb8718b51a8cc4dd" title="GetMode" alt="" coords="480,1189,555,1219"/>
+<area shape="rect" id="node89" href="$spell_check_8c.html#a4bc21b6d6d25bcbf5f13aeda765d1d89" title="transformeEnMinuscule" alt="" coords="663,967,820,996"/>
+<area shape="rect" id="node91" href="$spell_check_8c.html#a36663a990d2ffc8a5b10220f59d36a9c" title="DicoContient" alt="" coords="468,715,567,744"/>
+<area shape="rect" id="node94" href="$spell_check_8c.html#a603ba0c4a9641d8acb7faba1bf8f632b" title="DemandeCorrectionManuelle" alt="" coords="423,1136,612,1165"/>
+<area shape="rect" id="node97" href="$spell_check_8c.html#a531c6f8bad58ee3afe7da93d087bc6f1" title="DemandeOuiouNON" alt="" coords="447,768,588,797"/>
+<area shape="rect" id="node99" href="$spell_check_8c.html#afd7e604e350921847cbd4c1d03a9f6a6" title="chercheEtRemplace" alt="" coords="448,821,587,851"/>
+<area shape="rect" id="node101" href="$spell_check_8c.html#a0c035faa0dc2573278af5837a78d393a" title="TransformeEnMode" alt="" coords="449,875,585,904"/>
+<area shape="rect" id="node71" href="$spell_check_8c.html#a7938cf20e4d7e24f90cee4a6d58c7223" title="LisNombreDeMots" alt="" coords="676,688,807,717"/>
+<area shape="rect" id="node73" href="$spell_check_8c.html#acdd8403f3258dd6df16961514201f566" title="LisMot" alt="" coords="711,635,772,664"/>
+<area shape="rect" id="node83" href="$spell_check_8c.html#afdf1fd26f6fdf23a91393ab4fb301867" title="estPremiereLettreMaj" alt="" coords="668,1243,815,1272"/>
+<area shape="rect" id="node85" href="$spell_check_8c.html#a60d9e4088936a2b0230dc91ab911b4a7" title="estEnMaj" alt="" coords="703,1136,780,1165"/>
+<area shape="rect" id="node87" href="$spell_check_8c.html#a4fec11d4ba6c90099603d4ced0cd7870" title="estEnMin" alt="" coords="703,1189,780,1219"/>
+<area shape="rect" id="node114" href="$projet_8c.html#ab361887ae43f86f33627d34d32b0c9d9" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="479,1397,556,1427"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="detectLettersAndWords" name="detectLettersAndWords">
+<area shape="rect" id="node3" href="$projet_8c.html#af44cb7c9123d823447add912cef4712f" title="Teste si les couleurs RGB en paramètres sont égales." alt="" coords="213,5,328,35"/>
+<area shape="rect" id="node5" href="$projet_8c.html#a96ff91afd8ebc974f4a6365fb9d7bef1" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon ses coordonées." alt="" coords="229,59,312,88"/>
+<area shape="rect" id="node7" href="$projet_8c.html#a497be886110dddd526cf5b01b0c6bb71" title="Convertit des coordonées (x,y) en indice (index du tableau de données de l&#39;image RGB)" alt="" coords="377,32,511,61"/>
+<area shape="rect" id="node9" href="$projet_8c.html#ab3d10ec2e7a27ae13da109343210f55d" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon son index." alt="" coords="400,85,488,115"/>
+</map>

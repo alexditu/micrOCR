@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Reconnaissance matricielle de caractères:  Fichier source de spellCheck.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Reconnaissance matricielle de caractères
+   &#160;<span id="projectnumber">2.7</span>
+   </div>
+   <div id="projectbrief">Projet d&#39;algo 2012-2013, Groupe B2 - Reconnaissance matricielle de caractères</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('spell_check_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">spellCheck.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="spell_check_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *      Projet : Sous traitance geekou</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *      Fichier : Main.c</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Version 2</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *      Auteur : Vian Jeremy</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *      Date : 11/01/2013</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;ctype.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdarg.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="spell_8h.html">spell.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="spell_check_8h.html#afa7b7638d0ac972327d9fadc93db9802">   19</a></span>&#160;<span class="preprocessor">#define TAILLE_BUFFER 256</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="spell_check_8h.html#ac731e6ccb34d1ee45ac0df6c2daf02d0">   20</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TAILLE_MOT_MAX 50</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="spell_check_8h.html#a9583e2027ad6071f524fd7aafe799051">   21</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TAILLE_CHOIX_MAX 50</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="spell_check_8h.html#a29da27859c9dd16db4612fb44cbac3d0">   22</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STRTOK_SYNTAX &quot;. \r\t\n&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="spell_check_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">   24</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="spell_check_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="spell_check_8h.html#a21a4a6d0dd739d686d827d66141538d8">   25</a></span>&#160;<span class="keyword">typedef</span> FILE* <a class="code" href="spell_check_8h.html#a21a4a6d0dd739d686d827d66141538d8">pFILE</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="struct_dictionnaire.html">   26</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="struct_dictionnaire.html#a68530cf6868d78bc8ad1a2b0f6702af6">   28</a></span>&#160;        <a class="code" href="spell_check_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code" href="struct_dictionnaire.html#a68530cf6868d78bc8ad1a2b0f6702af6">NombreMots</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="struct_dictionnaire.html#ac81fb817226d17925e2e25f6f7b9cf4a">   29</a></span>&#160;        <span class="keywordtype">char</span>**  <a class="code" href="struct_dictionnaire.html#ac81fb817226d17925e2e25f6f7b9cf4a">LeMot</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}<a class="code" href="struct_dictionnaire.html">Dictionnaire</a>,*<a class="code" href="spell_check_8h.html#a96db1f20fdd665fc937006148553a0c5">pDictionnaire</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="spell_check_8c.html#a21f5a3581aaf1b70042db02dadf32850">spellCheck</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* texteOriginal);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">int</span> <a class="code" href="spell_check_8c.html#a2b45c492e7e9c250eb8718b51a8cc4dd">GetMode</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* maChaine);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="spell_check_8c.html#a603ba0c4a9641d8acb7faba1bf8f632b">DemandeCorrectionManuelle</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* MessageDemande,<span class="keywordtype">char</span>* pMot);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">int</span> <a class="code" href="spell_check_8c.html#a531c6f8bad58ee3afe7da93d087bc6f1">DemandeOuiouNON</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *chaine, ...);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="spell_check_8c.html#afd7e604e350921847cbd4c1d03a9f6a6">chercheEtRemplace</a>(<span class="keywordtype">char</span> *maChaine, <span class="keyword">const</span> <span class="keywordtype">char</span> *ARemplacer, <span class="keyword">const</span> <span class="keywordtype">char</span> *RemplacePar);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="spell_check_8c.html#a03cd841d09ff12bfe755aae69781bf23">copieChaineCaractere</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* texteOriginal);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="spell_check_8c.html#a0c035faa0dc2573278af5837a78d393a">TransformeEnMode</a>(<span class="keywordtype">char</span>* maChaine,<span class="keywordtype">int</span> Mode);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="spell_check_8c.html#a4bc21b6d6d25bcbf5f13aeda765d1d89">transformeEnMinuscule</a>(<span class="keywordtype">char</span>* maChaine);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="spell_check_8c.html#aca48e1e19fddf6be0618a50e029869d5">transformeEnMinusculeSansToucher</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* maChaine);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="spell_check_8c.html#a7b6b58412dafc82e44c94031998918be">transformeEnMajuscule</a>(<span class="keywordtype">char</span>* maChaine);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="spell_check_8c.html#a7bc509fffa72c3c1239a175b9fb2c9b1">transformeEnPremiereLettreMajuscule</a>(<span class="keywordtype">char</span>* maChaine);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">int</span> <a class="code" href="spell_check_8c.html#ac7f68bdcc0bbb1bc652214dac2fed71c">estUnNombre</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * s);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">int</span> <a class="code" href="spell_check_8c.html#afdf1fd26f6fdf23a91393ab4fb301867">estPremiereLettreMaj</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* maChaine);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">int</span> <a class="code" href="spell_check_8c.html#a60d9e4088936a2b0230dc91ab911b4a7">estEnMaj</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* maChaine);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">int</span> <a class="code" href="spell_check_8c.html#a4fec11d4ba6c90099603d4ced0cd7870">estEnMin</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* maChaine);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;pDictionnaire <a class="code" href="spell_check_8c.html#a5b18e9add1432accc49934d536b8de39">OuvreDictionnaire</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="projet_8c.html#aafa4cbb12171220520438cbcedc11115" title="Chaîne globale représentant le nom du fichier image .bmp à charger.">nomFichier</a>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span> <a class="code" href="spell_check_8c.html#acfe1cf3c9706fa808549fc8d6386b31c">FermeDictionnaire</a>(pDictionnaire monDictionnaire);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="spell_check_8c.html#a36663a990d2ffc8a5b10220f59d36a9c">DicoContient</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="struct_mot.html" title="Définit un &quot;mot&quot; par son éventuelle position en x, ses lettres et leurs nombre.">Mot</a>, pDictionnaire monDictionnaire);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="spell_check_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code" href="spell_check_8c.html#a7938cf20e4d7e24f90cee4a6d58c7223">LisNombreDeMots</a>(<a class="code" href="spell_check_8h.html#a21a4a6d0dd739d686d827d66141538d8">pFILE</a> monFichier);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="spell_check_8c.html#acdd8403f3258dd6df16961514201f566">LisMot</a>(<a class="code" href="spell_check_8h.html#a21a4a6d0dd739d686d827d66141538d8">pFILE</a> monFichier);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="spell_check_8h.html">spellCheck.h</a></li>
+    <li class="footer">Généré le Samedi Janvier 26 2013 20:06:13 pour Reconnaissance matricielle de caractères par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
+  </ul>
+</div>
+</body>
+</html>

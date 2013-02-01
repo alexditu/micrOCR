@@ -1,0 +1,912 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Reconnaissance matricielle de caractères: Référence du fichier spellCheck.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Reconnaissance matricielle de caractères
+   &#160;<span id="projectnumber">2.7</span>
+   </div>
+   <div id="projectbrief">Projet d&#39;algo 2012-2013, Groupe B2 - Reconnaissance matricielle de caractères</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('spell_check_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier spellCheck.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;string.h&gt;</code><br/>
+<code>#include &lt;ctype.h&gt;</code><br/>
+<code>#include &lt;stdbool.h&gt;</code><br/>
+<code>#include &lt;stdarg.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="spell_8h_source.html">spell.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de spellCheck.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h__incl.png" border="0" usemap="#spell_check_8h" alt=""/></div>
+<map name="spell_check_8h" id="spell_check_8h">
+<area shape="rect" id="node15" href="spell_8h.html" title="spell.h" alt="" coords="284,83,343,112"/></map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h__dep__incl.png" border="0" usemap="#spell_check_8hdep" alt=""/></div>
+<map name="spell_check_8hdep" id="spell_check_8hdep">
+<area shape="rect" id="node3" href="projet_8c.html" title="Code Source du projet d&#39;algo 2012&#45;2013." alt="" coords="5,83,69,112"/><area shape="rect" id="node5" href="spell_check_8c.html" title="spellCheck.c" alt="" coords="93,83,192,112"/></map>
+</div>
+</div>
+<p><a href="spell_check_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dictionnaire.html">Dictionnaire</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:afa7b7638d0ac972327d9fadc93db9802"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#afa7b7638d0ac972327d9fadc93db9802">TAILLE_BUFFER</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:afa7b7638d0ac972327d9fadc93db9802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac731e6ccb34d1ee45ac0df6c2daf02d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#ac731e6ccb34d1ee45ac0df6c2daf02d0">TAILLE_MOT_MAX</a>&#160;&#160;&#160;50</td></tr>
+<tr class="separator:ac731e6ccb34d1ee45ac0df6c2daf02d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9583e2027ad6071f524fd7aafe799051"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a9583e2027ad6071f524fd7aafe799051">TAILLE_CHOIX_MAX</a>&#160;&#160;&#160;50</td></tr>
+<tr class="separator:a9583e2027ad6071f524fd7aafe799051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29da27859c9dd16db4612fb44cbac3d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a29da27859c9dd16db4612fb44cbac3d0">STRTOK_SYNTAX</a>&#160;&#160;&#160;&quot;. \r\t\n&quot;</td></tr>
+<tr class="separator:a29da27859c9dd16db4612fb44cbac3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:a91ad9478d81a7aaf2593e8d9c3d06a14"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></td></tr>
+<tr class="separator:a91ad9478d81a7aaf2593e8d9c3d06a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21a4a6d0dd739d686d827d66141538d8"><td class="memItemLeft" align="right" valign="top">typedef FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a21a4a6d0dd739d686d827d66141538d8">pFILE</a></td></tr>
+<tr class="separator:a21a4a6d0dd739d686d827d66141538d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96db1f20fdd665fc937006148553a0c5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_dictionnaire.html">Dictionnaire</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a96db1f20fdd665fc937006148553a0c5">pDictionnaire</a></td></tr>
+<tr class="separator:a96db1f20fdd665fc937006148553a0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ada9d868cd3c1182b4f2f61010fc84832"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832">spellCheck</a> (const char *texteOriginal)</td></tr>
+<tr class="separator:ada9d868cd3c1182b4f2f61010fc84832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b45c492e7e9c250eb8718b51a8cc4dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a2b45c492e7e9c250eb8718b51a8cc4dd">GetMode</a> (const char *maChaine)</td></tr>
+<tr class="separator:a2b45c492e7e9c250eb8718b51a8cc4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603ba0c4a9641d8acb7faba1bf8f632b"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a603ba0c4a9641d8acb7faba1bf8f632b">DemandeCorrectionManuelle</a> (const char *MessageDemande, char *pMot)</td></tr>
+<tr class="separator:a603ba0c4a9641d8acb7faba1bf8f632b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531c6f8bad58ee3afe7da93d087bc6f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a531c6f8bad58ee3afe7da93d087bc6f1">DemandeOuiouNON</a> (const char *chaine,...)</td></tr>
+<tr class="separator:a531c6f8bad58ee3afe7da93d087bc6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7e604e350921847cbd4c1d03a9f6a6"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#afd7e604e350921847cbd4c1d03a9f6a6">chercheEtRemplace</a> (char *maChaine, const char *ARemplacer, const char *RemplacePar)</td></tr>
+<tr class="separator:afd7e604e350921847cbd4c1d03a9f6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03cd841d09ff12bfe755aae69781bf23"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a03cd841d09ff12bfe755aae69781bf23">copieChaineCaractere</a> (const char *texteOriginal)</td></tr>
+<tr class="separator:a03cd841d09ff12bfe755aae69781bf23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c035faa0dc2573278af5837a78d393a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a0c035faa0dc2573278af5837a78d393a">TransformeEnMode</a> (char *maChaine, int Mode)</td></tr>
+<tr class="separator:a0c035faa0dc2573278af5837a78d393a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bc21b6d6d25bcbf5f13aeda765d1d89"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a4bc21b6d6d25bcbf5f13aeda765d1d89">transformeEnMinuscule</a> (char *maChaine)</td></tr>
+<tr class="separator:a4bc21b6d6d25bcbf5f13aeda765d1d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca48e1e19fddf6be0618a50e029869d5"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#aca48e1e19fddf6be0618a50e029869d5">transformeEnMinusculeSansToucher</a> (const char *maChaine)</td></tr>
+<tr class="separator:aca48e1e19fddf6be0618a50e029869d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6b58412dafc82e44c94031998918be"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a7b6b58412dafc82e44c94031998918be">transformeEnMajuscule</a> (char *maChaine)</td></tr>
+<tr class="separator:a7b6b58412dafc82e44c94031998918be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bc509fffa72c3c1239a175b9fb2c9b1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a7bc509fffa72c3c1239a175b9fb2c9b1">transformeEnPremiereLettreMajuscule</a> (char *maChaine)</td></tr>
+<tr class="separator:a7bc509fffa72c3c1239a175b9fb2c9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f68bdcc0bbb1bc652214dac2fed71c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#ac7f68bdcc0bbb1bc652214dac2fed71c">estUnNombre</a> (const char *s)</td></tr>
+<tr class="separator:ac7f68bdcc0bbb1bc652214dac2fed71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf1fd26f6fdf23a91393ab4fb301867"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#afdf1fd26f6fdf23a91393ab4fb301867">estPremiereLettreMaj</a> (const char *maChaine)</td></tr>
+<tr class="separator:afdf1fd26f6fdf23a91393ab4fb301867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d9e4088936a2b0230dc91ab911b4a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a60d9e4088936a2b0230dc91ab911b4a7">estEnMaj</a> (const char *maChaine)</td></tr>
+<tr class="separator:a60d9e4088936a2b0230dc91ab911b4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fec11d4ba6c90099603d4ced0cd7870"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a4fec11d4ba6c90099603d4ced0cd7870">estEnMin</a> (const char *maChaine)</td></tr>
+<tr class="separator:a4fec11d4ba6c90099603d4ced0cd7870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b18e9add1432accc49934d536b8de39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="spell_check_8h.html#a96db1f20fdd665fc937006148553a0c5">pDictionnaire</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a5b18e9add1432accc49934d536b8de39">OuvreDictionnaire</a> (const char *<a class="el" href="projet_8c.html#aafa4cbb12171220520438cbcedc11115">nomFichier</a>)</td></tr>
+<tr class="separator:a5b18e9add1432accc49934d536b8de39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe1cf3c9706fa808549fc8d6386b31c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#acfe1cf3c9706fa808549fc8d6386b31c">FermeDictionnaire</a> (<a class="el" href="spell_check_8h.html#a96db1f20fdd665fc937006148553a0c5">pDictionnaire</a> monDictionnaire)</td></tr>
+<tr class="separator:acfe1cf3c9706fa808549fc8d6386b31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36663a990d2ffc8a5b10220f59d36a9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a36663a990d2ffc8a5b10220f59d36a9c">DicoContient</a> (const char *<a class="el" href="struct_mot.html">Mot</a>, <a class="el" href="spell_check_8h.html#a96db1f20fdd665fc937006148553a0c5">pDictionnaire</a> monDictionnaire)</td></tr>
+<tr class="separator:a36663a990d2ffc8a5b10220f59d36a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7938cf20e4d7e24f90cee4a6d58c7223"><td class="memItemLeft" align="right" valign="top"><a class="el" href="spell_check_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#a7938cf20e4d7e24f90cee4a6d58c7223">LisNombreDeMots</a> (<a class="el" href="spell_check_8h.html#a21a4a6d0dd739d686d827d66141538d8">pFILE</a> monFichier)</td></tr>
+<tr class="separator:a7938cf20e4d7e24f90cee4a6d58c7223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd8403f3258dd6df16961514201f566"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spell_check_8h.html#acdd8403f3258dd6df16961514201f566">LisMot</a> (<a class="el" href="spell_check_8h.html#a21a4a6d0dd739d686d827d66141538d8">pFILE</a> monFichier)</td></tr>
+<tr class="separator:acdd8403f3258dd6df16961514201f566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a class="anchor" id="a29da27859c9dd16db4612fb44cbac3d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STRTOK_SYNTAX&#160;&#160;&#160;&quot;. \r\t\n&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afa7b7638d0ac972327d9fadc93db9802"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAILLE_BUFFER&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9583e2027ad6071f524fd7aafe799051"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAILLE_CHOIX_MAX&#160;&#160;&#160;50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac731e6ccb34d1ee45ac0df6c2daf02d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAILLE_MOT_MAX&#160;&#160;&#160;50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des définitions de type</h2>
+<a class="anchor" id="a96db1f20fdd665fc937006148553a0c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="struct_dictionnaire.html">Dictionnaire</a>* <a class="el" href="spell_check_8h.html#a96db1f20fdd665fc937006148553a0c5">pDictionnaire</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a21a4a6d0dd739d686d827d66141538d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef FILE* <a class="el" href="spell_check_8h.html#a21a4a6d0dd739d686d827d66141538d8">pFILE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a91ad9478d81a7aaf2593e8d9c3d06a14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="spell_check_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="afd7e604e350921847cbd4c1d03a9f6a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* chercheEtRemplace </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>maChaine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ARemplacer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>RemplacePar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">    Operations sur les chaines de charactères
+</pre><p>========================================================================= </p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_afd7e604e350921847cbd4c1d03a9f6a6_icgraph.png" border="0" usemap="#spell_check_8h_afd7e604e350921847cbd4c1d03a9f6a6_icgraph" alt=""/></div>
+<map name="spell_check_8h_afd7e604e350921847cbd4c1d03a9f6a6_icgraph" id="spell_check_8h_afd7e604e350921847cbd4c1d03a9f6a6_icgraph">
+<area shape="rect" id="node3" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832" title="spellCheck" alt="" coords="196,5,281,35"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="331,5,461,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a03cd841d09ff12bfe755aae69781bf23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* copieChaineCaractere </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>texteOriginal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>copie une chaine de charactère en créant une nouvelle chaine identique </p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_a03cd841d09ff12bfe755aae69781bf23_icgraph.png" border="0" usemap="#spell_check_8h_a03cd841d09ff12bfe755aae69781bf23_icgraph" alt=""/></div>
+<map name="spell_check_8h_a03cd841d09ff12bfe755aae69781bf23_icgraph" id="spell_check_8h_a03cd841d09ff12bfe755aae69781bf23_icgraph">
+<area shape="rect" id="node3" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832" title="spellCheck" alt="" coords="447,5,532,35"/><area shape="rect" id="node7" href="spell_check_8h.html#a603ba0c4a9641d8acb7faba1bf8f632b" title="DemandeCorrectionManuelle" alt="" coords="207,31,396,60"/><area shape="rect" id="node10" href="spell_check_8h.html#aca48e1e19fddf6be0618a50e029869d5" title="transformeEnMinusculeSans\lToucher" alt="" coords="207,83,396,130"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="581,5,712,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a603ba0c4a9641d8acb7faba1bf8f632b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* DemandeCorrectionManuelle </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>MessageDemande</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pMot</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">    DemandeCorrectionManuelle()
+
+            Mode 0 : On ne cherche pas a comprendre
+            Mode 1 : Premiere Lettre en Majuscule
+    Mode 2 : En Majuscule
+            Mode 3 : En Minuscule
+</pre><p> =========================================================================== </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_a603ba0c4a9641d8acb7faba1bf8f632b_cgraph.png" border="0" usemap="#spell_check_8h_a603ba0c4a9641d8acb7faba1bf8f632b_cgraph" alt=""/></div>
+<map name="spell_check_8h_a603ba0c4a9641d8acb7faba1bf8f632b_cgraph" id="spell_check_8h_a603ba0c4a9641d8acb7faba1bf8f632b_cgraph">
+<area shape="rect" id="node3" href="spell_check_8c.html#a03cd841d09ff12bfe755aae69781bf23" title="copieChaineCaractere" alt="" coords="247,5,396,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_a603ba0c4a9641d8acb7faba1bf8f632b_icgraph.png" border="0" usemap="#spell_check_8h_a603ba0c4a9641d8acb7faba1bf8f632b_icgraph" alt=""/></div>
+<map name="spell_check_8h_a603ba0c4a9641d8acb7faba1bf8f632b_icgraph" id="spell_check_8h_a603ba0c4a9641d8acb7faba1bf8f632b_icgraph">
+<area shape="rect" id="node3" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832" title="spellCheck" alt="" coords="247,5,332,35"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="381,5,512,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a531c6f8bad58ee3afe7da93d087bc6f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DemandeOuiouNON </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>chaine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_a531c6f8bad58ee3afe7da93d087bc6f1_icgraph.png" border="0" usemap="#spell_check_8h_a531c6f8bad58ee3afe7da93d087bc6f1_icgraph" alt=""/></div>
+<map name="spell_check_8h_a531c6f8bad58ee3afe7da93d087bc6f1_icgraph" id="spell_check_8h_a531c6f8bad58ee3afe7da93d087bc6f1_icgraph">
+<area shape="rect" id="node3" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832" title="spellCheck" alt="" coords="199,5,284,35"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="333,5,464,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a36663a990d2ffc8a5b10220f59d36a9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DicoContient </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Mot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="spell_check_8h.html#a96db1f20fdd665fc937006148553a0c5">pDictionnaire</a>&#160;</td>
+          <td class="paramname"><em>monDictionnaire</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_a36663a990d2ffc8a5b10220f59d36a9c_icgraph.png" border="0" usemap="#spell_check_8h_a36663a990d2ffc8a5b10220f59d36a9c_icgraph" alt=""/></div>
+<map name="spell_check_8h_a36663a990d2ffc8a5b10220f59d36a9c_icgraph" id="spell_check_8h_a36663a990d2ffc8a5b10220f59d36a9c_icgraph">
+<area shape="rect" id="node3" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832" title="spellCheck" alt="" coords="153,5,239,35"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="288,5,419,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a60d9e4088936a2b0230dc91ab911b4a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int estEnMaj </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>maChaine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_a60d9e4088936a2b0230dc91ab911b4a7_icgraph.png" border="0" usemap="#spell_check_8h_a60d9e4088936a2b0230dc91ab911b4a7_icgraph" alt=""/></div>
+<map name="spell_check_8h_a60d9e4088936a2b0230dc91ab911b4a7_icgraph" id="spell_check_8h_a60d9e4088936a2b0230dc91ab911b4a7_icgraph">
+<area shape="rect" id="node3" href="spell_check_8h.html#a2b45c492e7e9c250eb8718b51a8cc4dd" title="GetMode" alt="" coords="131,5,205,35"/><area shape="rect" id="node5" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832" title="spellCheck" alt="" coords="255,5,340,35"/><area shape="rect" id="node7" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="389,5,520,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4fec11d4ba6c90099603d4ced0cd7870"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int estEnMin </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>maChaine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_a4fec11d4ba6c90099603d4ced0cd7870_icgraph.png" border="0" usemap="#spell_check_8h_a4fec11d4ba6c90099603d4ced0cd7870_icgraph" alt=""/></div>
+<map name="spell_check_8h_a4fec11d4ba6c90099603d4ced0cd7870_icgraph" id="spell_check_8h_a4fec11d4ba6c90099603d4ced0cd7870_icgraph">
+<area shape="rect" id="node3" href="spell_check_8h.html#a2b45c492e7e9c250eb8718b51a8cc4dd" title="GetMode" alt="" coords="131,5,205,35"/><area shape="rect" id="node5" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832" title="spellCheck" alt="" coords="255,5,340,35"/><area shape="rect" id="node7" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="389,5,520,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afdf1fd26f6fdf23a91393ab4fb301867"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int estPremiereLettreMaj </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>maChaine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_afdf1fd26f6fdf23a91393ab4fb301867_icgraph.png" border="0" usemap="#spell_check_8h_afdf1fd26f6fdf23a91393ab4fb301867_icgraph" alt=""/></div>
+<map name="spell_check_8h_afdf1fd26f6fdf23a91393ab4fb301867_icgraph" id="spell_check_8h_afdf1fd26f6fdf23a91393ab4fb301867_icgraph">
+<area shape="rect" id="node3" href="spell_check_8h.html#a2b45c492e7e9c250eb8718b51a8cc4dd" title="GetMode" alt="" coords="200,5,275,35"/><area shape="rect" id="node5" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832" title="spellCheck" alt="" coords="324,5,409,35"/><area shape="rect" id="node7" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="459,5,589,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac7f68bdcc0bbb1bc652214dac2fed71c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int estUnNombre </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_ac7f68bdcc0bbb1bc652214dac2fed71c_icgraph.png" border="0" usemap="#spell_check_8h_ac7f68bdcc0bbb1bc652214dac2fed71c_icgraph" alt=""/></div>
+<map name="spell_check_8h_ac7f68bdcc0bbb1bc652214dac2fed71c_icgraph" id="spell_check_8h_ac7f68bdcc0bbb1bc652214dac2fed71c_icgraph">
+<area shape="rect" id="node3" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832" title="spellCheck" alt="" coords="159,5,244,35"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="293,5,424,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acfe1cf3c9706fa808549fc8d6386b31c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FermeDictionnaire </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="spell_check_8h.html#a96db1f20fdd665fc937006148553a0c5">pDictionnaire</a>&#160;</td>
+          <td class="paramname"><em>monDictionnaire</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2b45c492e7e9c250eb8718b51a8cc4dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GetMode </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>maChaine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_a2b45c492e7e9c250eb8718b51a8cc4dd_cgraph.png" border="0" usemap="#spell_check_8h_a2b45c492e7e9c250eb8718b51a8cc4dd_cgraph" alt=""/></div>
+<map name="spell_check_8h_a2b45c492e7e9c250eb8718b51a8cc4dd_cgraph" id="spell_check_8h_a2b45c492e7e9c250eb8718b51a8cc4dd_cgraph">
+<area shape="rect" id="node3" href="spell_check_8c.html#afdf1fd26f6fdf23a91393ab4fb301867" title="estPremiereLettreMaj" alt="" coords="128,5,275,35"/><area shape="rect" id="node5" href="spell_check_8c.html#a60d9e4088936a2b0230dc91ab911b4a7" title="estEnMaj" alt="" coords="163,59,240,88"/><area shape="rect" id="node7" href="spell_check_8c.html#a4fec11d4ba6c90099603d4ced0cd7870" title="estEnMin" alt="" coords="163,112,240,141"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_a2b45c492e7e9c250eb8718b51a8cc4dd_icgraph.png" border="0" usemap="#spell_check_8h_a2b45c492e7e9c250eb8718b51a8cc4dd_icgraph" alt=""/></div>
+<map name="spell_check_8h_a2b45c492e7e9c250eb8718b51a8cc4dd_icgraph" id="spell_check_8h_a2b45c492e7e9c250eb8718b51a8cc4dd_icgraph">
+<area shape="rect" id="node3" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832" title="spellCheck" alt="" coords="129,5,215,35"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="264,5,395,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acdd8403f3258dd6df16961514201f566"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* LisMot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="spell_check_8h.html#a21a4a6d0dd739d686d827d66141538d8">pFILE</a>&#160;</td>
+          <td class="paramname"><em>monFichier</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_acdd8403f3258dd6df16961514201f566_icgraph.png" border="0" usemap="#spell_check_8h_acdd8403f3258dd6df16961514201f566_icgraph" alt=""/></div>
+<map name="spell_check_8h_acdd8403f3258dd6df16961514201f566_icgraph" id="spell_check_8h_acdd8403f3258dd6df16961514201f566_icgraph">
+<area shape="rect" id="node3" href="spell_check_8h.html#a5b18e9add1432accc49934d536b8de39" title="OuvreDictionnaire" alt="" coords="116,5,241,35"/><area shape="rect" id="node5" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832" title="spellCheck" alt="" coords="292,5,377,35"/><area shape="rect" id="node7" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="427,5,557,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7938cf20e4d7e24f90cee4a6d58c7223"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="spell_check_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> LisNombreDeMots </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="spell_check_8h.html#a21a4a6d0dd739d686d827d66141538d8">pFILE</a>&#160;</td>
+          <td class="paramname"><em>monFichier</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_a7938cf20e4d7e24f90cee4a6d58c7223_icgraph.png" border="0" usemap="#spell_check_8h_a7938cf20e4d7e24f90cee4a6d58c7223_icgraph" alt=""/></div>
+<map name="spell_check_8h_a7938cf20e4d7e24f90cee4a6d58c7223_icgraph" id="spell_check_8h_a7938cf20e4d7e24f90cee4a6d58c7223_icgraph">
+<area shape="rect" id="node3" href="spell_check_8h.html#a5b18e9add1432accc49934d536b8de39" title="OuvreDictionnaire" alt="" coords="185,5,311,35"/><area shape="rect" id="node5" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832" title="spellCheck" alt="" coords="361,5,447,35"/><area shape="rect" id="node7" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="496,5,627,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b18e9add1432accc49934d536b8de39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="spell_check_8h.html#a96db1f20fdd665fc937006148553a0c5">pDictionnaire</a> OuvreDictionnaire </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>nomFichier</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">    Dictionnaire PART
+</pre><p>========================================================================= </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_a5b18e9add1432accc49934d536b8de39_cgraph.png" border="0" usemap="#spell_check_8h_a5b18e9add1432accc49934d536b8de39_cgraph" alt=""/></div>
+<map name="spell_check_8h_a5b18e9add1432accc49934d536b8de39_cgraph" id="spell_check_8h_a5b18e9add1432accc49934d536b8de39_cgraph">
+<area shape="rect" id="node3" href="spell_check_8c.html#a7938cf20e4d7e24f90cee4a6d58c7223" title="LisNombreDeMots" alt="" coords="181,5,312,35"/><area shape="rect" id="node5" href="spell_check_8c.html#acdd8403f3258dd6df16961514201f566" title="LisMot" alt="" coords="216,59,277,88"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_a5b18e9add1432accc49934d536b8de39_icgraph.png" border="0" usemap="#spell_check_8h_a5b18e9add1432accc49934d536b8de39_icgraph" alt=""/></div>
+<map name="spell_check_8h_a5b18e9add1432accc49934d536b8de39_icgraph" id="spell_check_8h_a5b18e9add1432accc49934d536b8de39_icgraph">
+<area shape="rect" id="node3" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832" title="spellCheck" alt="" coords="183,5,268,35"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="317,5,448,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ada9d868cd3c1182b4f2f61010fc84832"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* spellCheck </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>monTexte</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">    Geekou Projet fonctions
+</pre><p>================================================================================</p>
+<pre class="fragment">    Geekou Projet fonctions
+</pre><p>========================================================================= </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_ada9d868cd3c1182b4f2f61010fc84832_cgraph.png" border="0" usemap="#spell_check_8h_ada9d868cd3c1182b4f2f61010fc84832_cgraph" alt=""/></div>
+<map name="spell_check_8h_ada9d868cd3c1182b4f2f61010fc84832_cgraph" id="spell_check_8h_ada9d868cd3c1182b4f2f61010fc84832_cgraph">
+<area shape="rect" id="node3" href="spell_check_8c.html#a5b18e9add1432accc49934d536b8de39" title="OuvreDictionnaire" alt="" coords="175,59,300,88"/><area shape="rect" id="node9" href="spell_8c.html#a73f5320614449925020c563a2ec8c0ee" title="initSpellCheck" alt="" coords="184,112,291,141"/><area shape="rect" id="node11" href="spell_check_8c.html#a03cd841d09ff12bfe755aae69781bf23" title="copieChaineCaractere" alt="" coords="400,299,549,328"/><area shape="rect" id="node13" href="spell_check_8c.html#ac7f68bdcc0bbb1bc652214dac2fed71c" title="estUnNombre" alt="" coords="187,219,288,248"/><area shape="rect" id="node15" href="spell_check_8c.html#a2b45c492e7e9c250eb8718b51a8cc4dd" title="GetMode" alt="" coords="200,165,275,195"/><area shape="rect" id="node23" href="spell_check_8c.html#a4bc21b6d6d25bcbf5f13aeda765d1d89" title="transformeEnMinuscule" alt="" coords="396,519,553,548"/><area shape="rect" id="node25" href="spell_check_8c.html#a36663a990d2ffc8a5b10220f59d36a9c" title="DicoContient" alt="" coords="188,376,287,405"/><area shape="rect" id="node27" href="spell_8c.html#a96087d7ed6e749aa5f209286d88e549d" title="correct" alt="" coords="207,429,268,459"/><area shape="rect" id="node29" href="spell_check_8c.html#a603ba0c4a9641d8acb7faba1bf8f632b" title="DemandeCorrectionManuelle" alt="" coords="143,272,332,301"/><area shape="rect" id="node32" href="spell_check_8c.html#a531c6f8bad58ee3afe7da93d087bc6f1" title="DemandeOuiouNON" alt="" coords="167,533,308,563"/><area shape="rect" id="node34" href="spell_check_8c.html#afd7e604e350921847cbd4c1d03a9f6a6" title="chercheEtRemplace" alt="" coords="168,587,307,616"/><area shape="rect" id="node36" href="spell_check_8c.html#a0c035faa0dc2573278af5837a78d393a" title="TransformeEnMode" alt="" coords="169,640,305,669"/><area shape="rect" id="node5" href="spell_check_8c.html#a7938cf20e4d7e24f90cee4a6d58c7223" title="LisNombreDeMots" alt="" coords="409,59,540,88"/><area shape="rect" id="node7" href="spell_check_8c.html#acdd8403f3258dd6df16961514201f566" title="LisMot" alt="" coords="444,5,505,35"/><area shape="rect" id="node17" href="spell_check_8c.html#afdf1fd26f6fdf23a91393ab4fb301867" title="estPremiereLettreMaj" alt="" coords="401,112,548,141"/><area shape="rect" id="node19" href="spell_check_8c.html#a60d9e4088936a2b0230dc91ab911b4a7" title="estEnMaj" alt="" coords="436,165,513,195"/><area shape="rect" id="node21" href="spell_check_8c.html#a4fec11d4ba6c90099603d4ced0cd7870" title="estEnMin" alt="" coords="436,219,513,248"/><area shape="rect" id="node38" href="spell_check_8c.html#a7bc509fffa72c3c1239a175b9fb2c9b1" title="transformeEnPremiereLettre\lMajuscule" alt="" coords="383,662,567,709"/><area shape="rect" id="node40" href="spell_check_8c.html#a7b6b58412dafc82e44c94031998918be" title="transformeEnMajuscule" alt="" coords="396,609,553,639"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_ada9d868cd3c1182b4f2f61010fc84832_icgraph.png" border="0" usemap="#spell_check_8h_ada9d868cd3c1182b4f2f61010fc84832_icgraph" alt=""/></div>
+<map name="spell_check_8h_ada9d868cd3c1182b4f2f61010fc84832_icgraph" id="spell_check_8h_ada9d868cd3c1182b4f2f61010fc84832_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="141,5,272,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b6b58412dafc82e44c94031998918be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* transformeEnMajuscule </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>maChaine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_a7b6b58412dafc82e44c94031998918be_icgraph.png" border="0" usemap="#spell_check_8h_a7b6b58412dafc82e44c94031998918be_icgraph" alt=""/></div>
+<map name="spell_check_8h_a7b6b58412dafc82e44c94031998918be_icgraph" id="spell_check_8h_a7b6b58412dafc82e44c94031998918be_icgraph">
+<area shape="rect" id="node3" href="spell_check_8h.html#a0c035faa0dc2573278af5837a78d393a" title="TransformeEnMode" alt="" coords="213,5,349,35"/><area shape="rect" id="node5" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832" title="spellCheck" alt="" coords="399,5,484,35"/><area shape="rect" id="node7" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="533,5,664,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4bc21b6d6d25bcbf5f13aeda765d1d89"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* transformeEnMinuscule </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>maChaine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transforme en minuscule une chaine de charactère puis supprime de la mémoire la chaine d'origine </p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_a4bc21b6d6d25bcbf5f13aeda765d1d89_icgraph.png" border="0" usemap="#spell_check_8h_a4bc21b6d6d25bcbf5f13aeda765d1d89_icgraph" alt=""/></div>
+<map name="spell_check_8h_a4bc21b6d6d25bcbf5f13aeda765d1d89_icgraph" id="spell_check_8h_a4bc21b6d6d25bcbf5f13aeda765d1d89_icgraph">
+<area shape="rect" id="node3" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832" title="spellCheck" alt="" coords="399,5,484,35"/><area shape="rect" id="node7" href="spell_check_8h.html#a0c035faa0dc2573278af5837a78d393a" title="TransformeEnMode" alt="" coords="213,31,349,60"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="533,5,664,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aca48e1e19fddf6be0618a50e029869d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* transformeEnMinusculeSansToucher </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>maChaine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_aca48e1e19fddf6be0618a50e029869d5_cgraph.png" border="0" usemap="#spell_check_8h_aca48e1e19fddf6be0618a50e029869d5_cgraph" alt=""/></div>
+<map name="spell_check_8h_aca48e1e19fddf6be0618a50e029869d5_cgraph" id="spell_check_8h_aca48e1e19fddf6be0618a50e029869d5_cgraph">
+<area shape="rect" id="node3" href="spell_check_8c.html#a03cd841d09ff12bfe755aae69781bf23" title="copieChaineCaractere" alt="" coords="244,13,393,43"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c035faa0dc2573278af5837a78d393a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* TransformeEnMode </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>maChaine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_a0c035faa0dc2573278af5837a78d393a_cgraph.png" border="0" usemap="#spell_check_8h_a0c035faa0dc2573278af5837a78d393a_cgraph" alt=""/></div>
+<map name="spell_check_8h_a0c035faa0dc2573278af5837a78d393a_cgraph" id="spell_check_8h_a0c035faa0dc2573278af5837a78d393a_cgraph">
+<area shape="rect" id="node3" href="spell_check_8c.html#a7bc509fffa72c3c1239a175b9fb2c9b1" title="transformeEnPremiereLettre\lMajuscule" alt="" coords="191,5,375,51"/><area shape="rect" id="node5" href="spell_check_8c.html#a7b6b58412dafc82e44c94031998918be" title="transformeEnMajuscule" alt="" coords="204,75,361,104"/><area shape="rect" id="node7" href="spell_check_8c.html#a4bc21b6d6d25bcbf5f13aeda765d1d89" title="transformeEnMinuscule" alt="" coords="204,128,361,157"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_a0c035faa0dc2573278af5837a78d393a_icgraph.png" border="0" usemap="#spell_check_8h_a0c035faa0dc2573278af5837a78d393a_icgraph" alt=""/></div>
+<map name="spell_check_8h_a0c035faa0dc2573278af5837a78d393a_icgraph" id="spell_check_8h_a0c035faa0dc2573278af5837a78d393a_icgraph">
+<area shape="rect" id="node3" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832" title="spellCheck" alt="" coords="191,5,276,35"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="325,5,456,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7bc509fffa72c3c1239a175b9fb2c9b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* transformeEnPremiereLettreMajuscule </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>maChaine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="spell_check_8h_a7bc509fffa72c3c1239a175b9fb2c9b1_icgraph.png" border="0" usemap="#spell_check_8h_a7bc509fffa72c3c1239a175b9fb2c9b1_icgraph" alt=""/></div>
+<map name="spell_check_8h_a7bc509fffa72c3c1239a175b9fb2c9b1_icgraph" id="spell_check_8h_a7bc509fffa72c3c1239a175b9fb2c9b1_icgraph">
+<area shape="rect" id="node3" href="spell_check_8h.html#a0c035faa0dc2573278af5837a78d393a" title="TransformeEnMode" alt="" coords="240,13,376,43"/><area shape="rect" id="node5" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832" title="spellCheck" alt="" coords="425,13,511,43"/><area shape="rect" id="node7" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="560,13,691,43"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="spell_check_8h.html">spellCheck.h</a></li>
+    <li class="footer">Généré le Samedi Janvier 26 2013 20:06:13 pour Reconnaissance matricielle de caractères par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
+  </ul>
+</div>
+</body>
+</html>

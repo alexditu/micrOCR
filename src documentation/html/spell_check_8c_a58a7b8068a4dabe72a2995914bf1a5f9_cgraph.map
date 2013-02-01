@@ -1,0 +1,7 @@
+<map id="DemandeCorrectionManuelle" name="DemandeCorrectionManuelle">
+<area shape="rect" id="node3" href="$spell_check_8c.html#a03cd841d09ff12bfe755aae69781bf23" title="copieChaineCaractere" alt="" coords="665,5,815,35"/>
+<area shape="rect" id="node5" href="$spell_check_8c.html#a0c035faa0dc2573278af5837a78d393a" title="TransformeEnMode" alt="" coords="245,65,381,95"/>
+<area shape="rect" id="node7" href="$spell_check_8c.html#a7bc509fffa72c3c1239a175b9fb2c9b1" title="transformeEnPremiereLettre\lMajuscule" alt="" coords="431,26,615,73"/>
+<area shape="rect" id="node10" href="$spell_check_8c.html#a7b6b58412dafc82e44c94031998918be" title="transformeEnMajuscule" alt="" coords="444,96,601,125"/>
+<area shape="rect" id="node12" href="$spell_check_8c.html#a4bc21b6d6d25bcbf5f13aeda765d1d89" title="transformeEnMinuscule" alt="" coords="444,149,601,179"/>
+</map>

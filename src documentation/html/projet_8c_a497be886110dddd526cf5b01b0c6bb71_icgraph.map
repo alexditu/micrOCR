@@ -1,0 +1,14 @@
+<map id="getIfromXYinImage" name="getIfromXYinImage">
+<area shape="rect" id="node3" href="$projet_8h.html#a96ff91afd8ebc974f4a6365fb9d7bef1" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon ses coordonées." alt="" coords="191,188,273,217"/>
+<area shape="rect" id="node19" href="$projet_8h.html#a59cb7bd568b148ea96186113c013b595" title="Effectue le prétraitement de l&#39;image à analyser en améliorant certains de ses aspects." alt="" coords="349,268,453,297"/>
+<area shape="rect" id="node34" href="$projet_8h.html#ab03a7fb3517aa7ea2061e49543038506" title="Crée une copie rognée d&#39;une image (DonneesImageRGB) à une zone donnée." alt="" coords="323,345,480,375"/>
+<area shape="rect" id="node5" href="$projet_8h.html#abe9732818bf9189c734f2b4fc979a64b" title="Détermine le plus petit rectangle contenant l&#39;intégralité des pixels formant le texte." alt="" coords="357,215,445,244"/>
+<area shape="rect" id="node23" href="$projet_8h.html#a5fd1e6347eda0b248ac5e5269fc32b21" title="Crée une copie de l&#39;image source (DonneesImageRGB) affectée d&#39;une rotation d&#39;un angle donné..." alt="" coords="356,161,447,191"/>
+<area shape="rect" id="node27" href="$projet_8h.html#af2d545606e4d53631f08f37fede71e8b" title="Détecte les mots et lettres constituant une partie de l&#39;image." alt="" coords="529,5,687,35"/>
+<area shape="rect" id="node30" href="$projet_8h.html#a3d15ac2fee57bdb7e0538e944d88a5a8" title="detectNbrLines" alt="" coords="553,59,663,88"/>
+<area shape="rect" id="node7" href="$projet_8h.html#ac18d865dd505d2097a8542c58e4f1706" title="Détermine le meilleur angle de rotation d&#39;une image pour &quot;horizontaliser&quot; au mieux le texte à reconna..." alt="" coords="557,163,659,192"/>
+<area shape="rect" id="node9" href="$projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="736,189,867,219"/>
+<area shape="rect" id="node11" href="$projet_8h.html#a8a5d8b65cc8be60c9ccf4ec4eb518051" title="separateLetters" alt="" coords="552,317,664,347"/>
+<area shape="rect" id="node14" href="$projet_8h.html#a5ac4e8464d47f8e25335f72059802cc6" title="Initialise et alloue un tableau de structure LettrePolice avec les caractères de la police Arial..." alt="" coords="557,371,659,400"/>
+<area shape="rect" id="node16" href="$projet_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="776,371,827,400"/>
+</map>

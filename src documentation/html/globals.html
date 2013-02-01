@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Reconnaissance matricielle de caractères: Variables globale</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Reconnaissance matricielle de caractères
+   &#160;<span id="projectnumber">2.7</span>
+   </div>
+   <div id="projectbrief">Projet d&#39;algo 2012-2013, Groupe B2 - Reconnaissance matricielle de caractères</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li class="current"><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="globals.html"><span>Tout</span></a></li>
+      <li><a href="globals_func.html"><span>Fonctions</span></a></li>
+      <li><a href="globals_vars.html"><span>Variables</span></a></li>
+      <li><a href="globals_type.html"><span>Définitions&#160;de&#160;type</span></a></li>
+      <li><a href="globals_defs.html"><span>Macros</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_b"><span>b</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
+      <li><a href="#index_f"><span>f</span></a></li>
+      <li><a href="#index_g"><span>g</span></a></li>
+      <li><a href="#index_h"><span>h</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
+      <li><a href="#index_o"><span>o</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_q"><span>q</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_u"><span>u</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('globals.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+<div class="textblock">Liste de toutes les fonctions, variables, macros, enumérations, et définitions de type avec des liens vers les fichiers auxquels ils appartiennent :</div>
+
+<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>alphabet
+: <a class="el" href="spell_8c.html#aa86e0d6bc39f3e98cda032c11e803a0d">spell.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>Bouton
+: <a class="el" href="projet_8h.html#a744c11b592a2a5dfc056c2dcc510bf61">projet.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>checkManualRect()
+: <a class="el" href="projet_8c.html#a955b06539ece628f265d1331c643ecd1">projet.c</a>
+, <a class="el" href="projet_8h.html#a955b06539ece628f265d1331c643ecd1">projet.h</a>
+</li>
+<li>chercheEtRemplace()
+: <a class="el" href="spell_check_8h.html#afd7e604e350921847cbd4c1d03a9f6a6">spellCheck.h</a>
+, <a class="el" href="spell_check_8c.html#afd7e604e350921847cbd4c1d03a9f6a6">spellCheck.c</a>
+</li>
+<li>clicInRect()
+: <a class="el" href="projet_8c.html#a7b03a219f0159c267666e780db756065">projet.c</a>
+, <a class="el" href="projet_8h.html#a7b03a219f0159c267666e780db756065">projet.h</a>
+</li>
+<li>colorCount
+: <a class="el" href="projet_8h.html#a24091d4fbefb8b49a4120f66c3c3a7e5">projet.h</a>
+</li>
+<li>compareLettres()
+: <a class="el" href="projet_8c.html#a2344579636b413f9731714b3241cd41b">projet.c</a>
+, <a class="el" href="projet_8h.html#a2344579636b413f9731714b3241cd41b">projet.h</a>
+</li>
+<li>copieChaineCaractere()
+: <a class="el" href="spell_check_8c.html#a03cd841d09ff12bfe755aae69781bf23">spellCheck.c</a>
+, <a class="el" href="spell_check_8h.html#a03cd841d09ff12bfe755aae69781bf23">spellCheck.h</a>
+</li>
+<li>correct()
+: <a class="el" href="spell_8c.html#a96087d7ed6e749aa5f209286d88e549d">spell.c</a>
+, <a class="el" href="spell_8h.html#a96087d7ed6e749aa5f209286d88e549d">spell.h</a>
+</li>
+<li>Correspondance
+: <a class="el" href="projet_8h.html#ace7777717b6dd74a98ee31cb4fc4c5fe">projet.h</a>
+</li>
+<li>Couleur
+: <a class="el" href="projet_8h.html#a90e2597d8e31171a4b2c5c07b8e4e4af">projet.h</a>
+</li>
+<li>CouleursEgales()
+: <a class="el" href="projet_8h.html#af44cb7c9123d823447add912cef4712f">projet.h</a>
+, <a class="el" href="projet_8c.html#af44cb7c9123d823447add912cef4712f">projet.c</a>
+</li>
+<li>cropImageToRectangle()
+: <a class="el" href="projet_8c.html#ab03a7fb3517aa7ea2061e49543038506">projet.c</a>
+, <a class="el" href="projet_8h.html#ab03a7fb3517aa7ea2061e49543038506">projet.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>delim
+: <a class="el" href="spell_8c.html#ac302743a8fc3c25ef96be4b6ce8db8c8">spell.c</a>
+</li>
+<li>DemandeCorrectionManuelle()
+: <a class="el" href="spell_check_8c.html#a603ba0c4a9641d8acb7faba1bf8f632b">spellCheck.c</a>
+, <a class="el" href="spell_check_8h.html#a603ba0c4a9641d8acb7faba1bf8f632b">spellCheck.h</a>
+</li>
+<li>DemandeOuiouNON()
+: <a class="el" href="spell_check_8c.html#a531c6f8bad58ee3afe7da93d087bc6f1">spellCheck.c</a>
+, <a class="el" href="spell_check_8h.html#a531c6f8bad58ee3afe7da93d087bc6f1">spellCheck.h</a>
+</li>
+<li>detectLettersAndWords()
+: <a class="el" href="projet_8c.html#af2d545606e4d53631f08f37fede71e8b">projet.c</a>
+, <a class="el" href="projet_8h.html#af2d545606e4d53631f08f37fede71e8b">projet.h</a>
+</li>
+<li>detectNbrLines()
+: <a class="el" href="projet_8c.html#a3d15ac2fee57bdb7e0538e944d88a5a8">projet.c</a>
+, <a class="el" href="projet_8h.html#a3d15ac2fee57bdb7e0538e944d88a5a8">projet.h</a>
+</li>
+<li>DicoContient()
+: <a class="el" href="spell_check_8h.html#a36663a990d2ffc8a5b10220f59d36a9c">spellCheck.h</a>
+, <a class="el" href="spell_check_8c.html#a36663a990d2ffc8a5b10220f59d36a9c">spellCheck.c</a>
+</li>
+<li>DICT_SZ
+: <a class="el" href="spell_8h.html#a7296d5d76031534605da566f5a94d1c1">spell.h</a>
+</li>
+<li>DICTIONARY
+: <a class="el" href="spell_8h.html#ae8cc1eecd70d0bb2c5109c8a63f9d7dd">spell.h</a>
+</li>
+<li>dispTab()
+: <a class="el" href="projet_8c.html#a57d88ed28c8f90de322c66ea67849d99">projet.c</a>
+, <a class="el" href="projet_8h.html#a57d88ed28c8f90de322c66ea67849d99">projet.h</a>
+</li>
+<li>drawRect()
+: <a class="el" href="projet_8c.html#a69f5e0e04dc084dcfd8f11da497290d8">projet.c</a>
+, <a class="el" href="projet_8h.html#a69f5e0e04dc084dcfd8f11da497290d8">projet.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>estEnMaj()
+: <a class="el" href="spell_check_8c.html#a60d9e4088936a2b0230dc91ab911b4a7">spellCheck.c</a>
+, <a class="el" href="spell_check_8h.html#a60d9e4088936a2b0230dc91ab911b4a7">spellCheck.h</a>
+</li>
+<li>estEnMin()
+: <a class="el" href="spell_check_8h.html#a4fec11d4ba6c90099603d4ced0cd7870">spellCheck.h</a>
+, <a class="el" href="spell_check_8c.html#a4fec11d4ba6c90099603d4ced0cd7870">spellCheck.c</a>
+</li>
+<li>estPremiereLettreMaj()
+: <a class="el" href="spell_check_8c.html#afdf1fd26f6fdf23a91393ab4fb301867">spellCheck.c</a>
+, <a class="el" href="spell_check_8h.html#afdf1fd26f6fdf23a91393ab4fb301867">spellCheck.h</a>
+</li>
+<li>estUnNombre()
+: <a class="el" href="spell_check_8h.html#ac7f68bdcc0bbb1bc652214dac2fed71c">spellCheck.h</a>
+, <a class="el" href="spell_check_8c.html#ac7f68bdcc0bbb1bc652214dac2fed71c">spellCheck.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>FermeDictionnaire()
+: <a class="el" href="spell_check_8c.html#acfe1cf3c9706fa808549fc8d6386b31c">spellCheck.c</a>
+, <a class="el" href="spell_check_8h.html#acfe1cf3c9706fa808549fc8d6386b31c">spellCheck.h</a>
+</li>
+<li>findBestAngle()
+: <a class="el" href="projet_8h.html#ac18d865dd505d2097a8542c58e4f1706">projet.h</a>
+, <a class="el" href="projet_8c.html#ac18d865dd505d2097a8542c58e4f1706">projet.c</a>
+</li>
+<li>freeCorr()
+: <a class="el" href="projet_8c.html#aadcb6b081fb4c088f91cb594e2272ba9">projet.c</a>
+, <a class="el" href="projet_8h.html#aadcb6b081fb4c088f91cb594e2272ba9">projet.h</a>
+</li>
+<li>freeImageMat()
+: <a class="el" href="projet_8h.html#a307e2a7d44b20a288d78685c13beb453">projet.h</a>
+, <a class="el" href="projet_8c.html#a307e2a7d44b20a288d78685c13beb453">projet.c</a>
+</li>
+<li>freeImageRGB()
+: <a class="el" href="projet_8c.html#aa7757aa0de1f179dc18d39b273104260">projet.c</a>
+, <a class="el" href="projet_8h.html#aa7757aa0de1f179dc18d39b273104260">projet.h</a>
+</li>
+<li>freeLettre()
+: <a class="el" href="projet_8c.html#ab361887ae43f86f33627d34d32b0c9d9">projet.c</a>
+, <a class="el" href="projet_8h.html#ab361887ae43f86f33627d34d32b0c9d9">projet.h</a>
+</li>
+<li>freeLP()
+: <a class="el" href="projet_8c.html#a2e65c614e4c5ec4801b3c4e42701b08a">projet.c</a>
+, <a class="el" href="projet_8h.html#a2e65c614e4c5ec4801b3c4e42701b08a">projet.h</a>
+</li>
+<li>freeMot()
+: <a class="el" href="projet_8c.html#a916494ce6dbfc55a6a04dc047721c03b">projet.c</a>
+, <a class="el" href="projet_8h.html#a916494ce6dbfc55a6a04dc047721c03b">projet.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
+<li>gestionEvenement()
+: <a class="el" href="projet_8c.html#af99bca1dd29e2d28d9aa01ae22400f05">projet.c</a>
+, <a class="el" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05">projet.h</a>
+</li>
+<li>getBackgroundAndTextColor()
+: <a class="el" href="projet_8h.html#a23718f32d68bd37ed3b3053cb01831ee">projet.h</a>
+, <a class="el" href="projet_8c.html#a23718f32d68bd37ed3b3053cb01831ee">projet.c</a>
+</li>
+<li>getColorAt()
+: <a class="el" href="projet_8c.html#a96ff91afd8ebc974f4a6365fb9d7bef1">projet.c</a>
+, <a class="el" href="projet_8h.html#a96ff91afd8ebc974f4a6365fb9d7bef1">projet.h</a>
+</li>
+<li>getColorAtI()
+: <a class="el" href="projet_8h.html#ab3d10ec2e7a27ae13da109343210f55d">projet.h</a>
+, <a class="el" href="projet_8c.html#ab3d10ec2e7a27ae13da109343210f55d">projet.c</a>
+</li>
+<li>getIfromXYinImage()
+: <a class="el" href="projet_8c.html#a497be886110dddd526cf5b01b0c6bb71">projet.c</a>
+, <a class="el" href="projet_8h.html#a497be886110dddd526cf5b01b0c6bb71">projet.h</a>
+</li>
+<li>getImageMatricielle()
+: <a class="el" href="projet_8c.html#acc99d2a8c679ec1e7e8b13023b427168">projet.c</a>
+, <a class="el" href="projet_8h.html#acc99d2a8c679ec1e7e8b13023b427168">projet.h</a>
+</li>
+<li>getMinRect()
+: <a class="el" href="projet_8c.html#abe9732818bf9189c734f2b4fc979a64b">projet.c</a>
+, <a class="el" href="projet_8h.html#abe9732818bf9189c734f2b4fc979a64b">projet.h</a>
+</li>
+<li>GetMode()
+: <a class="el" href="spell_check_8h.html#a2b45c492e7e9c250eb8718b51a8cc4dd">spellCheck.h</a>
+, <a class="el" href="spell_check_8c.html#a2b45c492e7e9c250eb8718b51a8cc4dd">spellCheck.c</a>
+</li>
+<li>getRectangleSurface()
+: <a class="el" href="projet_8h.html#a588da025664b440700dab1bf630a52db">projet.h</a>
+, <a class="el" href="projet_8c.html#a588da025664b440700dab1bf630a52db">projet.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
+<li>HauteurFenetre
+: <a class="el" href="projet_8h.html#acbcc2d697ee6b9898f3b9dc217a232eb">projet.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>imageMatricielle
+: <a class="el" href="projet_8h.html#a4673c5b44853ab233cba20b4453c7d01">projet.h</a>
+</li>
+<li>improveImage()
+: <a class="el" href="projet_8c.html#a59cb7bd568b148ea96186113c013b595">projet.c</a>
+, <a class="el" href="projet_8h.html#a59cb7bd568b148ea96186113c013b595">projet.h</a>
+</li>
+<li>indiceFreqMax()
+: <a class="el" href="projet_8c.html#adce0e7db88df64d3d202ddbea54960f1">projet.c</a>
+, <a class="el" href="projet_8h.html#adce0e7db88df64d3d202ddbea54960f1">projet.h</a>
+</li>
+<li>indiceFreqSousMax()
+: <a class="el" href="projet_8c.html#a92ac43bb654d32dd72629efd08d0ca2b">projet.c</a>
+, <a class="el" href="projet_8h.html#a92ac43bb654d32dd72629efd08d0ca2b">projet.h</a>
+</li>
+<li>initPoliceArial()
+: <a class="el" href="projet_8h.html#a5ac4e8464d47f8e25335f72059802cc6">projet.h</a>
+, <a class="el" href="projet_8c.html#a5ac4e8464d47f8e25335f72059802cc6">projet.c</a>
+</li>
+<li>initSpellCheck()
+: <a class="el" href="spell_8c.html#a73f5320614449925020c563a2ec8c0ee">spell.c</a>
+, <a class="el" href="spell_8h.html#a73f5320614449925020c563a2ec8c0ee">spell.h</a>
+</li>
+<li>INTSWAP
+: <a class="el" href="projet_8h.html#ad423458949b797dac5a9fbacf332a68b">projet.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>LargeurFenetre
+: <a class="el" href="projet_8h.html#ac6a40197d75dce1b0179a37afaa595f3">projet.h</a>
+</li>
+<li>Lettre
+: <a class="el" href="projet_8h.html#a9ecfebe55765096d8a16c7cdd192d166">projet.h</a>
+</li>
+<li>LettrePolice
+: <a class="el" href="projet_8h.html#a61b8fad9452b5b8c4d5beb5e041aa155">projet.h</a>
+</li>
+<li>lettresArial
+: <a class="el" href="projet_8c.html#a2b675e689aaa5ab93beb6e53024efd1c">projet.c</a>
+</li>
+<li>LisMot()
+: <a class="el" href="spell_check_8c.html#acdd8403f3258dd6df16961514201f566">spellCheck.c</a>
+, <a class="el" href="spell_check_8h.html#acdd8403f3258dd6df16961514201f566">spellCheck.h</a>
+</li>
+<li>LisNombreDeMots()
+: <a class="el" href="spell_check_8h.html#a7938cf20e4d7e24f90cee4a6d58c7223">spellCheck.h</a>
+, <a class="el" href="spell_check_8c.html#a7938cf20e4d7e24f90cee4a6d58c7223">spellCheck.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>main()
+: <a class="el" href="projet_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">projet.c</a>
+</li>
+<li>MAX
+: <a class="el" href="projet_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">projet.h</a>
+</li>
+<li>MIN
+: <a class="el" href="projet_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">projet.h</a>
+</li>
+<li>Mot
+: <a class="el" href="projet_8h.html#aa63bd35d10301a7e01ccb46712601a6d">projet.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>nbrBoutons
+: <a class="el" href="projet_8h.html#a74567a2c574778ca62be829f7d225d2e">projet.h</a>
+</li>
+<li>newTabMots()
+: <a class="el" href="projet_8c.html#ac8b4d5ddbaa4460b2b418d9931c80415">projet.c</a>
+, <a class="el" href="projet_8h.html#aef015a619ec01ce23c9758bd0dba1839">projet.h</a>
+</li>
+<li>nomFichier
+: <a class="el" href="projet_8c.html#aafa4cbb12171220520438cbcedc11115">projet.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>OuvreDictionnaire()
+: <a class="el" href="spell_check_8c.html#a5b18e9add1432accc49934d536b8de39">spellCheck.c</a>
+, <a class="el" href="spell_check_8h.html#a5b18e9add1432accc49934d536b8de39">spellCheck.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>paintBouton()
+: <a class="el" href="projet_8c.html#a8eabd18099e8d0bc447d01f6ab731011">projet.c</a>
+, <a class="el" href="projet_8h.html#a8eabd18099e8d0bc447d01f6ab731011">projet.h</a>
+</li>
+<li>pDictionnaire
+: <a class="el" href="spell_check_8h.html#a96db1f20fdd665fc937006148553a0c5">spellCheck.h</a>
+</li>
+<li>pFILE
+: <a class="el" href="spell_check_8h.html#a21a4a6d0dd739d686d827d66141538d8">spellCheck.h</a>
+</li>
+<li>PRINT
+: <a class="el" href="projet_8h.html#aa1ce7a40e182d5b76d8c60b6cd2e6ad5">projet.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
+<li>quick_select()
+: <a class="el" href="projet_8c.html#acec0a4945773204a14c4143e7045af4b">projet.c</a>
+, <a class="el" href="projet_8h.html#acec0a4945773204a14c4143e7045af4b">projet.h</a>
+</li>
+<li>quickSort()
+: <a class="el" href="projet_8c.html#a46361527703469a1c2e177853cbb0094">projet.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>Rectangle
+: <a class="el" href="projet_8h.html#a20b5b57bec63e30ccb64bfbe2a1efcb4">projet.h</a>
+</li>
+<li>resizedCopy()
+: <a class="el" href="projet_8c.html#aa706756cb0a7d118ed0e9d9c660b74d5">projet.c</a>
+, <a class="el" href="projet_8h.html#aa706756cb0a7d118ed0e9d9c660b74d5">projet.h</a>
+</li>
+<li>rotateImage()
+: <a class="el" href="projet_8c.html#a5fd1e6347eda0b248ac5e5269fc32b21">projet.c</a>
+, <a class="el" href="projet_8h.html#a5fd1e6347eda0b248ac5e5269fc32b21">projet.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>separateLetters()
+: <a class="el" href="projet_8c.html#a8a5d8b65cc8be60c9ccf4ec4eb518051">projet.c</a>
+, <a class="el" href="projet_8h.html#a8a5d8b65cc8be60c9ccf4ec4eb518051">projet.h</a>
+</li>
+<li>spellCheck()
+: <a class="el" href="spell_check_8h.html#ada9d868cd3c1182b4f2f61010fc84832">spellCheck.h</a>
+, <a class="el" href="spell_check_8c.html#a21f5a3581aaf1b70042db02dadf32850">spellCheck.c</a>
+</li>
+<li>strEndsWith()
+: <a class="el" href="projet_8c.html#a3e6055fa50e77005c009ba235708872d">projet.c</a>
+, <a class="el" href="projet_8h.html#a3e6055fa50e77005c009ba235708872d">projet.h</a>
+</li>
+<li>STRTOK_SYNTAX
+: <a class="el" href="spell_check_8h.html#a29da27859c9dd16db4612fb44cbac3d0">spellCheck.h</a>
+</li>
+<li>SWAP
+: <a class="el" href="projet_8h.html#aac9153aee4bdb92701df902e06a74eb3">projet.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>TAILLE_BUFFER
+: <a class="el" href="spell_check_8h.html#afa7b7638d0ac972327d9fadc93db9802">spellCheck.h</a>
+</li>
+<li>TAILLE_CHOIX_MAX
+: <a class="el" href="spell_check_8h.html#a9583e2027ad6071f524fd7aafe799051">spellCheck.h</a>
+</li>
+<li>TAILLE_MOT_MAX
+: <a class="el" href="spell_check_8h.html#ac731e6ccb34d1ee45ac0df6c2daf02d0">spellCheck.h</a>
+</li>
+<li>textInput
+: <a class="el" href="projet_8h.html#ab0ba6d049d9a25fefd19f2b475a739cd">projet.h</a>
+</li>
+<li>transformeEnMajuscule()
+: <a class="el" href="spell_check_8c.html#a7b6b58412dafc82e44c94031998918be">spellCheck.c</a>
+, <a class="el" href="spell_check_8h.html#a7b6b58412dafc82e44c94031998918be">spellCheck.h</a>
+</li>
+<li>transformeEnMinuscule()
+: <a class="el" href="spell_check_8h.html#a4bc21b6d6d25bcbf5f13aeda765d1d89">spellCheck.h</a>
+, <a class="el" href="spell_check_8c.html#a4bc21b6d6d25bcbf5f13aeda765d1d89">spellCheck.c</a>
+</li>
+<li>transformeEnMinusculeSansToucher()
+: <a class="el" href="spell_check_8c.html#aca48e1e19fddf6be0618a50e029869d5">spellCheck.c</a>
+, <a class="el" href="spell_check_8h.html#aca48e1e19fddf6be0618a50e029869d5">spellCheck.h</a>
+</li>
+<li>TransformeEnMode()
+: <a class="el" href="spell_check_8c.html#a0c035faa0dc2573278af5837a78d393a">spellCheck.c</a>
+, <a class="el" href="spell_check_8h.html#a0c035faa0dc2573278af5837a78d393a">spellCheck.h</a>
+</li>
+<li>transformeEnPremiereLettreMajuscule()
+: <a class="el" href="spell_check_8h.html#a7bc509fffa72c3c1239a175b9fb2c9b1">spellCheck.h</a>
+, <a class="el" href="spell_check_8c.html#a7bc509fffa72c3c1239a175b9fb2c9b1">spellCheck.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+<li>uint
+: <a class="el" href="spell_check_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">spellCheck.h</a>
+</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Généré le Samedi Janvier 26 2013 20:06:13 pour Reconnaissance matricielle de caractères par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
+  </ul>
+</div>
+</body>
+</html>

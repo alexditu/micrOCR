@@ -1,0 +1,2069 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Reconnaissance matricielle de caractères: Référence du fichier projet.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Reconnaissance matricielle de caractères
+   &#160;<span id="projectnumber">2.7</span>
+   </div>
+   <div id="projectbrief">Projet d&#39;algo 2012-2013, Groupe B2 - Reconnaissance matricielle de caractères</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('projet_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier projet.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Code Source du projet d'algo 2012-2013.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="projet_8h_source.html">projet.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="spell_check_8h_source.html">spellCheck.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de projet.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c__incl.png" border="0" usemap="#projet_8c" alt=""/></div>
+<map name="projet_8c" id="projet_8c">
+<area shape="rect" id="node3" href="projet_8h.html" title="Fichier d&#39;en&#45;tête du projet d&#39;algo 2012&#45;2013." alt="" coords="425,160,489,189"/><area shape="rect" id="node27" href="spell_check_8h.html" title="spellCheck.h" alt="" coords="652,83,751,112"/><area shape="rect" id="node36" href="spell_8h.html" title="spell.h" alt="" coords="908,160,967,189"/></map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a497be886110dddd526cf5b01b0c6bb71"><td class="memItemLeft" align="right" valign="top">long long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a497be886110dddd526cf5b01b0c6bb71">getIfromXYinImage</a> (DonneesImageRGB *image, int x, int y)</td></tr>
+<tr class="memdesc:a497be886110dddd526cf5b01b0c6bb71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertit des coordonées (x,y) en indice (index du tableau de données de l'image RGB)  <a href="#a497be886110dddd526cf5b01b0c6bb71"></a><br/></td></tr>
+<tr class="separator:a497be886110dddd526cf5b01b0c6bb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ff91afd8ebc974f4a6365fb9d7bef1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_couleur.html">Couleur</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a96ff91afd8ebc974f4a6365fb9d7bef1">getColorAt</a> (DonneesImageRGB *image, int x, int y)</td></tr>
+<tr class="memdesc:a96ff91afd8ebc974f4a6365fb9d7bef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'obtenir la couleur d'un pixel d'une image selon ses coordonées.  <a href="#a96ff91afd8ebc974f4a6365fb9d7bef1"></a><br/></td></tr>
+<tr class="separator:a96ff91afd8ebc974f4a6365fb9d7bef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d10ec2e7a27ae13da109343210f55d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_couleur.html">Couleur</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#ab3d10ec2e7a27ae13da109343210f55d">getColorAtI</a> (DonneesImageRGB *image, int i)</td></tr>
+<tr class="memdesc:ab3d10ec2e7a27ae13da109343210f55d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'obtenir la couleur d'un pixel d'une image selon son index.  <a href="#ab3d10ec2e7a27ae13da109343210f55d"></a><br/></td></tr>
+<tr class="separator:ab3d10ec2e7a27ae13da109343210f55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44cb7c9123d823447add912cef4712f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#af44cb7c9123d823447add912cef4712f">CouleursEgales</a> (<a class="el" href="struct_couleur.html">Couleur</a> c1, <a class="el" href="struct_couleur.html">Couleur</a> c2)</td></tr>
+<tr class="memdesc:af44cb7c9123d823447add912cef4712f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Teste si les couleurs RGB en paramètres sont égales.  <a href="#af44cb7c9123d823447add912cef4712f"></a><br/></td></tr>
+<tr class="separator:af44cb7c9123d823447add912cef4712f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce0e7db88df64d3d202ddbea54960f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#adce0e7db88df64d3d202ddbea54960f1">indiceFreqMax</a> (<a class="el" href="structcolor_count.html">colorCount</a> *tab, int taille)</td></tr>
+<tr class="memdesc:adce0e7db88df64d3d202ddbea54960f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie la fréquence maximale d'un tableau de fréquence de couleur.  <a href="#adce0e7db88df64d3d202ddbea54960f1"></a><br/></td></tr>
+<tr class="separator:adce0e7db88df64d3d202ddbea54960f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ac43bb654d32dd72629efd08d0ca2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a92ac43bb654d32dd72629efd08d0ca2b">indiceFreqSousMax</a> (<a class="el" href="structcolor_count.html">colorCount</a> *tab, int taille, int except)</td></tr>
+<tr class="memdesc:a92ac43bb654d32dd72629efd08d0ca2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie la 2ème fréquence maximale d'un tableau de fréquence de couleur.  <a href="#a92ac43bb654d32dd72629efd08d0ca2b"></a><br/></td></tr>
+<tr class="separator:a92ac43bb654d32dd72629efd08d0ca2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a588da025664b440700dab1bf630a52db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a588da025664b440700dab1bf630a52db">getRectangleSurface</a> (<a class="el" href="struct_rectangle.html">Rectangle</a> rect)</td></tr>
+<tr class="memdesc:a588da025664b440700dab1bf630a52db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule la surface du rectangle donné.  <a href="#a588da025664b440700dab1bf630a52db"></a><br/></td></tr>
+<tr class="separator:a588da025664b440700dab1bf630a52db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69f5e0e04dc084dcfd8f11da497290d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a69f5e0e04dc084dcfd8f11da497290d8">drawRect</a> (int x1, int y1, int x2, int y2)</td></tr>
+<tr class="memdesc:a69f5e0e04dc084dcfd8f11da497290d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine un rectangle vide défini par ses sommets haut-gauche et bas-droit.  <a href="#a69f5e0e04dc084dcfd8f11da497290d8"></a><br/></td></tr>
+<tr class="separator:a69f5e0e04dc084dcfd8f11da497290d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e6055fa50e77005c009ba235708872d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a3e6055fa50e77005c009ba235708872d">strEndsWith</a> (const char *str, const char *suffix)</td></tr>
+<tr class="memdesc:a3e6055fa50e77005c009ba235708872d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indique si une chaîne se termine par une certaine autre chaîne (suffixe).  <a href="#a3e6055fa50e77005c009ba235708872d"></a><br/></td></tr>
+<tr class="separator:a3e6055fa50e77005c009ba235708872d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec0a4945773204a14c4143e7045af4b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#acec0a4945773204a14c4143e7045af4b">quick_select</a> (int *arr, int n)</td></tr>
+<tr class="memdesc:acec0a4945773204a14c4143e7045af4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie la médiane du tableau de valeur donnée.  <a href="#acec0a4945773204a14c4143e7045af4b"></a><br/></td></tr>
+<tr class="separator:acec0a4945773204a14c4143e7045af4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46361527703469a1c2e177853cbb0094"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a46361527703469a1c2e177853cbb0094">quickSort</a> (int *a, int n)</td></tr>
+<tr class="separator:a46361527703469a1c2e177853cbb0094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d88ed28c8f90de322c66ea67849d99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a57d88ed28c8f90de322c66ea67849d99">dispTab</a> (int *tab, int nbrElem)</td></tr>
+<tr class="memdesc:a57d88ed28c8f90de322c66ea67849d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le contenu d'un tableau d'entier.  <a href="#a57d88ed28c8f90de322c66ea67849d99"></a><br/></td></tr>
+<tr class="separator:a57d88ed28c8f90de322c66ea67849d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe9732818bf9189c734f2b4fc979a64b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rectangle.html">Rectangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#abe9732818bf9189c734f2b4fc979a64b">getMinRect</a> (DonneesImageRGB *image, <a class="el" href="struct_couleur.html">Couleur</a> couleurTexte)</td></tr>
+<tr class="memdesc:abe9732818bf9189c734f2b4fc979a64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Détermine le plus petit rectangle contenant l'intégralité des pixels formant le texte.  <a href="#abe9732818bf9189c734f2b4fc979a64b"></a><br/></td></tr>
+<tr class="separator:abe9732818bf9189c734f2b4fc979a64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59cb7bd568b148ea96186113c013b595"><td class="memItemLeft" align="right" valign="top">DonneesImageRGB *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a59cb7bd568b148ea96186113c013b595">improveImage</a> (DonneesImageRGB *image)</td></tr>
+<tr class="memdesc:a59cb7bd568b148ea96186113c013b595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Effectue le prétraitement de l'image à analyser en améliorant certains de ses aspects.  <a href="#a59cb7bd568b148ea96186113c013b595"></a><br/></td></tr>
+<tr class="separator:a59cb7bd568b148ea96186113c013b595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fd1e6347eda0b248ac5e5269fc32b21"><td class="memItemLeft" align="right" valign="top">DonneesImageRGB *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a5fd1e6347eda0b248ac5e5269fc32b21">rotateImage</a> (DonneesImageRGB *image, int angle_degre, <a class="el" href="struct_couleur.html">Couleur</a> couleurFond)</td></tr>
+<tr class="memdesc:a5fd1e6347eda0b248ac5e5269fc32b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une copie de l'image source (DonneesImageRGB) affectée d'une rotation d'un angle donné.  <a href="#a5fd1e6347eda0b248ac5e5269fc32b21"></a><br/></td></tr>
+<tr class="separator:a5fd1e6347eda0b248ac5e5269fc32b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18d865dd505d2097a8542c58e4f1706"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#ac18d865dd505d2097a8542c58e4f1706">findBestAngle</a> (DonneesImageRGB *image, <a class="el" href="struct_couleur.html">Couleur</a> couleurFond, <a class="el" href="struct_couleur.html">Couleur</a> couleurTexte)</td></tr>
+<tr class="memdesc:ac18d865dd505d2097a8542c58e4f1706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Détermine le meilleur angle de rotation d'une image pour "horizontaliser" au mieux le texte à reconnaître.  <a href="#ac18d865dd505d2097a8542c58e4f1706"></a><br/></td></tr>
+<tr class="separator:ac18d865dd505d2097a8542c58e4f1706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23718f32d68bd37ed3b3053cb01831ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a23718f32d68bd37ed3b3053cb01831ee">getBackgroundAndTextColor</a> (DonneesImageRGB *image, <a class="el" href="struct_couleur.html">Couleur</a> *fond, <a class="el" href="struct_couleur.html">Couleur</a> *texte)</td></tr>
+<tr class="memdesc:a23718f32d68bd37ed3b3053cb01831ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Détecte la couleur de fond et la couleur du texte d'une image donnée.  <a href="#a23718f32d68bd37ed3b3053cb01831ee"></a><br/></td></tr>
+<tr class="separator:a23718f32d68bd37ed3b3053cb01831ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03a7fb3517aa7ea2061e49543038506"><td class="memItemLeft" align="right" valign="top">DonneesImageRGB *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#ab03a7fb3517aa7ea2061e49543038506">cropImageToRectangle</a> (DonneesImageRGB *image, <a class="el" href="struct_rectangle.html">Rectangle</a> rect)</td></tr>
+<tr class="memdesc:ab03a7fb3517aa7ea2061e49543038506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une copie rognée d'une image (DonneesImageRGB) à une zone donnée.  <a href="#ab03a7fb3517aa7ea2061e49543038506"></a><br/></td></tr>
+<tr class="separator:ab03a7fb3517aa7ea2061e49543038506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2d545606e4d53631f08f37fede71e8b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#af2d545606e4d53631f08f37fede71e8b">detectLettersAndWords</a> (DonneesImageRGB *image, <a class="el" href="struct_couleur.html">Couleur</a> couleurTexte, <a class="el" href="struct_mot.html">Mot</a> **results, int *nbrDeMots, int *espaces)</td></tr>
+<tr class="memdesc:af2d545606e4d53631f08f37fede71e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Détecte les mots et lettres constituant une partie de l'image.  <a href="#af2d545606e4d53631f08f37fede71e8b"></a><br/></td></tr>
+<tr class="separator:af2d545606e4d53631f08f37fede71e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa706756cb0a7d118ed0e9d9c660b74d5"><td class="memItemLeft" align="right" valign="top">DonneesImageRGB *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#aa706756cb0a7d118ed0e9d9c660b74d5">resizedCopy</a> (DonneesImageRGB *image, int newWidth, int newHeight)</td></tr>
+<tr class="memdesc:aa706756cb0a7d118ed0e9d9c660b74d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une copie redimensionnée d'une image (DonneesImageRGB) à des dimensions données.  <a href="#aa706756cb0a7d118ed0e9d9c660b74d5"></a><br/></td></tr>
+<tr class="separator:aa706756cb0a7d118ed0e9d9c660b74d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8b4d5ddbaa4460b2b418d9931c80415"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_mot.html">Mot</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#ac8b4d5ddbaa4460b2b418d9931c80415">newTabMots</a> (void)</td></tr>
+<tr class="memdesc:ac8b4d5ddbaa4460b2b418d9931c80415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise et alloue un tableau de mots.  <a href="#ac8b4d5ddbaa4460b2b418d9931c80415"></a><br/></td></tr>
+<tr class="separator:ac8b4d5ddbaa4460b2b418d9931c80415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a5d8b65cc8be60c9ccf4ec4eb518051"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lettre.html">Lettre</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a8a5d8b65cc8be60c9ccf4ec4eb518051">separateLetters</a> (DonneesImageRGB *image, <a class="el" href="struct_couleur.html">Couleur</a> couleurTexte, <a class="el" href="struct_couleur.html">Couleur</a> couleurFond, <a class="el" href="struct_mot.html">Mot</a> **results, int *nbrDeLettres)</td></tr>
+<tr class="separator:a8a5d8b65cc8be60c9ccf4ec4eb518051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc99d2a8c679ec1e7e8b13023b427168"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structimage_matricielle.html">imageMatricielle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#acc99d2a8c679ec1e7e8b13023b427168">getImageMatricielle</a> (DonneesImageRGB *image, <a class="el" href="struct_couleur.html">Couleur</a> couleurTexte)</td></tr>
+<tr class="memdesc:acc99d2a8c679ec1e7e8b13023b427168"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une image matricielle à partir d'une image RGB source, connaissant la couleur du fond de l'image.  <a href="#acc99d2a8c679ec1e7e8b13023b427168"></a><br/></td></tr>
+<tr class="separator:acc99d2a8c679ec1e7e8b13023b427168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2344579636b413f9731714b3241cd41b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a2344579636b413f9731714b3241cd41b">compareLettres</a> (<a class="el" href="structimage_matricielle.html">imageMatricielle</a> *imgSrc, <a class="el" href="structimage_matricielle.html">imageMatricielle</a> *imgPolice)</td></tr>
+<tr class="memdesc:a2344579636b413f9731714b3241cd41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare une lettre reconnu dans l'image source à une lettre de la police, avec un indice de ressemblance.  <a href="#a2344579636b413f9731714b3241cd41b"></a><br/></td></tr>
+<tr class="separator:a2344579636b413f9731714b3241cd41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac4e8464d47f8e25335f72059802cc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lettre_police.html">LettrePolice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a5ac4e8464d47f8e25335f72059802cc6">initPoliceArial</a> ()</td></tr>
+<tr class="memdesc:a5ac4e8464d47f8e25335f72059802cc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise et alloue un tableau de structure <a class="el" href="struct_lettre_police.html" title="Définit une &quot;lettre&quot; typique d&#39;une police, avec notemment son ratio largeur/hauteur et ses images a...">LettrePolice</a> avec les caractères de la police Arial.  <a href="#a5ac4e8464d47f8e25335f72059802cc6"></a><br/></td></tr>
+<tr class="separator:a5ac4e8464d47f8e25335f72059802cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d15ac2fee57bdb7e0538e944d88a5a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a3d15ac2fee57bdb7e0538e944d88a5a8">detectNbrLines</a> (DonneesImageRGB *image, int *tabY, <a class="el" href="struct_couleur.html">Couleur</a> couleurTexte)</td></tr>
+<tr class="separator:a3d15ac2fee57bdb7e0538e944d88a5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955b06539ece628f265d1331c643ecd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rectangle.html">Rectangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a955b06539ece628f265d1331c643ecd1">checkManualRect</a> (<a class="el" href="struct_rectangle.html">Rectangle</a> manualRect, DonneesImageRGB *imageBest)</td></tr>
+<tr class="memdesc:a955b06539ece628f265d1331c643ecd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si le rectangle de rogange est valide par rapport à l'image à analyser.  <a href="#a955b06539ece628f265d1331c643ecd1"></a><br/></td></tr>
+<tr class="separator:a955b06539ece628f265d1331c643ecd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b03a219f0159c267666e780db756065"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a7b03a219f0159c267666e780db756065">clicInRect</a> (int x, int y, <a class="el" href="struct_rectangle.html">Rectangle</a> rect)</td></tr>
+<tr class="memdesc:a7b03a219f0159c267666e780db756065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si le clic de coordonées (x,y) est dans le rectangle rect.  <a href="#a7b03a219f0159c267666e780db756065"></a><br/></td></tr>
+<tr class="separator:a7b03a219f0159c267666e780db756065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7757aa0de1f179dc18d39b273104260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#aa7757aa0de1f179dc18d39b273104260">freeImageRGB</a> (DonneesImageRGB *img)</td></tr>
+<tr class="memdesc:aa7757aa0de1f179dc18d39b273104260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libère proprement la mémoire allouée pour cette structure.  <a href="#aa7757aa0de1f179dc18d39b273104260"></a><br/></td></tr>
+<tr class="separator:aa7757aa0de1f179dc18d39b273104260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a307e2a7d44b20a288d78685c13beb453"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a307e2a7d44b20a288d78685c13beb453">freeImageMat</a> (<a class="el" href="structimage_matricielle.html">imageMatricielle</a> *imgMat)</td></tr>
+<tr class="memdesc:a307e2a7d44b20a288d78685c13beb453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libère proprement la mémoire allouée pour cette structure.  <a href="#a307e2a7d44b20a288d78685c13beb453"></a><br/></td></tr>
+<tr class="separator:a307e2a7d44b20a288d78685c13beb453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab361887ae43f86f33627d34d32b0c9d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#ab361887ae43f86f33627d34d32b0c9d9">freeLettre</a> (<a class="el" href="struct_lettre.html">Lettre</a> *ltr)</td></tr>
+<tr class="memdesc:ab361887ae43f86f33627d34d32b0c9d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libère proprement la mémoire allouée pour cette structure.  <a href="#ab361887ae43f86f33627d34d32b0c9d9"></a><br/></td></tr>
+<tr class="separator:ab361887ae43f86f33627d34d32b0c9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a916494ce6dbfc55a6a04dc047721c03b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a916494ce6dbfc55a6a04dc047721c03b">freeMot</a> (<a class="el" href="struct_mot.html">Mot</a> *mot)</td></tr>
+<tr class="memdesc:a916494ce6dbfc55a6a04dc047721c03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libère proprement la mémoire allouée pour cette structure.  <a href="#a916494ce6dbfc55a6a04dc047721c03b"></a><br/></td></tr>
+<tr class="separator:a916494ce6dbfc55a6a04dc047721c03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e65c614e4c5ec4801b3c4e42701b08a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a2e65c614e4c5ec4801b3c4e42701b08a">freeLP</a> (<a class="el" href="struct_lettre_police.html">LettrePolice</a> *lp)</td></tr>
+<tr class="memdesc:a2e65c614e4c5ec4801b3c4e42701b08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libère proprement la mémoire allouée pour cette structure.  <a href="#a2e65c614e4c5ec4801b3c4e42701b08a"></a><br/></td></tr>
+<tr class="separator:a2e65c614e4c5ec4801b3c4e42701b08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadcb6b081fb4c088f91cb594e2272ba9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#aadcb6b081fb4c088f91cb594e2272ba9">freeCorr</a> (<a class="el" href="struct_correspondance.html">Correspondance</a> *corr)</td></tr>
+<tr class="memdesc:aadcb6b081fb4c088f91cb594e2272ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libère proprement la mémoire allouée pour cette structure.  <a href="#aadcb6b081fb4c088f91cb594e2272ba9"></a><br/></td></tr>
+<tr class="separator:aadcb6b081fb4c088f91cb594e2272ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eabd18099e8d0bc447d01f6ab731011"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a8eabd18099e8d0bc447d01f6ab731011">paintBouton</a> (<a class="el" href="struct_bouton.html">Bouton</a> b)</td></tr>
+<tr class="memdesc:a8eabd18099e8d0bc447d01f6ab731011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine un bouton.  <a href="#a8eabd18099e8d0bc447d01f6ab731011"></a><br/></td></tr>
+<tr class="separator:a8eabd18099e8d0bc447d01f6ab731011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af99bca1dd29e2d28d9aa01ae22400f05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#af99bca1dd29e2d28d9aa01ae22400f05">gestionEvenement</a> (EvenementGfx evenement)</td></tr>
+<tr class="memdesc:af99bca1dd29e2d28d9aa01ae22400f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de gestion des evenements du système graphique.  <a href="#af99bca1dd29e2d28d9aa01ae22400f05"></a><br/></td></tr>
+<tr class="separator:af99bca1dd29e2d28d9aa01ae22400f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aafa4cbb12171220520438cbcedc11115"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#aafa4cbb12171220520438cbcedc11115">nomFichier</a> [75]</td></tr>
+<tr class="memdesc:aafa4cbb12171220520438cbcedc11115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Chaîne globale représentant le nom du fichier image .bmp à charger.  <a href="#aafa4cbb12171220520438cbcedc11115"></a><br/></td></tr>
+<tr class="separator:aafa4cbb12171220520438cbcedc11115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b675e689aaa5ab93beb6e53024efd1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lettre_police.html">LettrePolice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet_8c.html#a2b675e689aaa5ab93beb6e53024efd1c">lettresArial</a> = NULL</td></tr>
+<tr class="memdesc:a2b675e689aaa5ab93beb6e53024efd1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensemble des lettres de la police Arial. Allocation faite dans <a class="el" href="projet_8c.html#a5ac4e8464d47f8e25335f72059802cc6" title="Initialise et alloue un tableau de structure LettrePolice avec les caractères de la police Arial...">initPoliceArial()</a>, appelé dans le <a class="el" href="projet_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>.  <a href="#a2b675e689aaa5ab93beb6e53024efd1c"></a><br/></td></tr>
+<tr class="separator:a2b675e689aaa5ab93beb6e53024efd1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Code Source du projet d'algo 2012-2013. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Adrien Bertrand (Groupe B2 avec Romain Bosselet et Yanis Chamieh) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>2.6 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>11/01/2013</dd></dl>
+<p>Fichier .c contenant l'implémentation du programme de reconnaissance matricielle de caractères </p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="a955b06539ece628f265d1331c643ecd1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rectangle.html">Rectangle</a> checkManualRect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rectangle.html">Rectangle</a>&#160;</td>
+          <td class="paramname"><em>manualRect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DonneesImageRGB *&#160;</td>
+          <td class="paramname"><em>imageBest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie si le rectangle de rogange est valide par rapport à l'image à analyser. </p>
+<p>Vérifie si le rectangle de rogange est valide par rapport à l'image à analyser en vérifiant si les sommets du rectangle sont bien compris dans l'image. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">manualRect</td><td>le rectangle que l'utilisateur a défini. </td></tr>
+    <tr><td class="paramname">imageBest</td><td>l'image qui va être analysée. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le rectangle non modifié si OK, et un rectangle "dummy" (invalide pour la suite) si problème. </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a955b06539ece628f265d1331c643ecd1_icgraph.png" border="0" usemap="#projet_8c_a955b06539ece628f265d1331c643ecd1_icgraph" alt=""/></div>
+<map name="projet_8c_a955b06539ece628f265d1331c643ecd1_icgraph" id="projet_8c_a955b06539ece628f265d1331c643ecd1_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="181,5,312,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b03a219f0159c267666e780db756065"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int clicInRect </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_rectangle.html">Rectangle</a>&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie si le clic de coordonées (x,y) est dans le rectangle rect. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>le rectangle que l'utilisateur a défini. </td></tr>
+    <tr><td class="paramname">y</td><td>l'image qui va être analysée. </td></tr>
+    <tr><td class="paramname">rect</td><td>le rectangle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un entier jouand le rôle de booléen : 1 si vrai, 0 si faux. </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a7b03a219f0159c267666e780db756065_icgraph.png" border="0" usemap="#projet_8c_a7b03a219f0159c267666e780db756065_icgraph" alt=""/></div>
+<map name="projet_8c_a7b03a219f0159c267666e780db756065_icgraph" id="projet_8c_a7b03a219f0159c267666e780db756065_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="136,5,267,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2344579636b413f9731714b3241cd41b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double compareLettres </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structimage_matricielle.html">imageMatricielle</a> *&#160;</td>
+          <td class="paramname"><em>imgSrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structimage_matricielle.html">imageMatricielle</a> *&#160;</td>
+          <td class="paramname"><em>imgPolice</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compare une lettre reconnu dans l'image source à une lettre de la police, avec un indice de ressemblance. </p>
+<p>L'algorithme compare binairement les images matricielles des deux caractères images et affecte un indice de ressemblance </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imgSrc</td><td>L'image matricielle source </td></tr>
+    <tr><td class="paramname">imgPolice</td><td>L'image matricielle d'un caractère de la police </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>L'indice de ressemblance </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a2344579636b413f9731714b3241cd41b_icgraph.png" border="0" usemap="#projet_8c_a2344579636b413f9731714b3241cd41b_icgraph" alt=""/></div>
+<map name="projet_8c_a2344579636b413f9731714b3241cd41b_icgraph" id="projet_8c_a2344579636b413f9731714b3241cd41b_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="165,5,296,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af44cb7c9123d823447add912cef4712f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CouleursEgales </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_couleur.html">Couleur</a>&#160;</td>
+          <td class="paramname"><em>c1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_couleur.html">Couleur</a>&#160;</td>
+          <td class="paramname"><em>c2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Teste si les couleurs RGB en paramètres sont égales. </p>
+<p>Vérifie si chaque composante RGB de l'une est égale à celle de l'autre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c1</td><td>1ère couleur </td></tr>
+    <tr><td class="paramname">c2</td><td>2ème couleur </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un <em>int</em> jouant le rôle de booléen (1 si vrai -couleurs égales- ou 0 si faux). </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_af44cb7c9123d823447add912cef4712f_icgraph.png" border="0" usemap="#projet_8c_af44cb7c9123d823447add912cef4712f_icgraph" alt=""/></div>
+<map name="projet_8c_af44cb7c9123d823447add912cef4712f_icgraph" id="projet_8c_af44cb7c9123d823447add912cef4712f_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#abe9732818bf9189c734f2b4fc979a64b" title="Détermine le plus petit rectangle contenant l&#39;intégralité des pixels formant le texte." alt="" coords="192,109,280,139"/><area shape="rect" id="node17" href="projet_8h.html#af2d545606e4d53631f08f37fede71e8b" title="Détecte les mots et lettres constituant une partie de l&#39;image." alt="" coords="353,216,511,245"/><area shape="rect" id="node20" href="projet_8h.html#acc99d2a8c679ec1e7e8b13023b427168" title="Crée une image matricielle à partir d&#39;une image RGB source, connaissant la couleur du fond de l&#39;image..." alt="" coords="169,267,303,296"/><area shape="rect" id="node23" href="projet_8h.html#a3d15ac2fee57bdb7e0538e944d88a5a8" title="detectNbrLines" alt="" coords="181,320,291,349"/><area shape="rect" id="node5" href="projet_8h.html#ac18d865dd505d2097a8542c58e4f1706" title="Détermine le meilleur angle de rotation d&#39;une image pour &quot;horizontaliser&quot; au mieux le texte à reconna..." alt="" coords="381,163,483,192"/><area shape="rect" id="node7" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="560,189,691,219"/><area shape="rect" id="node9" href="projet_8h.html#a8a5d8b65cc8be60c9ccf4ec4eb518051" title="separateLetters" alt="" coords="376,109,488,139"/><area shape="rect" id="node12" href="projet_8h.html#a5ac4e8464d47f8e25335f72059802cc6" title="Initialise et alloue un tableau de structure LettrePolice avec les caractères de la police Arial..." alt="" coords="381,5,483,35"/><area shape="rect" id="node14" href="projet_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="600,5,651,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab03a7fb3517aa7ea2061e49543038506"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DonneesImageRGB* cropImageToRectangle </td>
+          <td>(</td>
+          <td class="paramtype">DonneesImageRGB *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_rectangle.html">Rectangle</a>&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une copie rognée d'une image (DonneesImageRGB) à une zone donnée. </p>
+<p>Crée une copie rognée d'une image source (DonneesImageRGB) à une zone donnée par un rectangle précisant les coordonées. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>l'image source </td></tr>
+    <tr><td class="paramname">rect</td><td>Le rectangle utilisé pour déterminer les coordonées de la zone où l'image se fera rogner. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>pointeur vers une (nouvelle) image ne contenant que la zone de pixels voulue (rognée) </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_ab03a7fb3517aa7ea2061e49543038506_cgraph.png" border="0" usemap="#projet_8c_ab03a7fb3517aa7ea2061e49543038506_cgraph" alt=""/></div>
+<map name="projet_8c_ab03a7fb3517aa7ea2061e49543038506_cgraph" id="projet_8c_ab03a7fb3517aa7ea2061e49543038506_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#a497be886110dddd526cf5b01b0c6bb71" title="Convertit des coordonées (x,y) en indice (index du tableau de données de l&#39;image RGB)" alt="" coords="212,5,345,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_ab03a7fb3517aa7ea2061e49543038506_icgraph.png" border="0" usemap="#projet_8c_ab03a7fb3517aa7ea2061e49543038506_icgraph" alt=""/></div>
+<map name="projet_8c_ab03a7fb3517aa7ea2061e49543038506_icgraph" id="projet_8c_ab03a7fb3517aa7ea2061e49543038506_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#a8a5d8b65cc8be60c9ccf4ec4eb518051" title="separateLetters" alt="" coords="211,5,323,35"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="371,31,501,60"/><area shape="rect" id="node7" href="projet_8h.html#a5ac4e8464d47f8e25335f72059802cc6" title="Initialise et alloue un tableau de structure LettrePolice avec les caractères de la police Arial..." alt="" coords="216,109,317,139"/><area shape="rect" id="node9" href="projet_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="411,109,461,139"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af2d545606e4d53631f08f37fede71e8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int detectLettersAndWords </td>
+          <td>(</td>
+          <td class="paramtype">DonneesImageRGB *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_couleur.html">Couleur</a>&#160;</td>
+          <td class="paramname"><em>couleurTexte</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_mot.html">Mot</a> **&#160;</td>
+          <td class="paramname"><em>results</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>nbrDeMots</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>espaces</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Détecte les mots et lettres constituant une partie de l'image. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>L'image source </td></tr>
+    <tr><td class="paramname">couleurTexte</td><td>La couleur RGB du texte </td></tr>
+    <tr><td class="paramname">results</td><td>Tableau de mots trouvés (à remplir) </td></tr>
+    <tr><td class="paramname">nbrDeMots</td><td>Le nombre de mots trouvés (à écrire) </td></tr>
+    <tr><td class="paramname">espaces</td><td>Tableau donnant la position des espaces </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si tout s'est bien passé, -1 sinon. </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_af2d545606e4d53631f08f37fede71e8b_cgraph.png" border="0" usemap="#projet_8c_af2d545606e4d53631f08f37fede71e8b_cgraph" alt=""/></div>
+<map name="projet_8c_af2d545606e4d53631f08f37fede71e8b_cgraph" id="projet_8c_af2d545606e4d53631f08f37fede71e8b_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#af44cb7c9123d823447add912cef4712f" title="Teste si les couleurs RGB en paramètres sont égales." alt="" coords="213,5,328,35"/><area shape="rect" id="node5" href="projet_8c.html#a96ff91afd8ebc974f4a6365fb9d7bef1" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon ses coordonées." alt="" coords="229,59,312,88"/><area shape="rect" id="node7" href="projet_8c.html#a497be886110dddd526cf5b01b0c6bb71" title="Convertit des coordonées (x,y) en indice (index du tableau de données de l&#39;image RGB)" alt="" coords="377,32,511,61"/><area shape="rect" id="node9" href="projet_8c.html#ab3d10ec2e7a27ae13da109343210f55d" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon son index." alt="" coords="400,85,488,115"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_af2d545606e4d53631f08f37fede71e8b_icgraph.png" border="0" usemap="#projet_8c_af2d545606e4d53631f08f37fede71e8b_icgraph" alt=""/></div>
+<map name="projet_8c_af2d545606e4d53631f08f37fede71e8b_icgraph" id="projet_8c_af2d545606e4d53631f08f37fede71e8b_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="213,5,344,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3d15ac2fee57bdb7e0538e944d88a5a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int detectNbrLines </td>
+          <td>(</td>
+          <td class="paramtype">DonneesImageRGB *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>tabY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_couleur.html">Couleur</a>&#160;</td>
+          <td class="paramname"><em>couleurTexte</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>L'image source </td></tr>
+    <tr><td class="paramname">tabY</td><td>Tableau d'entiers à remplir contenant les coordonées y des "espaces" verticaux dans l'image. </td></tr>
+    <tr><td class="paramname">couleurTexte</td><td>La couleur du fond dans l'image </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le nombre de lignes de texte que l'image contient. </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a3d15ac2fee57bdb7e0538e944d88a5a8_cgraph.png" border="0" usemap="#projet_8c_a3d15ac2fee57bdb7e0538e944d88a5a8_cgraph" alt=""/></div>
+<map name="projet_8c_a3d15ac2fee57bdb7e0538e944d88a5a8_cgraph" id="projet_8c_a3d15ac2fee57bdb7e0538e944d88a5a8_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#af44cb7c9123d823447add912cef4712f" title="Teste si les couleurs RGB en paramètres sont égales." alt="" coords="165,5,280,35"/><area shape="rect" id="node5" href="projet_8c.html#a96ff91afd8ebc974f4a6365fb9d7bef1" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon ses coordonées." alt="" coords="181,59,264,88"/><area shape="rect" id="node7" href="projet_8c.html#a497be886110dddd526cf5b01b0c6bb71" title="Convertit des coordonées (x,y) en indice (index du tableau de données de l&#39;image RGB)" alt="" coords="329,32,463,61"/><area shape="rect" id="node9" href="projet_8c.html#ab3d10ec2e7a27ae13da109343210f55d" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon son index." alt="" coords="352,85,440,115"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a3d15ac2fee57bdb7e0538e944d88a5a8_icgraph.png" border="0" usemap="#projet_8c_a3d15ac2fee57bdb7e0538e944d88a5a8_icgraph" alt=""/></div>
+<map name="projet_8c_a3d15ac2fee57bdb7e0538e944d88a5a8_icgraph" id="projet_8c_a3d15ac2fee57bdb7e0538e944d88a5a8_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="165,5,296,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a57d88ed28c8f90de322c66ea67849d99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dispTab </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>tab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbrElem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le contenu d'un tableau d'entier. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>Le tableau d'entiers </td></tr>
+    <tr><td class="paramname">nbrElem</td><td>le nombre d'éléments du tableau <em>tab</em> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a69f5e0e04dc084dcfd8f11da497290d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void drawRect </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dessine un rectangle vide défini par ses sommets haut-gauche et bas-droit. </p>
+<p>Dessine un rectangle vide défini par ses sommets haut-gauche et bas-droit en utilisant la fonction ligne(), dépendante d'OpenGL via GfxLib </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x1</td><td>Coordonée x du sommet haut-gauche du rectangle </td></tr>
+    <tr><td class="paramname">y1</td><td>Coordonée y du sommet haut-gauche du rectangle </td></tr>
+    <tr><td class="paramname">x2</td><td>Coordonée x du sommet bas-droit du rectangle </td></tr>
+    <tr><td class="paramname">y2</td><td>Coordonée y du sommet bas-droit du rectangle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a69f5e0e04dc084dcfd8f11da497290d8_icgraph.png" border="0" usemap="#projet_8c_a69f5e0e04dc084dcfd8f11da497290d8_icgraph" alt=""/></div>
+<map name="projet_8c_a69f5e0e04dc084dcfd8f11da497290d8_icgraph" id="projet_8c_a69f5e0e04dc084dcfd8f11da497290d8_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#a8eabd18099e8d0bc447d01f6ab731011" title="Dessine un bouton." alt="" coords="133,5,224,35"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="272,32,403,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac18d865dd505d2097a8542c58e4f1706"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int findBestAngle </td>
+          <td>(</td>
+          <td class="paramtype">DonneesImageRGB *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_couleur.html">Couleur</a>&#160;</td>
+          <td class="paramname"><em>couleurFond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_couleur.html">Couleur</a>&#160;</td>
+          <td class="paramname"><em>couleurTexte</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Détermine le meilleur angle de rotation d'une image pour "horizontaliser" au mieux le texte à reconnaître. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>L'image source. </td></tr>
+    <tr><td class="paramname">couleurFond</td><td>La couleur du fond de l'image </td></tr>
+    <tr><td class="paramname">couleurTexte</td><td>La couleur du texte dans l'image </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>L'angle en degré </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_ac18d865dd505d2097a8542c58e4f1706_cgraph.png" border="0" usemap="#projet_8c_ac18d865dd505d2097a8542c58e4f1706_cgraph" alt=""/></div>
+<map name="projet_8c_ac18d865dd505d2097a8542c58e4f1706_cgraph" id="projet_8c_ac18d865dd505d2097a8542c58e4f1706_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#a5fd1e6347eda0b248ac5e5269fc32b21" title="Crée une copie de l&#39;image source (DonneesImageRGB) affectée d&#39;une rotation d&#39;un angle donné..." alt="" coords="184,32,275,61"/><area shape="rect" id="node11" href="projet_8c.html#abe9732818bf9189c734f2b4fc979a64b" title="Détermine le plus petit rectangle contenant l&#39;intégralité des pixels formant le texte." alt="" coords="185,85,273,115"/><area shape="rect" id="node16" href="projet_8c.html#a588da025664b440700dab1bf630a52db" title="Calcule la surface du rectangle donné." alt="" coords="157,139,301,168"/><area shape="rect" id="node5" href="projet_8c.html#a96ff91afd8ebc974f4a6365fb9d7bef1" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon ses coordonées." alt="" coords="365,32,448,61"/><area shape="rect" id="node7" href="projet_8c.html#a497be886110dddd526cf5b01b0c6bb71" title="Convertit des coordonées (x,y) en indice (index du tableau de données de l&#39;image RGB)" alt="" coords="513,5,647,35"/><area shape="rect" id="node9" href="projet_8c.html#ab3d10ec2e7a27ae13da109343210f55d" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon son index." alt="" coords="536,59,624,88"/><area shape="rect" id="node13" href="projet_8c.html#af44cb7c9123d823447add912cef4712f" title="Teste si les couleurs RGB en paramètres sont égales." alt="" coords="349,85,464,115"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_ac18d865dd505d2097a8542c58e4f1706_icgraph.png" border="0" usemap="#projet_8c_ac18d865dd505d2097a8542c58e4f1706_icgraph" alt=""/></div>
+<map name="projet_8c_ac18d865dd505d2097a8542c58e4f1706_icgraph" id="projet_8c_ac18d865dd505d2097a8542c58e4f1706_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="157,5,288,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aadcb6b081fb4c088f91cb594e2272ba9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void freeCorr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_correspondance.html">Correspondance</a> *&#160;</td>
+          <td class="paramname"><em>corr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Libère proprement la mémoire allouée pour cette structure. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">corr</td><td>pointeur vers la structure à free. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_aadcb6b081fb4c088f91cb594e2272ba9_cgraph.png" border="0" usemap="#projet_8c_aadcb6b081fb4c088f91cb594e2272ba9_cgraph" alt=""/></div>
+<map name="projet_8c_aadcb6b081fb4c088f91cb594e2272ba9_cgraph" id="projet_8c_aadcb6b081fb4c088f91cb594e2272ba9_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#ab361887ae43f86f33627d34d32b0c9d9" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="123,5,200,35"/><area shape="rect" id="node5" href="projet_8c.html#a307e2a7d44b20a288d78685c13beb453" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="249,5,351,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_aadcb6b081fb4c088f91cb594e2272ba9_icgraph.png" border="0" usemap="#projet_8c_aadcb6b081fb4c088f91cb594e2272ba9_icgraph" alt=""/></div>
+<map name="projet_8c_aadcb6b081fb4c088f91cb594e2272ba9_icgraph" id="projet_8c_aadcb6b081fb4c088f91cb594e2272ba9_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="123,5,253,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a307e2a7d44b20a288d78685c13beb453"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void freeImageMat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structimage_matricielle.html">imageMatricielle</a> *&#160;</td>
+          <td class="paramname"><em>imgMat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Libère proprement la mémoire allouée pour cette structure. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imgMat</td><td>pointeur vers la structure à free. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a307e2a7d44b20a288d78685c13beb453_icgraph.png" border="0" usemap="#projet_8c_a307e2a7d44b20a288d78685c13beb453_icgraph" alt=""/></div>
+<map name="projet_8c_a307e2a7d44b20a288d78685c13beb453_icgraph" id="projet_8c_a307e2a7d44b20a288d78685c13beb453_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#ab361887ae43f86f33627d34d32b0c9d9" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="157,59,235,88"/><area shape="rect" id="node7" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="400,85,531,115"/><area shape="rect" id="node12" href="projet_8h.html#a2e65c614e4c5ec4801b3c4e42701b08a" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="167,163,225,192"/><area shape="rect" id="node5" href="projet_8h.html#a916494ce6dbfc55a6a04dc047721c03b" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="284,5,351,35"/><area shape="rect" id="node9" href="projet_8h.html#aadcb6b081fb4c088f91cb594e2272ba9" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="283,59,352,88"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7757aa0de1f179dc18d39b273104260"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void freeImageRGB </td>
+          <td>(</td>
+          <td class="paramtype">DonneesImageRGB *&#160;</td>
+          <td class="paramname"><em>img</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Libère proprement la mémoire allouée pour cette structure. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">img</td><td>pointeur vers la structure à free. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_aa7757aa0de1f179dc18d39b273104260_icgraph.png" border="0" usemap="#projet_8c_aa7757aa0de1f179dc18d39b273104260_icgraph" alt=""/></div>
+<map name="projet_8c_aa7757aa0de1f179dc18d39b273104260_icgraph" id="projet_8c_aa7757aa0de1f179dc18d39b273104260_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#a2e65c614e4c5ec4801b3c4e42701b08a" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="164,5,223,35"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="272,32,403,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab361887ae43f86f33627d34d32b0c9d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void freeLettre </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lettre.html">Lettre</a> *&#160;</td>
+          <td class="paramname"><em>ltr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Libère proprement la mémoire allouée pour cette structure. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ltr</td><td>pointeur vers la structure à free. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_ab361887ae43f86f33627d34d32b0c9d9_cgraph.png" border="0" usemap="#projet_8c_ab361887ae43f86f33627d34d32b0c9d9_cgraph" alt=""/></div>
+<map name="projet_8c_ab361887ae43f86f33627d34d32b0c9d9_cgraph" id="projet_8c_ab361887ae43f86f33627d34d32b0c9d9_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#a307e2a7d44b20a288d78685c13beb453" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="132,5,233,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_ab361887ae43f86f33627d34d32b0c9d9_icgraph.png" border="0" usemap="#projet_8c_ab361887ae43f86f33627d34d32b0c9d9_icgraph" alt=""/></div>
+<map name="projet_8c_ab361887ae43f86f33627d34d32b0c9d9_icgraph" id="projet_8c_ab361887ae43f86f33627d34d32b0c9d9_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#a916494ce6dbfc55a6a04dc047721c03b" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="132,5,199,35"/><area shape="rect" id="node7" href="projet_8h.html#aadcb6b081fb4c088f91cb594e2272ba9" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="131,59,200,88"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="248,32,379,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e65c614e4c5ec4801b3c4e42701b08a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void freeLP </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lettre_police.html">LettrePolice</a> *&#160;</td>
+          <td class="paramname"><em>lp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Libère proprement la mémoire allouée pour cette structure. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lp</td><td>pointeur vers la structure à free. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a2e65c614e4c5ec4801b3c4e42701b08a_cgraph.png" border="0" usemap="#projet_8c_a2e65c614e4c5ec4801b3c4e42701b08a_cgraph" alt=""/></div>
+<map name="projet_8c_a2e65c614e4c5ec4801b3c4e42701b08a_cgraph" id="projet_8c_a2e65c614e4c5ec4801b3c4e42701b08a_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#aa7757aa0de1f179dc18d39b273104260" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="115,5,224,35"/><area shape="rect" id="node5" href="projet_8c.html#a307e2a7d44b20a288d78685c13beb453" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="119,59,220,88"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a2e65c614e4c5ec4801b3c4e42701b08a_icgraph.png" border="0" usemap="#projet_8c_a2e65c614e4c5ec4801b3c4e42701b08a_icgraph" alt=""/></div>
+<map name="projet_8c_a2e65c614e4c5ec4801b3c4e42701b08a_icgraph" id="projet_8c_a2e65c614e4c5ec4801b3c4e42701b08a_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="115,5,245,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a916494ce6dbfc55a6a04dc047721c03b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void freeMot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_mot.html">Mot</a> *&#160;</td>
+          <td class="paramname"><em>mot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Libère proprement la mémoire allouée pour cette structure. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mot</td><td>pointeur vers la structure à free. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a916494ce6dbfc55a6a04dc047721c03b_cgraph.png" border="0" usemap="#projet_8c_a916494ce6dbfc55a6a04dc047721c03b_cgraph" alt=""/></div>
+<map name="projet_8c_a916494ce6dbfc55a6a04dc047721c03b_cgraph" id="projet_8c_a916494ce6dbfc55a6a04dc047721c03b_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#ab361887ae43f86f33627d34d32b0c9d9" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="120,5,197,35"/><area shape="rect" id="node5" href="projet_8c.html#a307e2a7d44b20a288d78685c13beb453" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="247,5,348,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a916494ce6dbfc55a6a04dc047721c03b_icgraph.png" border="0" usemap="#projet_8c_a916494ce6dbfc55a6a04dc047721c03b_icgraph" alt=""/></div>
+<map name="projet_8c_a916494ce6dbfc55a6a04dc047721c03b_icgraph" id="projet_8c_a916494ce6dbfc55a6a04dc047721c03b_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="120,5,251,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af99bca1dd29e2d28d9aa01ae22400f05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gestionEvenement </td>
+          <td>(</td>
+          <td class="paramtype">EvenementGfx&#160;</td>
+          <td class="paramname"><em>evenement</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction de gestion des evenements du système graphique. </p>
+<p>La fonction de gestion des événements, appelée automatiquement par le systeme graphique dès qu'une événement survient. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">evenement</td><td>L'événement en question. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_af99bca1dd29e2d28d9aa01ae22400f05_cgraph.png" border="0" usemap="#projet_8c_af99bca1dd29e2d28d9aa01ae22400f05_cgraph" alt=""/></div>
+<map name="projet_8c_af99bca1dd29e2d28d9aa01ae22400f05_cgraph" id="projet_8c_af99bca1dd29e2d28d9aa01ae22400f05_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#a23718f32d68bd37ed3b3053cb01831ee" title="Détecte la couleur de fond et la couleur du texte d&#39;une image donnée." alt="" coords="184,40,373,69"/><area shape="rect" id="node9" href="projet_8c.html#a59cb7bd568b148ea96186113c013b595" title="Effectue le prétraitement de l&#39;image à analyser en améliorant certains de ses aspects." alt="" coords="465,128,569,157"/><area shape="rect" id="node20" href="projet_8c.html#a5fd1e6347eda0b248ac5e5269fc32b21" title="Crée une copie de l&#39;image source (DonneesImageRGB) affectée d&#39;une rotation d&#39;un angle donné..." alt="" coords="472,288,563,317"/><area shape="rect" id="node23" href="projet_8c.html#a69f5e0e04dc084dcfd8f11da497290d8" title="Dessine un rectangle vide défini par ses sommets haut&#45;gauche et bas&#45;droit." alt="" coords="479,555,556,584"/><area shape="rect" id="node25" href="projet_8c.html#aa706756cb0a7d118ed0e9d9c660b74d5" title="Crée une copie redimensionnée d&#39;une image (DonneesImageRGB) à des dimensions données." alt="" coords="232,659,325,688"/><area shape="rect" id="node27" href="projet_8c.html#a8eabd18099e8d0bc447d01f6ab731011" title="Dessine un bouton." alt="" coords="233,605,324,635"/><area shape="rect" id="node30" href="projet_8c.html#abe9732818bf9189c734f2b4fc979a64b" title="Détermine le plus petit rectangle contenant l&#39;intégralité des pixels formant le texte." alt="" coords="473,235,561,264"/><area shape="rect" id="node35" href="projet_8c.html#ab03a7fb3517aa7ea2061e49543038506" title="Crée une copie rognée d&#39;une image (DonneesImageRGB) à une zone donnée." alt="" coords="439,181,596,211"/><area shape="rect" id="node38" href="projet_8c.html#ac18d865dd505d2097a8542c58e4f1706" title="Détermine le meilleur angle de rotation d&#39;une image pour &quot;horizontaliser&quot; au mieux le texte à reconna..." alt="" coords="228,349,329,379"/><area shape="rect" id="node44" href="projet_8c.html#a3d15ac2fee57bdb7e0538e944d88a5a8" title="detectNbrLines" alt="" coords="463,448,572,477"/><area shape="rect" id="node48" href="projet_8c.html#ac8b4d5ddbaa4460b2b418d9931c80415" title="Initialise et alloue un tableau de mots." alt="" coords="231,712,327,741"/><area shape="rect" id="node50" href="projet_8c.html#af2d545606e4d53631f08f37fede71e8b" title="Détecte les mots et lettres constituant une partie de l&#39;image." alt="" coords="439,395,596,424"/><area shape="rect" id="node54" href="projet_8c.html#a8a5d8b65cc8be60c9ccf4ec4eb518051" title="separateLetters" alt="" coords="223,144,335,173"/><area shape="rect" id="node59" href="projet_8c.html#acc99d2a8c679ec1e7e8b13023b427168" title="Crée une image matricielle à partir d&#39;une image RGB source, connaissant la couleur du fond de l&#39;image..." alt="" coords="451,501,584,531"/><area shape="rect" id="node63" href="projet_8c.html#a2344579636b413f9731714b3241cd41b" title="Compare une lettre reconnu dans l&#39;image source à une lettre de la police, avec un indice de ressembla..." alt="" coords="223,765,335,795"/><area shape="rect" id="node65" href="spell_8c.html#a96087d7ed6e749aa5f209286d88e549d" title="correct" alt="" coords="487,608,548,637"/><area shape="rect" id="node67" href="spell_check_8c.html#a21f5a3581aaf1b70042db02dadf32850" title="spellCheck" alt="" coords="236,875,321,904"/><area shape="rect" id="node104" href="projet_8c.html#aa7757aa0de1f179dc18d39b273104260" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="463,1243,572,1272"/><area shape="rect" id="node106" href="projet_8c.html#a307e2a7d44b20a288d78685c13beb453" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="691,1345,792,1375"/><area shape="rect" id="node108" href="projet_8c.html#a2e65c614e4c5ec4801b3c4e42701b08a" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="249,1241,308,1271"/><area shape="rect" id="node112" href="projet_8c.html#aadcb6b081fb4c088f91cb594e2272ba9" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="244,1345,313,1375"/><area shape="rect" id="node117" href="projet_8c.html#a916494ce6dbfc55a6a04dc047721c03b" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="245,1399,312,1428"/><area shape="rect" id="node120" href="projet_8c.html#a7b03a219f0159c267666e780db756065" title="Vérifie si le clic de coordonées (x,y) est dans le rectangle rect." alt="" coords="239,1452,319,1481"/><area shape="rect" id="node122" href="projet_8c.html#a955b06539ece628f265d1331c643ecd1" title="Vérifie si le rectangle de rogange est valide par rapport à l&#39;image à analyser." alt="" coords="216,1505,341,1535"/><area shape="rect" id="node5" href="projet_8c.html#adce0e7db88df64d3d202ddbea54960f1" title="Renvoie la fréquence maximale d&#39;un tableau de fréquence de couleur." alt="" coords="464,59,571,88"/><area shape="rect" id="node7" href="projet_8c.html#a92ac43bb654d32dd72629efd08d0ca2b" title="Renvoie la 2ème fréquence maximale d&#39;un tableau de fréquence de couleur." alt="" coords="449,5,585,35"/><area shape="rect" id="node11" href="projet_8c.html#a96ff91afd8ebc974f4a6365fb9d7bef1" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon ses coordonées." alt="" coords="700,288,783,317"/><area shape="rect" id="node13" href="projet_8c.html#a497be886110dddd526cf5b01b0c6bb71" title="Convertit des coordonées (x,y) en indice (index du tableau de données de l&#39;image RGB)" alt="" coords="871,207,1004,236"/><area shape="rect" id="node18" href="projet_8c.html#acec0a4945773204a14c4143e7045af4b" title="Renvoie la médiane du tableau de valeur donnée." alt="" coords="695,155,788,184"/><area shape="rect" id="node15" href="projet_8c.html#ab3d10ec2e7a27ae13da109343210f55d" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon son index." alt="" coords="893,387,981,416"/><area shape="rect" id="node32" href="projet_8c.html#af44cb7c9123d823447add912cef4712f" title="Teste si les couleurs RGB en paramètres sont égales." alt="" coords="684,408,799,437"/><area shape="rect" id="node42" href="projet_8c.html#a588da025664b440700dab1bf630a52db" title="Calcule la surface du rectangle donné." alt="" coords="445,341,589,371"/><area shape="rect" id="node69" href="spell_check_8c.html#a5b18e9add1432accc49934d536b8de39" title="OuvreDictionnaire" alt="" coords="455,661,580,691"/><area shape="rect" id="node75" href="spell_8c.html#a73f5320614449925020c563a2ec8c0ee" title="initSpellCheck" alt="" coords="464,928,571,957"/><area shape="rect" id="node77" href="spell_check_8c.html#a03cd841d09ff12bfe755aae69781bf23" title="copieChaineCaractere" alt="" coords="667,1044,816,1073"/><area shape="rect" id="node79" href="spell_check_8c.html#ac7f68bdcc0bbb1bc652214dac2fed71c" title="estUnNombre" alt="" coords="467,1083,568,1112"/><area shape="rect" id="node81" href="spell_check_8c.html#a2b45c492e7e9c250eb8718b51a8cc4dd" title="GetMode" alt="" coords="480,1189,555,1219"/><area shape="rect" id="node89" href="spell_check_8c.html#a4bc21b6d6d25bcbf5f13aeda765d1d89" title="transformeEnMinuscule" alt="" coords="663,967,820,996"/><area shape="rect" id="node91" href="spell_check_8c.html#a36663a990d2ffc8a5b10220f59d36a9c" title="DicoContient" alt="" coords="468,715,567,744"/><area shape="rect" id="node94" href="spell_check_8c.html#a603ba0c4a9641d8acb7faba1bf8f632b" title="DemandeCorrectionManuelle" alt="" coords="423,1136,612,1165"/><area shape="rect" id="node97" href="spell_check_8c.html#a531c6f8bad58ee3afe7da93d087bc6f1" title="DemandeOuiouNON" alt="" coords="447,768,588,797"/><area shape="rect" id="node99" href="spell_check_8c.html#afd7e604e350921847cbd4c1d03a9f6a6" title="chercheEtRemplace" alt="" coords="448,821,587,851"/><area shape="rect" id="node101" href="spell_check_8c.html#a0c035faa0dc2573278af5837a78d393a" title="TransformeEnMode" alt="" coords="449,875,585,904"/><area shape="rect" id="node71" href="spell_check_8c.html#a7938cf20e4d7e24f90cee4a6d58c7223" title="LisNombreDeMots" alt="" coords="676,688,807,717"/><area shape="rect" id="node73" href="spell_check_8c.html#acdd8403f3258dd6df16961514201f566" title="LisMot" alt="" coords="711,635,772,664"/><area shape="rect" id="node83" href="spell_check_8c.html#afdf1fd26f6fdf23a91393ab4fb301867" title="estPremiereLettreMaj" alt="" coords="668,1243,815,1272"/><area shape="rect" id="node85" href="spell_check_8c.html#a60d9e4088936a2b0230dc91ab911b4a7" title="estEnMaj" alt="" coords="703,1136,780,1165"/><area shape="rect" id="node87" href="spell_check_8c.html#a4fec11d4ba6c90099603d4ced0cd7870" title="estEnMin" alt="" coords="703,1189,780,1219"/><area shape="rect" id="node114" href="projet_8c.html#ab361887ae43f86f33627d34d32b0c9d9" title="Libère proprement la mémoire allouée pour cette structure." alt="" coords="479,1397,556,1427"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a23718f32d68bd37ed3b3053cb01831ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void getBackgroundAndTextColor </td>
+          <td>(</td>
+          <td class="paramtype">DonneesImageRGB *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_couleur.html">Couleur</a> *&#160;</td>
+          <td class="paramname"><em>fond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_couleur.html">Couleur</a> *&#160;</td>
+          <td class="paramname"><em>texte</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Détecte la couleur de fond et la couleur du texte d'une image donnée. </p>
+<p>Détecte la couleur de fond et la couleur du texte d'une image donnée et les enregistre dans les valeurs pointées passées en paramètres. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>L'image source. </td></tr>
+    <tr><td class="paramname">fond</td><td>Pointeur vers la valeur de la couleur de fond. </td></tr>
+    <tr><td class="paramname">texte</td><td>Pointeur vers la valeur de la couleur du texte. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a23718f32d68bd37ed3b3053cb01831ee_cgraph.png" border="0" usemap="#projet_8c_a23718f32d68bd37ed3b3053cb01831ee_cgraph" alt=""/></div>
+<map name="projet_8c_a23718f32d68bd37ed3b3053cb01831ee_cgraph" id="projet_8c_a23718f32d68bd37ed3b3053cb01831ee_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#adce0e7db88df64d3d202ddbea54960f1" title="Renvoie la fréquence maximale d&#39;un tableau de fréquence de couleur." alt="" coords="259,5,365,35"/><area shape="rect" id="node5" href="projet_8c.html#a92ac43bb654d32dd72629efd08d0ca2b" title="Renvoie la 2ème fréquence maximale d&#39;un tableau de fréquence de couleur." alt="" coords="244,59,380,88"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a23718f32d68bd37ed3b3053cb01831ee_icgraph.png" border="0" usemap="#projet_8c_a23718f32d68bd37ed3b3053cb01831ee_icgraph" alt=""/></div>
+<map name="projet_8c_a23718f32d68bd37ed3b3053cb01831ee_icgraph" id="projet_8c_a23718f32d68bd37ed3b3053cb01831ee_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="243,5,373,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a96ff91afd8ebc974f4a6365fb9d7bef1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_couleur.html">Couleur</a> getColorAt </td>
+          <td>(</td>
+          <td class="paramtype">DonneesImageRGB *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet d'obtenir la couleur d'un pixel d'une image selon ses coordonées. </p>
+<p>Permet d'obtenir la couleur RGB d'un pixel d'une image d'après ses coordonées (x,y). </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>l'image source que l'on va utiliser </td></tr>
+    <tr><td class="paramname">x</td><td>La coordonée en x du pixel voulu </td></tr>
+    <tr><td class="paramname">y</td><td>La coordonée en y du pixel voulu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>la couleur du pixel. </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a96ff91afd8ebc974f4a6365fb9d7bef1_cgraph.png" border="0" usemap="#projet_8c_a96ff91afd8ebc974f4a6365fb9d7bef1_cgraph" alt=""/></div>
+<map name="projet_8c_a96ff91afd8ebc974f4a6365fb9d7bef1_cgraph" id="projet_8c_a96ff91afd8ebc974f4a6365fb9d7bef1_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#a497be886110dddd526cf5b01b0c6bb71" title="Convertit des coordonées (x,y) en indice (index du tableau de données de l&#39;image RGB)" alt="" coords="140,5,273,35"/><area shape="rect" id="node5" href="projet_8c.html#ab3d10ec2e7a27ae13da109343210f55d" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon son index." alt="" coords="163,59,251,88"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a96ff91afd8ebc974f4a6365fb9d7bef1_icgraph.png" border="0" usemap="#projet_8c_a96ff91afd8ebc974f4a6365fb9d7bef1_icgraph" alt=""/></div>
+<map name="projet_8c_a96ff91afd8ebc974f4a6365fb9d7bef1_icgraph" id="projet_8c_a96ff91afd8ebc974f4a6365fb9d7bef1_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#abe9732818bf9189c734f2b4fc979a64b" title="Détermine le plus petit rectangle contenant l&#39;intégralité des pixels formant le texte." alt="" coords="151,109,239,139"/><area shape="rect" id="node17" href="projet_8h.html#a59cb7bd568b148ea96186113c013b595" title="Effectue le prétraitement de l&#39;image à analyser en améliorant certains de ses aspects." alt="" coords="143,229,247,259"/><area shape="rect" id="node21" href="projet_8h.html#a5fd1e6347eda0b248ac5e5269fc32b21" title="Crée une copie de l&#39;image source (DonneesImageRGB) affectée d&#39;une rotation d&#39;un angle donné..." alt="" coords="149,163,240,192"/><area shape="rect" id="node25" href="projet_8h.html#af2d545606e4d53631f08f37fede71e8b" title="Détecte les mots et lettres constituant une partie de l&#39;image." alt="" coords="300,317,457,347"/><area shape="rect" id="node28" href="projet_8h.html#a3d15ac2fee57bdb7e0538e944d88a5a8" title="detectNbrLines" alt="" coords="140,357,249,387"/><area shape="rect" id="node5" href="projet_8h.html#ac18d865dd505d2097a8542c58e4f1706" title="Détermine le meilleur angle de rotation d&#39;une image pour &quot;horizontaliser&quot; au mieux le texte à reconna..." alt="" coords="328,109,429,139"/><area shape="rect" id="node7" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="507,213,637,243"/><area shape="rect" id="node9" href="projet_8h.html#a8a5d8b65cc8be60c9ccf4ec4eb518051" title="separateLetters" alt="" coords="323,213,435,243"/><area shape="rect" id="node12" href="projet_8h.html#a5ac4e8464d47f8e25335f72059802cc6" title="Initialise et alloue un tableau de structure LettrePolice avec les caractères de la police Arial..." alt="" coords="328,5,429,35"/><area shape="rect" id="node14" href="projet_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="547,5,597,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3d10ec2e7a27ae13da109343210f55d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_couleur.html">Couleur</a> getColorAtI </td>
+          <td>(</td>
+          <td class="paramtype">DonneesImageRGB *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet d'obtenir la couleur d'un pixel d'une image selon son index. </p>
+<p>Permet d'obtenir la couleur RGB d'un pixel d'une image d'après son index. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>l'image source que l'on va utiliser </td></tr>
+    <tr><td class="paramname">i</td><td>L'index du tableau de données de l'image RGB </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>la couleur du pixel. </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_ab3d10ec2e7a27ae13da109343210f55d_icgraph.png" border="0" usemap="#projet_8c_ab3d10ec2e7a27ae13da109343210f55d_icgraph" alt=""/></div>
+<map name="projet_8c_ab3d10ec2e7a27ae13da109343210f55d_icgraph" id="projet_8c_ab3d10ec2e7a27ae13da109343210f55d_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#a96ff91afd8ebc974f4a6365fb9d7bef1" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon ses coordonées." alt="" coords="168,291,251,320"/><area shape="rect" id="node33" href="projet_8h.html#acc99d2a8c679ec1e7e8b13023b427168" title="Crée une image matricielle à partir d&#39;une image RGB source, connaissant la couleur du fond de l&#39;image..." alt="" coords="143,369,276,399"/><area shape="rect" id="node5" href="projet_8h.html#abe9732818bf9189c734f2b4fc979a64b" title="Détermine le plus petit rectangle contenant l&#39;intégralité des pixels formant le texte." alt="" coords="337,109,425,139"/><area shape="rect" id="node19" href="projet_8h.html#a59cb7bd568b148ea96186113c013b595" title="Effectue le prétraitement de l&#39;image à analyser en améliorant certains de ses aspects." alt="" coords="329,211,433,240"/><area shape="rect" id="node23" href="projet_8h.html#a5fd1e6347eda0b248ac5e5269fc32b21" title="Crée une copie de l&#39;image source (DonneesImageRGB) affectée d&#39;une rotation d&#39;un angle donné..." alt="" coords="336,264,427,293"/><area shape="rect" id="node27" href="projet_8h.html#af2d545606e4d53631f08f37fede71e8b" title="Détecte les mots et lettres constituant une partie de l&#39;image." alt="" coords="487,317,644,347"/><area shape="rect" id="node30" href="projet_8h.html#a3d15ac2fee57bdb7e0538e944d88a5a8" title="detectNbrLines" alt="" coords="327,368,436,397"/><area shape="rect" id="node7" href="projet_8h.html#ac18d865dd505d2097a8542c58e4f1706" title="Détermine le meilleur angle de rotation d&#39;une image pour &quot;horizontaliser&quot; au mieux le texte à reconna..." alt="" coords="515,163,616,192"/><area shape="rect" id="node9" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="693,240,824,269"/><area shape="rect" id="node11" href="projet_8h.html#a8a5d8b65cc8be60c9ccf4ec4eb518051" title="separateLetters" alt="" coords="509,109,621,139"/><area shape="rect" id="node14" href="projet_8h.html#a5ac4e8464d47f8e25335f72059802cc6" title="Initialise et alloue un tableau de structure LettrePolice avec les caractères de la police Arial..." alt="" coords="515,5,616,35"/><area shape="rect" id="node16" href="projet_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="733,5,784,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a497be886110dddd526cf5b01b0c6bb71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long long int getIfromXYinImage </td>
+          <td>(</td>
+          <td class="paramtype">DonneesImageRGB *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertit des coordonées (x,y) en indice (index du tableau de données de l'image RGB) </p>
+<p>Convertit des coordonées (x,y) en indice (index du tableau de données de l'image RGB) en vérifiant que ce point (x,y) apaprtient bien à l'image. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>l'image source que l'on va utiliser </td></tr>
+    <tr><td class="paramname">x</td><td>La coordonée en x du pixel voulu </td></tr>
+    <tr><td class="paramname">y</td><td>La coordonée en y du pixel voulu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>L'indice (index du tableau de données de l'image RGB) correspondant au pixel, où 0 si les coordonées sont invalides. </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a497be886110dddd526cf5b01b0c6bb71_icgraph.png" border="0" usemap="#projet_8c_a497be886110dddd526cf5b01b0c6bb71_icgraph" alt=""/></div>
+<map name="projet_8c_a497be886110dddd526cf5b01b0c6bb71_icgraph" id="projet_8c_a497be886110dddd526cf5b01b0c6bb71_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#a96ff91afd8ebc974f4a6365fb9d7bef1" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon ses coordonées." alt="" coords="191,188,273,217"/><area shape="rect" id="node19" href="projet_8h.html#a59cb7bd568b148ea96186113c013b595" title="Effectue le prétraitement de l&#39;image à analyser en améliorant certains de ses aspects." alt="" coords="349,268,453,297"/><area shape="rect" id="node34" href="projet_8h.html#ab03a7fb3517aa7ea2061e49543038506" title="Crée une copie rognée d&#39;une image (DonneesImageRGB) à une zone donnée." alt="" coords="323,345,480,375"/><area shape="rect" id="node5" href="projet_8h.html#abe9732818bf9189c734f2b4fc979a64b" title="Détermine le plus petit rectangle contenant l&#39;intégralité des pixels formant le texte." alt="" coords="357,215,445,244"/><area shape="rect" id="node23" href="projet_8h.html#a5fd1e6347eda0b248ac5e5269fc32b21" title="Crée une copie de l&#39;image source (DonneesImageRGB) affectée d&#39;une rotation d&#39;un angle donné..." alt="" coords="356,161,447,191"/><area shape="rect" id="node27" href="projet_8h.html#af2d545606e4d53631f08f37fede71e8b" title="Détecte les mots et lettres constituant une partie de l&#39;image." alt="" coords="529,5,687,35"/><area shape="rect" id="node30" href="projet_8h.html#a3d15ac2fee57bdb7e0538e944d88a5a8" title="detectNbrLines" alt="" coords="553,59,663,88"/><area shape="rect" id="node7" href="projet_8h.html#ac18d865dd505d2097a8542c58e4f1706" title="Détermine le meilleur angle de rotation d&#39;une image pour &quot;horizontaliser&quot; au mieux le texte à reconna..." alt="" coords="557,163,659,192"/><area shape="rect" id="node9" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="736,189,867,219"/><area shape="rect" id="node11" href="projet_8h.html#a8a5d8b65cc8be60c9ccf4ec4eb518051" title="separateLetters" alt="" coords="552,317,664,347"/><area shape="rect" id="node14" href="projet_8h.html#a5ac4e8464d47f8e25335f72059802cc6" title="Initialise et alloue un tableau de structure LettrePolice avec les caractères de la police Arial..." alt="" coords="557,371,659,400"/><area shape="rect" id="node16" href="projet_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="776,371,827,400"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acc99d2a8c679ec1e7e8b13023b427168"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structimage_matricielle.html">imageMatricielle</a>* getImageMatricielle </td>
+          <td>(</td>
+          <td class="paramtype">DonneesImageRGB *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_couleur.html">Couleur</a>&#160;</td>
+          <td class="paramname"><em>couleurTexte</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une image matricielle à partir d'une image RGB source, connaissant la couleur du fond de l'image. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>L'image source. </td></tr>
+    <tr><td class="paramname">couleurTexte</td><td>La couleur du texte dans l'image </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Pointeur vers l'image matricielle </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_acc99d2a8c679ec1e7e8b13023b427168_cgraph.png" border="0" usemap="#projet_8c_acc99d2a8c679ec1e7e8b13023b427168_cgraph" alt=""/></div>
+<map name="projet_8c_acc99d2a8c679ec1e7e8b13023b427168_cgraph" id="projet_8c_acc99d2a8c679ec1e7e8b13023b427168_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#af44cb7c9123d823447add912cef4712f" title="Teste si les couleurs RGB en paramètres sont égales." alt="" coords="189,5,304,35"/><area shape="rect" id="node5" href="projet_8c.html#ab3d10ec2e7a27ae13da109343210f55d" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon son index." alt="" coords="203,59,291,88"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_acc99d2a8c679ec1e7e8b13023b427168_icgraph.png" border="0" usemap="#projet_8c_acc99d2a8c679ec1e7e8b13023b427168_icgraph" alt=""/></div>
+<map name="projet_8c_acc99d2a8c679ec1e7e8b13023b427168_icgraph" id="projet_8c_acc99d2a8c679ec1e7e8b13023b427168_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="189,5,320,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abe9732818bf9189c734f2b4fc979a64b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rectangle.html">Rectangle</a> getMinRect </td>
+          <td>(</td>
+          <td class="paramtype">DonneesImageRGB *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_couleur.html">Couleur</a>&#160;</td>
+          <td class="paramname"><em>couleurTexte</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Détermine le plus petit rectangle contenant l'intégralité des pixels formant le texte. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>L'image source. </td></tr>
+    <tr><td class="paramname">couleurTexte</td><td>La couleur du texte dans l'image </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le rectangle déterminé. </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_abe9732818bf9189c734f2b4fc979a64b_cgraph.png" border="0" usemap="#projet_8c_abe9732818bf9189c734f2b4fc979a64b_cgraph" alt=""/></div>
+<map name="projet_8c_abe9732818bf9189c734f2b4fc979a64b_cgraph" id="projet_8c_abe9732818bf9189c734f2b4fc979a64b_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#af44cb7c9123d823447add912cef4712f" title="Teste si les couleurs RGB en paramètres sont égales." alt="" coords="144,5,259,35"/><area shape="rect" id="node5" href="projet_8c.html#a96ff91afd8ebc974f4a6365fb9d7bef1" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon ses coordonées." alt="" coords="160,59,243,88"/><area shape="rect" id="node7" href="projet_8c.html#a497be886110dddd526cf5b01b0c6bb71" title="Convertit des coordonées (x,y) en indice (index du tableau de données de l&#39;image RGB)" alt="" coords="308,32,441,61"/><area shape="rect" id="node9" href="projet_8c.html#ab3d10ec2e7a27ae13da109343210f55d" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon son index." alt="" coords="331,85,419,115"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_abe9732818bf9189c734f2b4fc979a64b_icgraph.png" border="0" usemap="#projet_8c_abe9732818bf9189c734f2b4fc979a64b_icgraph" alt=""/></div>
+<map name="projet_8c_abe9732818bf9189c734f2b4fc979a64b_icgraph" id="projet_8c_abe9732818bf9189c734f2b4fc979a64b_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#ac18d865dd505d2097a8542c58e4f1706" title="Détermine le meilleur angle de rotation d&#39;une image pour &quot;horizontaliser&quot; au mieux le texte à reconna..." alt="" coords="149,5,251,35"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="304,57,435,87"/><area shape="rect" id="node7" href="projet_8h.html#a8a5d8b65cc8be60c9ccf4ec4eb518051" title="separateLetters" alt="" coords="144,109,256,139"/><area shape="rect" id="node10" href="projet_8h.html#a5ac4e8464d47f8e25335f72059802cc6" title="Initialise et alloue un tableau de structure LettrePolice avec les caractères de la police Arial..." alt="" coords="149,163,251,192"/><area shape="rect" id="node12" href="projet_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="344,163,395,192"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a588da025664b440700dab1bf630a52db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getRectangleSurface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rectangle.html">Rectangle</a>&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcule la surface du rectangle donné. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>Le rectangle dont on veut la surface </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>La surface du rectangle, en pixels² </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a588da025664b440700dab1bf630a52db_icgraph.png" border="0" usemap="#projet_8c_a588da025664b440700dab1bf630a52db_icgraph" alt=""/></div>
+<map name="projet_8c_a588da025664b440700dab1bf630a52db_icgraph" id="projet_8c_a588da025664b440700dab1bf630a52db_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#ac18d865dd505d2097a8542c58e4f1706" title="Détermine le meilleur angle de rotation d&#39;une image pour &quot;horizontaliser&quot; au mieux le texte à reconna..." alt="" coords="199,5,300,35"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="349,5,480,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a59cb7bd568b148ea96186113c013b595"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DonneesImageRGB* improveImage </td>
+          <td>(</td>
+          <td class="paramtype">DonneesImageRGB *&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Effectue le prétraitement de l'image à analyser en améliorant certains de ses aspects. </p>
+<p>Supression de pixels isolés (filtre médian), augmentation du contraste, "lissage" des couleurs (réduction de la palette)... </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>L'image source. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>le pointeur vers l'image (même qu'au départ) </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a59cb7bd568b148ea96186113c013b595_cgraph.png" border="0" usemap="#projet_8c_a59cb7bd568b148ea96186113c013b595_cgraph" alt=""/></div>
+<map name="projet_8c_a59cb7bd568b148ea96186113c013b595_cgraph" id="projet_8c_a59cb7bd568b148ea96186113c013b595_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#a96ff91afd8ebc974f4a6365fb9d7bef1" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon ses coordonées." alt="" coords="164,57,247,87"/><area shape="rect" id="node5" href="projet_8c.html#a497be886110dddd526cf5b01b0c6bb71" title="Convertit des coordonées (x,y) en indice (index du tableau de données de l&#39;image RGB)" alt="" coords="303,5,436,35"/><area shape="rect" id="node10" href="projet_8c.html#acec0a4945773204a14c4143e7045af4b" title="Renvoie la médiane du tableau de valeur donnée." alt="" coords="159,111,252,140"/><area shape="rect" id="node7" href="projet_8c.html#ab3d10ec2e7a27ae13da109343210f55d" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon son index." alt="" coords="325,59,413,88"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a59cb7bd568b148ea96186113c013b595_icgraph.png" border="0" usemap="#projet_8c_a59cb7bd568b148ea96186113c013b595_icgraph" alt=""/></div>
+<map name="projet_8c_a59cb7bd568b148ea96186113c013b595_icgraph" id="projet_8c_a59cb7bd568b148ea96186113c013b595_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#a8a5d8b65cc8be60c9ccf4ec4eb518051" title="separateLetters" alt="" coords="157,5,269,35"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="317,32,448,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adce0e7db88df64d3d202ddbea54960f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int indiceFreqMax </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcolor_count.html">colorCount</a> *&#160;</td>
+          <td class="paramname"><em>tab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>taille</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renvoie la fréquence maximale d'un tableau de fréquence de couleur. </p>
+<p>Renvoie la valeur de la fréquence maximale d'un tableau de fréquence de couleur de taille donnée </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>Le tableau de couleur </td></tr>
+    <tr><td class="paramname">taille</td><td>le nombre d'éléments du tableau <em>tab</em> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>la valeur de la fréquence maximale </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_adce0e7db88df64d3d202ddbea54960f1_icgraph.png" border="0" usemap="#projet_8c_adce0e7db88df64d3d202ddbea54960f1_icgraph" alt=""/></div>
+<map name="projet_8c_adce0e7db88df64d3d202ddbea54960f1_icgraph" id="projet_8c_adce0e7db88df64d3d202ddbea54960f1_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#a23718f32d68bd37ed3b3053cb01831ee" title="Détecte la couleur de fond et la couleur du texte d&#39;une image donnée." alt="" coords="160,5,349,35"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="397,5,528,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a92ac43bb654d32dd72629efd08d0ca2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int indiceFreqSousMax </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcolor_count.html">colorCount</a> *&#160;</td>
+          <td class="paramname"><em>tab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>taille</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>except</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renvoie la 2ème fréquence maximale d'un tableau de fréquence de couleur. </p>
+<p>Renvoie la 2ème valeur de la fréquence maximale d'un tableau de fréquence de couleur de taille donnée </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>Le tableau de couleur </td></tr>
+    <tr><td class="paramname">taille</td><td>le nombre d'éléments du tableau <em>tab</em> </td></tr>
+    <tr><td class="paramname">except</td><td>la valeur à ne pas considérer (c'est le maximum) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>la valeur de la 2ème fréquence maximale </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a92ac43bb654d32dd72629efd08d0ca2b_icgraph.png" border="0" usemap="#projet_8c_a92ac43bb654d32dd72629efd08d0ca2b_icgraph" alt=""/></div>
+<map name="projet_8c_a92ac43bb654d32dd72629efd08d0ca2b_icgraph" id="projet_8c_a92ac43bb654d32dd72629efd08d0ca2b_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#a23718f32d68bd37ed3b3053cb01831ee" title="Détecte la couleur de fond et la couleur du texte d&#39;une image donnée." alt="" coords="192,5,381,35"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="429,5,560,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5ac4e8464d47f8e25335f72059802cc6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_lettre_police.html">LettrePolice</a>* initPoliceArial </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise et alloue un tableau de structure <a class="el" href="struct_lettre_police.html" title="Définit une &quot;lettre&quot; typique d&#39;une police, avec notemment son ratio largeur/hauteur et ses images a...">LettrePolice</a> avec les caractères de la police Arial. </p>
+<p>Initialise et alloue un tableau de 70 structures (c'est le nombre de caractères de la police Arial) pour chaque caractères de la police. Un fichier texte est utilisé pour faire la correspondance entre chaque fichier .bmp (imagette de chaque caractère) et le caractère en lui-même. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Aucun</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>(Le pointeur vers) le tableau de structure contenant les caractèers de la police Arial chargée. </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a5ac4e8464d47f8e25335f72059802cc6_cgraph.png" border="0" usemap="#projet_8c_a5ac4e8464d47f8e25335f72059802cc6_cgraph" alt=""/></div>
+<map name="projet_8c_a5ac4e8464d47f8e25335f72059802cc6_cgraph" id="projet_8c_a5ac4e8464d47f8e25335f72059802cc6_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#abe9732818bf9189c734f2b4fc979a64b" title="Détermine le plus petit rectangle contenant l&#39;intégralité des pixels formant le texte." alt="" coords="189,57,277,87"/><area shape="rect" id="node13" href="projet_8c.html#ab03a7fb3517aa7ea2061e49543038506" title="Crée une copie rognée d&#39;une image (DonneesImageRGB) à une zone donnée." alt="" coords="155,111,312,140"/><area shape="rect" id="node5" href="projet_8c.html#af44cb7c9123d823447add912cef4712f" title="Teste si les couleurs RGB en paramètres sont égales." alt="" coords="360,5,475,35"/><area shape="rect" id="node7" href="projet_8c.html#a96ff91afd8ebc974f4a6365fb9d7bef1" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon ses coordonées." alt="" coords="376,59,459,88"/><area shape="rect" id="node9" href="projet_8c.html#a497be886110dddd526cf5b01b0c6bb71" title="Convertit des coordonées (x,y) en indice (index du tableau de données de l&#39;image RGB)" alt="" coords="524,111,657,140"/><area shape="rect" id="node11" href="projet_8c.html#ab3d10ec2e7a27ae13da109343210f55d" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon son index." alt="" coords="547,57,635,87"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a5ac4e8464d47f8e25335f72059802cc6_icgraph.png" border="0" usemap="#projet_8c_a5ac4e8464d47f8e25335f72059802cc6_icgraph" alt=""/></div>
+<map name="projet_8c_a5ac4e8464d47f8e25335f72059802cc6_icgraph" id="projet_8c_a5ac4e8464d47f8e25335f72059802cc6_icgraph">
+<area shape="rect" id="node3" href="projet_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="155,5,205,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.png" border="0" usemap="#projet_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" alt=""/></div>
+<map name="projet_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" id="projet_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#a5ac4e8464d47f8e25335f72059802cc6" title="Initialise et alloue un tableau de structure LettrePolice avec les caractères de la police Arial..." alt="" coords="104,84,205,113"/><area shape="rect" id="node18" href="projet_8c.html#a3e6055fa50e77005c009ba235708872d" title="Indique si une chaîne se termine par une certaine autre chaîne (suffixe)." alt="" coords="108,137,201,167"/><area shape="rect" id="node5" href="projet_8c.html#abe9732818bf9189c734f2b4fc979a64b" title="Détermine le plus petit rectangle contenant l&#39;intégralité des pixels formant le texte." alt="" coords="288,57,376,87"/><area shape="rect" id="node15" href="projet_8c.html#ab03a7fb3517aa7ea2061e49543038506" title="Crée une copie rognée d&#39;une image (DonneesImageRGB) à une zone donnée." alt="" coords="253,111,411,140"/><area shape="rect" id="node7" href="projet_8c.html#af44cb7c9123d823447add912cef4712f" title="Teste si les couleurs RGB en paramètres sont égales." alt="" coords="459,5,573,35"/><area shape="rect" id="node9" href="projet_8c.html#a96ff91afd8ebc974f4a6365fb9d7bef1" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon ses coordonées." alt="" coords="475,59,557,88"/><area shape="rect" id="node11" href="projet_8c.html#a497be886110dddd526cf5b01b0c6bb71" title="Convertit des coordonées (x,y) en indice (index du tableau de données de l&#39;image RGB)" alt="" coords="623,111,756,140"/><area shape="rect" id="node13" href="projet_8c.html#ab3d10ec2e7a27ae13da109343210f55d" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon son index." alt="" coords="645,57,733,87"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8b4d5ddbaa4460b2b418d9931c80415"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_mot.html">Mot</a>** newTabMots </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise et alloue un tableau de mots. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Aucun</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Pointeur vers le tableau de structures </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_ac8b4d5ddbaa4460b2b418d9931c80415_icgraph.png" border="0" usemap="#projet_8c_ac8b4d5ddbaa4460b2b418d9931c80415_icgraph" alt=""/></div>
+<map name="projet_8c_ac8b4d5ddbaa4460b2b418d9931c80415_icgraph" id="projet_8c_ac8b4d5ddbaa4460b2b418d9931c80415_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="152,5,283,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8eabd18099e8d0bc447d01f6ab731011"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void paintBouton </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_bouton.html">Bouton</a>&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dessine un bouton. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>le bouton à dessiner. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a8eabd18099e8d0bc447d01f6ab731011_cgraph.png" border="0" usemap="#projet_8c_a8eabd18099e8d0bc447d01f6ab731011_cgraph" alt=""/></div>
+<map name="projet_8c_a8eabd18099e8d0bc447d01f6ab731011_cgraph" id="projet_8c_a8eabd18099e8d0bc447d01f6ab731011_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#a69f5e0e04dc084dcfd8f11da497290d8" title="Dessine un rectangle vide défini par ses sommets haut&#45;gauche et bas&#45;droit." alt="" coords="145,5,223,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a8eabd18099e8d0bc447d01f6ab731011_icgraph.png" border="0" usemap="#projet_8c_a8eabd18099e8d0bc447d01f6ab731011_icgraph" alt=""/></div>
+<map name="projet_8c_a8eabd18099e8d0bc447d01f6ab731011_icgraph" id="projet_8c_a8eabd18099e8d0bc447d01f6ab731011_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="144,5,275,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acec0a4945773204a14c4143e7045af4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int quick_select </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renvoie la médiane du tableau de valeur donnée. </p>
+<dl class="section note"><dt>Note</dt><dd>from the public domain source code on <a href="http://ndevilla.free.fr/median/median/">http://ndevilla.free.fr/median/median/</a> </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>Le tableau de valeurs </td></tr>
+    <tr><td class="paramname">n</td><td>le nombre d'éléments du tableau <em>arr</em> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>la médiane du tableau </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_acec0a4945773204a14c4143e7045af4b_icgraph.png" border="0" usemap="#projet_8c_acec0a4945773204a14c4143e7045af4b_icgraph" alt=""/></div>
+<map name="projet_8c_acec0a4945773204a14c4143e7045af4b_icgraph" id="projet_8c_acec0a4945773204a14c4143e7045af4b_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#a59cb7bd568b148ea96186113c013b595" title="Effectue le prétraitement de l&#39;image à analyser en améliorant certains de ses aspects." alt="" coords="149,32,253,61"/><area shape="rect" id="node5" href="projet_8h.html#a8a5d8b65cc8be60c9ccf4ec4eb518051" title="separateLetters" alt="" coords="301,5,413,35"/><area shape="rect" id="node7" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="461,32,592,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a46361527703469a1c2e177853cbb0094"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void quickSort </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa706756cb0a7d118ed0e9d9c660b74d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DonneesImageRGB* resizedCopy </td>
+          <td>(</td>
+          <td class="paramtype">DonneesImageRGB *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>newWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>newHeight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une copie redimensionnée d'une image (DonneesImageRGB) à des dimensions données. </p>
+<p>Crée une copie redimensionnée d'une image source (DonneesImageRGB) à des dimensions (largeur et hauteur) données. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>L'image source </td></tr>
+    <tr><td class="paramname">newWidth</td><td>La largeur de la nouvelle image. </td></tr>
+    <tr><td class="paramname">newHeight</td><td>Le hauteur de la nouvelle image. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>pointeur vers la nouvelle image </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_aa706756cb0a7d118ed0e9d9c660b74d5_icgraph.png" border="0" usemap="#projet_8c_aa706756cb0a7d118ed0e9d9c660b74d5_icgraph" alt=""/></div>
+<map name="projet_8c_aa706756cb0a7d118ed0e9d9c660b74d5_icgraph" id="projet_8c_aa706756cb0a7d118ed0e9d9c660b74d5_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="149,5,280,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5fd1e6347eda0b248ac5e5269fc32b21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DonneesImageRGB* rotateImage </td>
+          <td>(</td>
+          <td class="paramtype">DonneesImageRGB *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>angle_degre</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_couleur.html">Couleur</a>&#160;</td>
+          <td class="paramname"><em>couleurFond</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une copie de l'image source (DonneesImageRGB) affectée d'une rotation d'un angle donné. </p>
+<p>Crée une copie de l'image source (DonneesImageRGB) affectée d'une rotation d'un angle précisé (en degré). Les zones "vides" sont colorées de la couleur précisée. </p>
+<dl class="section note"><dt>Note</dt><dd>Attention, les dimensions de la nouvelle image ne sont pas égales à celles de l'image source (sauf pour une rotation de 180°). </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>L'image source </td></tr>
+    <tr><td class="paramname">angle_degre</td><td>L'angle de rotation en degré. (La rotation s'effectue dans le sens anti-trigonométrique). </td></tr>
+    <tr><td class="paramname">couleurFond</td><td>La couleur qui va remplacer les zones vides si besoin. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>pointeur vers la nouvelle image </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a5fd1e6347eda0b248ac5e5269fc32b21_cgraph.png" border="0" usemap="#projet_8c_a5fd1e6347eda0b248ac5e5269fc32b21_cgraph" alt=""/></div>
+<map name="projet_8c_a5fd1e6347eda0b248ac5e5269fc32b21_cgraph" id="projet_8c_a5fd1e6347eda0b248ac5e5269fc32b21_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#a96ff91afd8ebc974f4a6365fb9d7bef1" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon ses coordonées." alt="" coords="145,32,228,61"/><area shape="rect" id="node5" href="projet_8c.html#a497be886110dddd526cf5b01b0c6bb71" title="Convertit des coordonées (x,y) en indice (index du tableau de données de l&#39;image RGB)" alt="" coords="279,5,412,35"/><area shape="rect" id="node7" href="projet_8c.html#ab3d10ec2e7a27ae13da109343210f55d" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon son index." alt="" coords="301,59,389,88"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a5fd1e6347eda0b248ac5e5269fc32b21_icgraph.png" border="0" usemap="#projet_8c_a5fd1e6347eda0b248ac5e5269fc32b21_icgraph" alt=""/></div>
+<map name="projet_8c_a5fd1e6347eda0b248ac5e5269fc32b21_icgraph" id="projet_8c_a5fd1e6347eda0b248ac5e5269fc32b21_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#ac18d865dd505d2097a8542c58e4f1706" title="Détermine le meilleur angle de rotation d&#39;une image pour &quot;horizontaliser&quot; au mieux le texte à reconna..." alt="" coords="145,5,247,35"/><area shape="rect" id="node5" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="296,32,427,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8a5d8b65cc8be60c9ccf4ec4eb518051"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_lettre.html">Lettre</a>* separateLetters </td>
+          <td>(</td>
+          <td class="paramtype">DonneesImageRGB *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_couleur.html">Couleur</a>&#160;</td>
+          <td class="paramname"><em>couleurTexte</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_couleur.html">Couleur</a>&#160;</td>
+          <td class="paramname"><em>couleurFond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_mot.html">Mot</a> **&#160;</td>
+          <td class="paramname"><em>results</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>nbrDeLettres</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>L'image source </td></tr>
+    <tr><td class="paramname">couleurTexte</td><td>La couleur du texte dans l'image </td></tr>
+    <tr><td class="paramname">couleurFond</td><td>La couleur du fond dans l'image </td></tr>
+    <tr><td class="paramname">results</td><td>Tableau de mots utilisé pour obtenir les lettres etc. </td></tr>
+    <tr><td class="paramname">nbrDeLettres</td><td>Le nombre, au total, de lettres déterminé </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le tableau des lettres, séparées. </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a8a5d8b65cc8be60c9ccf4ec4eb518051_cgraph.png" border="0" usemap="#projet_8c_a8a5d8b65cc8be60c9ccf4ec4eb518051_cgraph" alt=""/></div>
+<map name="projet_8c_a8a5d8b65cc8be60c9ccf4ec4eb518051_cgraph" id="projet_8c_a8a5d8b65cc8be60c9ccf4ec4eb518051_cgraph">
+<area shape="rect" id="node3" href="projet_8c.html#ab03a7fb3517aa7ea2061e49543038506" title="Crée une copie rognée d&#39;une image (DonneesImageRGB) à une zone donnée." alt="" coords="165,5,323,35"/><area shape="rect" id="node7" href="projet_8c.html#a59cb7bd568b148ea96186113c013b595" title="Effectue le prétraitement de l&#39;image à analyser en améliorant certains de ses aspects." alt="" coords="192,83,296,112"/><area shape="rect" id="node17" href="projet_8c.html#abe9732818bf9189c734f2b4fc979a64b" title="Détermine le plus petit rectangle contenant l&#39;intégralité des pixels formant le texte." alt="" coords="200,136,288,165"/><area shape="rect" id="node5" href="projet_8c.html#a497be886110dddd526cf5b01b0c6bb71" title="Convertit des coordonées (x,y) en indice (index du tableau de données de l&#39;image RGB)" alt="" coords="535,31,668,60"/><area shape="rect" id="node9" href="projet_8c.html#a96ff91afd8ebc974f4a6365fb9d7bef1" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon ses coordonées." alt="" coords="387,136,469,165"/><area shape="rect" id="node15" href="projet_8c.html#acec0a4945773204a14c4143e7045af4b" title="Renvoie la médiane du tableau de valeur donnée." alt="" coords="381,83,475,112"/><area shape="rect" id="node12" href="projet_8c.html#ab3d10ec2e7a27ae13da109343210f55d" title="Permet d&#39;obtenir la couleur d&#39;un pixel d&#39;une image selon son index." alt="" coords="557,136,645,165"/><area shape="rect" id="node19" href="projet_8c.html#af44cb7c9123d823447add912cef4712f" title="Teste si les couleurs RGB en paramètres sont égales." alt="" coords="371,189,485,219"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a8a5d8b65cc8be60c9ccf4ec4eb518051_icgraph.png" border="0" usemap="#projet_8c_a8a5d8b65cc8be60c9ccf4ec4eb518051_icgraph" alt=""/></div>
+<map name="projet_8c_a8a5d8b65cc8be60c9ccf4ec4eb518051_icgraph" id="projet_8c_a8a5d8b65cc8be60c9ccf4ec4eb518051_icgraph">
+<area shape="rect" id="node3" href="projet_8h.html#af99bca1dd29e2d28d9aa01ae22400f05" title="Fonction de gestion des evenements du système graphique." alt="" coords="165,5,296,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e6055fa50e77005c009ba235708872d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int strEndsWith </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>suffix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indique si une chaîne se termine par une certaine autre chaîne (suffixe). </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>(pointeur vers) la chaîne complète </td></tr>
+    <tr><td class="paramname">suffix</td><td>(pointeur vers) la chaîne du suffixe </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un <em>int</em> jouant le rôle de booléen (1 si vrai ou 0 si faux). </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="projet_8c_a3e6055fa50e77005c009ba235708872d_icgraph.png" border="0" usemap="#projet_8c_a3e6055fa50e77005c009ba235708872d_icgraph" alt=""/></div>
+<map name="projet_8c_a3e6055fa50e77005c009ba235708872d_icgraph" id="projet_8c_a3e6055fa50e77005c009ba235708872d_icgraph">
+<area shape="rect" id="node3" href="projet_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="149,5,200,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a class="anchor" id="a2b675e689aaa5ab93beb6e53024efd1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_lettre_police.html">LettrePolice</a>* lettresArial = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ensemble des lettres de la police Arial. Allocation faite dans <a class="el" href="projet_8c.html#a5ac4e8464d47f8e25335f72059802cc6" title="Initialise et alloue un tableau de structure LettrePolice avec les caractères de la police Arial...">initPoliceArial()</a>, appelé dans le <a class="el" href="projet_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="aafa4cbb12171220520438cbcedc11115"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char nomFichier[75]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Chaîne globale représentant le nom du fichier image .bmp à charger. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="projet_8c.html">projet.c</a></li>
+    <li class="footer">Généré le Samedi Janvier 26 2013 20:06:13 pour Reconnaissance matricielle de caractères par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
+  </ul>
+</div>
+</body>
+</html>

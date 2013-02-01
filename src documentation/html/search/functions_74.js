@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['transformeenmajuscule',['transformeEnMajuscule',['../spell_check_8c.html#a7b6b58412dafc82e44c94031998918be',1,'transformeEnMajuscule(char *maChaine):&#160;spellCheck.c'],['../spell_check_8h.html#a7b6b58412dafc82e44c94031998918be',1,'transformeEnMajuscule(char *maChaine):&#160;spellCheck.c']]],
+  ['transformeenminuscule',['transformeEnMinuscule',['../spell_check_8c.html#a4bc21b6d6d25bcbf5f13aeda765d1d89',1,'transformeEnMinuscule(char *maChaine):&#160;spellCheck.c'],['../spell_check_8h.html#a4bc21b6d6d25bcbf5f13aeda765d1d89',1,'transformeEnMinuscule(char *maChaine):&#160;spellCheck.c']]],
+  ['transformeenminusculesanstoucher',['transformeEnMinusculeSansToucher',['../spell_check_8c.html#aca48e1e19fddf6be0618a50e029869d5',1,'transformeEnMinusculeSansToucher(const char *maChaine):&#160;spellCheck.c'],['../spell_check_8h.html#aca48e1e19fddf6be0618a50e029869d5',1,'transformeEnMinusculeSansToucher(const char *maChaine):&#160;spellCheck.c']]],
+  ['transformeenmode',['TransformeEnMode',['../spell_check_8c.html#a0c035faa0dc2573278af5837a78d393a',1,'TransformeEnMode(char *maChaine, int Mode):&#160;spellCheck.c'],['../spell_check_8h.html#a0c035faa0dc2573278af5837a78d393a',1,'TransformeEnMode(char *maChaine, int Mode):&#160;spellCheck.c']]],
+  ['transformeenpremierelettremajuscule',['transformeEnPremiereLettreMajuscule',['../spell_check_8c.html#a7bc509fffa72c3c1239a175b9fb2c9b1',1,'transformeEnPremiereLettreMajuscule(char *maChaine):&#160;spellCheck.c'],['../spell_check_8h.html#a7bc509fffa72c3c1239a175b9fb2c9b1',1,'transformeEnPremiereLettreMajuscule(char *maChaine):&#160;spellCheck.c']]]
+];

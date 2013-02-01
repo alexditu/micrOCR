@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Reconnaissance matricielle de caractères:  Fichier source de ESLib.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Reconnaissance matricielle de caractères
+   &#160;<span id="projectnumber">1.5</span>
+   </div>
+   <div id="projectbrief">Projet d&#39;algo 2012-2013, Groupe B2 - Reconnaissance matricielle de caractères</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('_e_s_lib_8h.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">ESLib.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_e_s_lib_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/* Veuillez reporter tout commentaire a ghislain.oudinet@isen.fr */</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="comment">/*</span>
+<a name="l00004"></a>00004 <span class="comment"></span>
+<a name="l00005"></a>00005 <span class="comment">        Version 1.9 : ajout de tempsReel()</span>
+<a name="l00006"></a>00006 <span class="comment">        Version 1.8 : ajout de valeurIntervalleZeroUn pour sortir une valeur</span>
+<a name="l00007"></a>00007 <span class="comment">                aleatoire entre 0 et 1 inclus</span>
+<a name="l00008"></a>00008 <span class="comment">        Version 1.5 : lisPrecision rendue publique</span>
+<a name="l00009"></a>00009 <span class="comment">        Version 1.1 : ajout de lisChaine_deTaille</span>
+<a name="l00010"></a>00010 <span class="comment">*/</span>
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 <span class="preprocessor">#ifndef ESLIB_H</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define ESLIB_H</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span>
+<a name="l00015"></a>00015 <span class="comment">/* Lis une valeur entiere entree au clavier et la renvoie */</span>
+<a name="l00016"></a>00016 <span class="keywordtype">int</span> <a class="code" href="_e_s_lib_8h.html#a5ebb165deecbeb1383462eda940e6d65">lisEntier</a>(<span class="keywordtype">void</span>);
+<a name="l00017"></a>00017 
+<a name="l00018"></a>00018 <span class="comment">/* Lis une valeur flottante entree au clavier et la renvoie */</span>
+<a name="l00019"></a>00019 <span class="keywordtype">float</span> <a class="code" href="_e_s_lib_8h.html#a770f015caccf7cd6e700f7155b58337a">lisFlottant</a>(<span class="keywordtype">void</span>);
+<a name="l00020"></a>00020 
+<a name="l00021"></a>00021 <span class="comment">/* Lis un caractere au clavier et le renvoie */</span>
+<a name="l00022"></a>00022 <span class="keywordtype">char</span> <a class="code" href="_e_s_lib_8h.html#a13b06afb82894c4ef71b31d2b9cb9819">lisCaractere</a>(<span class="keywordtype">void</span>);
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024 <span class="comment">/* Lis une chaine de caracteres de longueur donnee */</span>
+<a name="l00025"></a>00025 <span class="keywordtype">void</span> <a class="code" href="_e_s_lib_8h.html#a608b3ca2fd733a45d9a277c3ce2f4ef9">lisChaine_deTaille</a>(<span class="keywordtype">char</span> *chaine, <span class="keywordtype">int</span> taille);
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027 <span class="comment">/* Ecris une chaine de caracteres sur l&#39;ecran */</span>
+<a name="l00028"></a>00028 <span class="keywordtype">void</span> <a class="code" href="_e_s_lib_8h.html#a25ec76de3456867fef89a4f43969ccc5">ecrisChaine</a>(<span class="keywordtype">char</span> *chaine);
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 <span class="comment">/* Ecris un entier decimal sur l&#39;ecran */</span>
+<a name="l00031"></a>00031 <span class="keywordtype">void</span> <a class="code" href="_e_s_lib_8h.html#a4e28913edbf254586d386da982914735">ecrisEntier</a>(<span class="keywordtype">int</span> valeur);
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033 <span class="comment">/* Fixe le nombre de chiffres a afficher apres la virgule pour un flottant */</span>
+<a name="l00034"></a>00034 <span class="keywordtype">void</span> <a class="code" href="_e_s_lib_8h.html#a3ea7e8305b004969812e03502965acdc">fixePrecision</a>(<span class="keywordtype">int</span> n);
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036 <span class="comment">/* Lis le nombre de chiffres a afficher apres la virgule pour un flottant */</span>
+<a name="l00037"></a>00037 <span class="keywordtype">int</span> <a class="code" href="_e_s_lib_8h.html#ade6dd98047a91ab80e40f50783e69ee7">lisPrecision</a>(<span class="keywordtype">void</span>);
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039 <span class="comment">/* Ecris un flottant sur l&#39;ecran */</span>
+<a name="l00040"></a>00040 <span class="keywordtype">void</span> <a class="code" href="_e_s_lib_8h.html#a9d4e31c2bb96c682fc2d3e436f6f1644">ecrisFlottant</a>(<span class="keywordtype">float</span> valeur);
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 <span class="comment">/* Ecris un caractere sur l&#39;ecran */</span>
+<a name="l00043"></a>00043 <span class="keywordtype">void</span> <a class="code" href="_e_s_lib_8h.html#ac6cc1715a1b6b9a58ac5d7a6dba5525c">ecrisCaractere</a>(<span class="keywordtype">char</span> valeur);
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045 <span class="comment">/* Insere une tabulation */</span>
+<a name="l00046"></a>00046 <span class="keywordtype">void</span> <a class="code" href="_e_s_lib_8h.html#ac7211c0f72b47bf68bfd5f4664432afc">tabulation</a>(<span class="keywordtype">void</span>);
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048 <span class="comment">/* Passe a la ligne suivante */</span>
+<a name="l00049"></a>00049 <span class="keywordtype">void</span> <a class="code" href="_e_s_lib_8h.html#ab1be9feec4a4e9c19136dd82ce8fa0e5">sautDeLigne</a>(<span class="keywordtype">void</span>);
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 <span class="comment">/* Efface l&#39;ecran */</span>
+<a name="l00052"></a>00052 <span class="keywordtype">void</span> <a class="code" href="_e_s_lib_8h.html#a2e7da22612a7121aa9db08a2433d2275">effaceEcran</a>(<span class="keywordtype">void</span>);
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 <span class="comment">/* Renvoie une information temps reel */</span>
+<a name="l00055"></a>00055 <span class="keywordtype">double</span> <a class="code" href="_e_s_lib_8h.html#aec2fef3e69e3cf70aedf40aa0c29992d">tempsReel</a>(<span class="keywordtype">void</span>);
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057 <span class="comment">/* Renvoie le temps CPU en secondes relatif au programme */</span>
+<a name="l00058"></a>00058 <span class="keywordtype">double</span> <a class="code" href="_e_s_lib_8h.html#a241776f3ace337fc7ee13cd359138644">tempsCPU</a>(<span class="keywordtype">void</span>);
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060 <span class="comment">/* Initialise le generateur aleatoire avec la valeur passee en parametre */</span>
+<a name="l00061"></a>00061 <span class="keywordtype">void</span> <a class="code" href="_e_s_lib_8h.html#af03e0cf01f52fb6ef6f914b6915c366e">initialiseValeurAleatoire</a>(<span class="keywordtype">float</span> valeur);
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063 <span class="comment">/* Renvoie une valeur aleatoire comprise entre 0 inclus et 1 exclu */</span>
+<a name="l00064"></a>00064 <span class="keywordtype">float</span> <a class="code" href="_e_s_lib_8h.html#a69d275c4f379f632aca6a51c41625014">valeurAleatoire</a>(<span class="keywordtype">void</span>);
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066 <span class="comment">/* Renvoie une valeur aleatoire comprise entre 0 inclus et 1 inclus */</span>
+<a name="l00067"></a>00067 <span class="keywordtype">float</span> <a class="code" href="_e_s_lib_8h.html#a3f31be52bca6fe6dd738f9af4bbd6dc9">valeurIntervalleZeroUn</a>(<span class="keywordtype">void</span>);
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="_e_s_lib_8h.html">ESLib.h</a>      </li>
+
+    <li class="footer">Généré le Mercredi Décembre 19 2012 02:02:14 pour Reconnaissance matricielle de caractères par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

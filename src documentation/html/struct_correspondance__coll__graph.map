@@ -1,0 +1,5 @@
+<map id="Correspondance" name="Correspondance">
+<area shape="rect" id="node2" href="$struct_lettre_police.html" title="Définit une &quot;lettre&quot; typique d&#39;une police, avec notemment son ratio largeur/hauteur et ses images a..." alt="" coords="5,101,96,131"/>
+<area shape="rect" id="node4" href="$structimage_matricielle.html" title="Représente une image matricielle binaire." alt="" coords="44,5,159,35"/>
+<area shape="rect" id="node6" href="$struct_lettre.html" title="Définit une &quot;lettre&quot; par son éventuelle position en x, son caractère et ses images associées..." alt="" coords="121,101,175,131"/>
+</map>

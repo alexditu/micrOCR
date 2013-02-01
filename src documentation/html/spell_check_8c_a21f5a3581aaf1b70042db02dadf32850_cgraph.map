@@ -1,0 +1,21 @@
+<map id="spellCheck" name="spellCheck">
+<area shape="rect" id="node3" href="$spell_check_8c.html#a5b18e9add1432accc49934d536b8de39" title="OuvreDictionnaire" alt="" coords="175,59,300,88"/>
+<area shape="rect" id="node9" href="$spell_8c.html#a73f5320614449925020c563a2ec8c0ee" title="initSpellCheck" alt="" coords="184,112,291,141"/>
+<area shape="rect" id="node11" href="$spell_check_8c.html#a03cd841d09ff12bfe755aae69781bf23" title="copieChaineCaractere" alt="" coords="400,299,549,328"/>
+<area shape="rect" id="node13" href="$spell_check_8c.html#ac7f68bdcc0bbb1bc652214dac2fed71c" title="estUnNombre" alt="" coords="187,219,288,248"/>
+<area shape="rect" id="node15" href="$spell_check_8c.html#a2b45c492e7e9c250eb8718b51a8cc4dd" title="GetMode" alt="" coords="200,165,275,195"/>
+<area shape="rect" id="node23" href="$spell_check_8c.html#a4bc21b6d6d25bcbf5f13aeda765d1d89" title="transformeEnMinuscule" alt="" coords="396,519,553,548"/>
+<area shape="rect" id="node25" href="$spell_check_8c.html#a36663a990d2ffc8a5b10220f59d36a9c" title="DicoContient" alt="" coords="188,376,287,405"/>
+<area shape="rect" id="node27" href="$spell_8c.html#a96087d7ed6e749aa5f209286d88e549d" title="correct" alt="" coords="207,429,268,459"/>
+<area shape="rect" id="node29" href="$spell_check_8c.html#a603ba0c4a9641d8acb7faba1bf8f632b" title="DemandeCorrectionManuelle" alt="" coords="143,272,332,301"/>
+<area shape="rect" id="node32" href="$spell_check_8c.html#a531c6f8bad58ee3afe7da93d087bc6f1" title="DemandeOuiouNON" alt="" coords="167,533,308,563"/>
+<area shape="rect" id="node34" href="$spell_check_8c.html#afd7e604e350921847cbd4c1d03a9f6a6" title="chercheEtRemplace" alt="" coords="168,587,307,616"/>
+<area shape="rect" id="node36" href="$spell_check_8c.html#a0c035faa0dc2573278af5837a78d393a" title="TransformeEnMode" alt="" coords="169,640,305,669"/>
+<area shape="rect" id="node5" href="$spell_check_8c.html#a7938cf20e4d7e24f90cee4a6d58c7223" title="LisNombreDeMots" alt="" coords="409,59,540,88"/>
+<area shape="rect" id="node7" href="$spell_check_8c.html#acdd8403f3258dd6df16961514201f566" title="LisMot" alt="" coords="444,5,505,35"/>
+<area shape="rect" id="node17" href="$spell_check_8c.html#afdf1fd26f6fdf23a91393ab4fb301867" title="estPremiereLettreMaj" alt="" coords="401,112,548,141"/>
+<area shape="rect" id="node19" href="$spell_check_8c.html#a60d9e4088936a2b0230dc91ab911b4a7" title="estEnMaj" alt="" coords="436,165,513,195"/>
+<area shape="rect" id="node21" href="$spell_check_8c.html#a4fec11d4ba6c90099603d4ced0cd7870" title="estEnMin" alt="" coords="436,219,513,248"/>
+<area shape="rect" id="node38" href="$spell_check_8c.html#a7bc509fffa72c3c1239a175b9fb2c9b1" title="transformeEnPremiereLettre\lMajuscule" alt="" coords="383,662,567,709"/>
+<area shape="rect" id="node40" href="$spell_check_8c.html#a7b6b58412dafc82e44c94031998918be" title="transformeEnMajuscule" alt="" coords="396,609,553,639"/>
+</map>

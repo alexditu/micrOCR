@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Reconnaissance matricielle de caractères:  Fichier source de GfxLib.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Reconnaissance matricielle de caractères
+   &#160;<span id="projectnumber">1.5</span>
+   </div>
+   <div id="projectbrief">Projet d&#39;algo 2012-2013, Groupe B2 - Reconnaissance matricielle de caractères</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('_gfx_lib_8h.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">GfxLib.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_gfx_lib_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">// Veuillez reporter tout commentaire a ghislain.oudinet@isen.fr</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="comment">//      Version 3.1 (19/12/2009) : modification de toucheShiftAppuyee, toucheCtrlAppuyee et toucheAltAppuyee pour qu&#39;elles</span>
+<a name="l00004"></a>00004 <span class="comment">//      renvoient l&#39;etat en temps reel, et plus seulement lors du dernier evenement concerne (permet plus de possibilites lors d&#39;animations)</span>
+<a name="l00005"></a>00005 <span class="comment">//      homogeneisation de l&#39;ecriture du code du programme principal avec l&#39;equivalence de initialisationGLUT</span>
+<a name="l00006"></a>00006 <span class="comment">//              et initialiationGDI, et utilisation de _main sous Win32 au lieu de main</span>
+<a name="l00007"></a>00007 <span class="comment">//              ajout de la fonction messageErreur</span>
+<a name="l00008"></a>00008 <span class="comment">//</span>
+<a name="l00009"></a>00009 <span class="comment">//      Version 3 (02/11/2009) : portage de la bibliotheque sous une forme specifique (mais plus limitee) Windows uniquement</span>
+<a name="l00010"></a>00010 <span class="comment">//</span>
+<a name="l00011"></a>00011 <span class="comment">//      Version 2.6 (12/02/2009) : utilisation d&#39;un GL_QUADS dans la fonction rectangle au lieu de glRectf</span>
+<a name="l00012"></a>00012 <span class="comment">//              ajout de la fonction BVR2ARVB</span>
+<a name="l00013"></a>00013 <span class="comment">//              ajout de la fonction BVR2ABVR</span>
+<a name="l00014"></a>00014 <span class="comment">//              ajout de la fonction creeTexture2D</span>
+<a name="l00015"></a>00015 <span class="comment">//              ajout de la fonction rectangleSelonTexture</span>
+<a name="l00016"></a>00016 <span class="comment">//              ajout de la fonction libereTexture</span>
+<a name="l00017"></a>00017 <span class="comment">//</span>
+<a name="l00018"></a>00018 <span class="comment">//      Version 2.5.1 (28/03/2008) : ajout de l&#39;opacite dans le choix de la couleur</span>
+<a name="l00019"></a>00019 <span class="comment">//        courante, avec la fonction couleurCouranteOpaque</span>
+<a name="l00020"></a>00020 <span class="comment">//</span>
+<a name="l00021"></a>00021 <span class="comment">//      Version 2.5 (21/08/2007) : ajout de la gestion des touches speciales du clavier</span>
+<a name="l00022"></a>00022 <span class="comment">//              ajout de ecrisImageARVB</span>
+<a name="l00023"></a>00023 <span class="comment">//</span>
+<a name="l00024"></a>00024 <span class="comment">//      Version 2.4.1 (23/01/07) : ajout de materiauLuminescent</span>
+<a name="l00025"></a>00025 <span class="comment">//</span>
+<a name="l00026"></a>00026 <span class="comment">//      Version 2.4 (16/01/2007) : ajout de la gestion du message Redimensionnement</span>
+<a name="l00027"></a>00027 <span class="comment">//              ajout des fonctions largeurFenetre et hauteurFenetre</span>
+<a name="l00028"></a>00028 <span class="comment">//              ajout de modifieFonctionDeplacementPassifSouris et de activeGestionDeplacementPassifSouris</span>
+<a name="l00029"></a>00029 <span class="comment">//              ajout de fonctionDeplacementPassifSouris</span>
+<a name="l00030"></a>00030 <span class="comment">//              ajout de modePleinEcran et de redimensionneFenetre</span>
+<a name="l00031"></a>00031 <span class="comment">//</span>
+<a name="l00032"></a>00032 <span class="comment">//      Version 2.3 (23/10/2006) : ajout des fonctions Timer et du redessin programme</span>
+<a name="l00033"></a>00033 <span class="comment">//      </span>
+<a name="l00034"></a>00034 <span class="comment">//      Version 2.2 (30/06/2006) : prepareFenetreGraphique fait cycler la position</span>
+<a name="l00035"></a>00035 <span class="comment">//              de depart des fenetres</span>
+<a name="l00036"></a>00036 <span class="comment">//      </span>
+<a name="l00037"></a>00037 <span class="comment">//      Version 2.1 : main est sorti de la bibliotheque, pour des besoins pedagogiques,</span>
+<a name="l00038"></a>00038 <span class="comment">//              cassant la compatibilite avec les anciens codes. Cependant, on peut reintegrer</span>
+<a name="l00039"></a>00039 <span class="comment">//              le main manquant dans chaque programme, a partir du code suivant :</span>
+<a name="l00040"></a>00040 <span class="comment">//int main(int argc, char **argv)</span>
+<a name="l00041"></a>00041 <span class="comment">//{     initialiseGLUT(argc, argv);</span>
+<a name="l00042"></a>00042 <span class="comment">//      gfxMain();</span>
+<a name="l00043"></a>00043 <span class="comment">//      return 0;}</span>
+<a name="l00044"></a>00044 <span class="comment">//</span>
+<a name="l00045"></a>00045 <span class="comment">//      Version 2.0 (29/01/06) : ajout de la gestion de la 3D</span>
+<a name="l00046"></a>00046 <span class="comment">//              modification de fonctionRedimensionnement, ajout de sAngleDeVue et sVisualisationMode2D</span>
+<a name="l00047"></a>00047 <span class="comment">//              ajout de prepareFenetre_En_DeTaille</span>
+<a name="l00048"></a>00048 <span class="comment">//              ajout de passeEnMode3D, passeEnMode2D</span>
+<a name="l00049"></a>00049 <span class="comment">//              definitions de Point3DGfx et de Vecteur3DGfx</span>
+<a name="l00050"></a>00050 <span class="comment">//              ajout de fixeLuminositeAmbiante, lumiereDiffuse_Couleur_En et placeObservateur</span>
+<a name="l00051"></a>00051 <span class="comment">//              ajout de point3D, ligne3D et triangle3D</span>
+<a name="l00052"></a>00052 <span class="comment">//              ajout de empileTranslation, empileRotationSelonX, empileRotationSelonY et</span>
+<a name="l00053"></a>00053 <span class="comment">//                      empileRotationSelonZ</span>
+<a name="l00054"></a>00054 <span class="comment">//</span>
+<a name="l00055"></a>00055 <span class="comment">//      Version 1.2 : ajout de fonctions d&#39;affichage et de lecture ecran d&#39;images bitmap</span>
+<a name="l00056"></a>00056 <span class="comment">//</span>
+<a name="l00057"></a>00057 <span class="comment">//      Version 1.1.1 : correction de rafraichitFenetre en rafraichisFenetre</span>
+<a name="l00058"></a>00058 <span class="comment">//</span>
+<a name="l00059"></a>00059 <span class="comment">//      Version 1.1 : affichage des erreurs OpenGL dans fonctionAffichage</span>
+<a name="l00060"></a>00060 <span class="comment">//              afficheImage en cours de developpement</span>
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062 <span class="preprocessor">#ifndef GFXLIB_H</span>
+<a name="l00063"></a>00063 <span class="preprocessor"></span><span class="preprocessor">#define GFXLIB_H</span>
+<a name="l00064"></a>00064 <span class="preprocessor"></span>
+<a name="l00065"></a>00065 <span class="preprocessor">#ifdef _WIN32</span>
+<a name="l00066"></a>00066 <span class="preprocessor"></span><span class="preprocessor">#include &lt;windows.h&gt;</span>
+<a name="l00067"></a>00067 <span class="preprocessor">#endif</span>
+<a name="l00068"></a>00068 <span class="preprocessor"></span>
+<a name="l00069"></a>00069 <span class="preprocessor">#include &lt;stdbool.h&gt;</span>
+<a name="l00070"></a>00070 <span class="comment">/*#define bool int</span>
+<a name="l00071"></a>00071 <span class="comment">#define true (0==0)</span>
+<a name="l00072"></a>00072 <span class="comment">#define false (!true)*/</span>
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074 
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076 <span class="comment">/* Partie publique basique</span>
+<a name="l00077"></a>00077 <span class="comment">   Cette partie est relative a toutes les informations utiles pour</span>
+<a name="l00078"></a>00078 <span class="comment">   mettre en place simplement un environnement graphique portable */</span>
+<a name="l00079"></a>00079    
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081 
+<a name="l00082"></a>00082 
+<a name="l00083"></a><a class="code" href="_gfx_lib_8h.html#a075d46fafd3b5a6a9c0d925fe4385bd8a0ce5649a8293ef335904be5787d30d80">00083</a> <span class="keyword">typedef</span> <span class="keyword">enum</span> {<a class="code" href="_gfx_lib_8h.html#a075d46fafd3b5a6a9c0d925fe4385bd8adc08cebdb91f4885280603f0460cfbd0">Inactivite</a>, <a class="code" href="_gfx_lib_8h.html#a075d46fafd3b5a6a9c0d925fe4385bd8a09d3df72b6b44bb191d27e1bde6c71a5">Affichage</a>, <a class="code" href="_gfx_lib_8h.html#a075d46fafd3b5a6a9c0d925fe4385bd8aad397f581f5322804ec141178785a227">Clavier</a>, <a class="code" href="_gfx_lib_8h.html#a075d46fafd3b5a6a9c0d925fe4385bd8ae83ec3b7002b77363196e05c1d6128a1">ClavierSpecial</a>, <a class="code" href="_gfx_lib_8h.html#a075d46fafd3b5a6a9c0d925fe4385bd8a0ce5649a8293ef335904be5787d30d80">Souris</a>, <a class="code" href="_gfx_lib_8h.html#a075d46fafd3b5a6a9c0d925fe4385bd8a6a099d73c2ad7232f0b20bbdace93f1a">BoutonSouris</a>, <a class="code" href="_gfx_lib_8h.html#a075d46fafd3b5a6a9c0d925fe4385bd8aeb3ae26d7a1629aa0fc6c83f46306cf5">Initialisation</a>, <a class="code" href="_gfx_lib_8h.html#a075d46fafd3b5a6a9c0d925fe4385bd8a1cf647c1390125955524b97f66ddf4ff">Redimensionnement</a>}
+<a name="l00084"></a>00084         <a class="code" href="_gfx_lib_8h.html#a075d46fafd3b5a6a9c0d925fe4385bd8">EvenementGfx</a>;
+<a name="l00085"></a><a class="code" href="_gfx_lib_8h.html#acfe06041f95bdf726bac0cb1854e6431ab0dd116144fff2906d5a8b5f93599335">00085</a> <span class="keyword">typedef</span> <span class="keyword">enum</span> {<a class="code" href="_gfx_lib_8h.html#acfe06041f95bdf726bac0cb1854e6431a74c173eeeec91b717fb7ea6c73ae3c6e">GaucheAppuye</a>, <a class="code" href="_gfx_lib_8h.html#acfe06041f95bdf726bac0cb1854e6431ab0dd116144fff2906d5a8b5f93599335">GaucheRelache</a>, <a class="code" href="_gfx_lib_8h.html#acfe06041f95bdf726bac0cb1854e6431a4241c1c593b201ad982b6b3759f6d2ac">DroiteAppuye</a>, <a class="code" href="_gfx_lib_8h.html#acfe06041f95bdf726bac0cb1854e6431a836c25909dd23a0f0c6bb139598db46f">DroiteRelache</a>}
+<a name="l00086"></a>00086         <a class="code" href="_gfx_lib_8h.html#acfe06041f95bdf726bac0cb1854e6431">EtatBoutonSouris</a>;
+<a name="l00087"></a><a class="code" href="_gfx_lib_8h.html#a3b069ad5cec6474258ae85ca1872f1d6a985a3e4c5a12e7b1d13be8ecba6647a4">00087</a> <span class="keyword">typedef</span> <span class="keyword">enum</span> {<a class="code" href="_gfx_lib_8h.html#a3b069ad5cec6474258ae85ca1872f1d6a4114ea6862c6529f31e5e1b8f6280994">SuiteDePoints</a>, <a class="code" href="_gfx_lib_8h.html#a3b069ad5cec6474258ae85ca1872f1d6a04d2c9cbcfeac5a8725ca30b68d2dd21">SuiteDeLignes</a>, <a class="code" href="_gfx_lib_8h.html#a3b069ad5cec6474258ae85ca1872f1d6a985a3e4c5a12e7b1d13be8ecba6647a4">SuiteDeTriangles</a>, <a class="code" href="_gfx_lib_8h.html#a3b069ad5cec6474258ae85ca1872f1d6a5971a60a55be8b751067370a3052c4c3">SuiteDeRectangles</a>, <a class="code" href="_gfx_lib_8h.html#a3b069ad5cec6474258ae85ca1872f1d6a055a1a0d19874b5b82a92b70c78b7d69">BandeDeTriangles</a>, <a class="code" href="_gfx_lib_8h.html#a3b069ad5cec6474258ae85ca1872f1d6a92b10625eaa65afdbb74fbe919726617">BandeDeRectangles</a>}
+<a name="l00088"></a>00088         <a class="code" href="_gfx_lib_8h.html#a3b069ad5cec6474258ae85ca1872f1d6">PrimitiveGfxLib</a>;
+<a name="l00089"></a><a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4f">00089</a> <span class="keyword">typedef</span> <span class="keyword">enum</span> {<a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fa96c42996102a2e14e1748d5cbda4fd39">ToucheF1</a> = 1, <a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fa08f583451efc306478d5208c37383af8">ToucheF2</a>, <a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fa21a11a830ed6cf42f110bf4ce1a33266">ToucheF3</a>, <a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fac32ae954fd36c1cc620745bd2abff5ed">ToucheF4</a>, <a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fa8147ca899be1426267541a651015e23d">ToucheF5</a>, <a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fa9ac75cd006f671d4e4774e1bfbaad005">ToucheF6</a>, <a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fa5e15c1b9733fb8076b962eed2b31d090">ToucheF7</a>, <a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fa85fef647fa59b959b3005f61a7eef7bb">ToucheF8</a>, <a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fa4ba3740785adb9145f1257224f1e3bcf">ToucheF9</a>, <a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fa8d0dfe525dde9bc3e78b00f215983836">ToucheF10</a>, <a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fa99353cc40c75251d546dab7e23ded5cc">ToucheF11</a>, <a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fabb2b185829546ed4d1b1be3d8526e709">ToucheF12</a>,
+<a name="l00090"></a><a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fa267207253c7ab648827554df7182c768">00090</a>         <a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fa5935d7b437829a75078cd4007e2b2da0">ToucheFlecheHaut</a>, <a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fa80a2db33d5d034be67ddcd15910dbd12">ToucheFlecheBas</a>, <a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fa1a3290284ddf5ef978b2780fbfd72170">ToucheFlecheGauche</a>, <a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fae554b71a6b72a0a1ea3b7c9191429850">ToucheFlecheDroite</a>, <a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4fa267207253c7ab648827554df7182c768">ToucheNonGeree</a>} <a class="code" href="_gfx_lib_8h.html#abd0584a5869986d8bb409e5aff01aa4f">TouchesSpeciales</a>;
+<a name="l00091"></a>00091 
+<a name="l00092"></a><a class="code" href="struct_texture2_d.html">00092</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00093"></a>00093         {
+<a name="l00094"></a><a class="code" href="struct_texture2_d.html#a74f0f2591e5f65bf792b2c3c67817d78">00094</a>                 <span class="keywordtype">int</span> <a class="code" href="struct_texture2_d.html#a74f0f2591e5f65bf792b2c3c67817d78">largeur</a>; <span class="comment">// Largeur des donnees</span>
+<a name="l00095"></a><a class="code" href="struct_texture2_d.html#a5e94a2f98c16e8b6860f95c99da1c0d3">00095</a>                 <span class="keywordtype">int</span> <a class="code" href="struct_texture2_d.html#a5e94a2f98c16e8b6860f95c99da1c0d3">hauteur</a>; <span class="comment">// Hauteur des donnees</span>
+<a name="l00096"></a><a class="code" href="struct_texture2_d.html#abd733074a464ac7033c16527499dcf5f">00096</a>                 <span class="keywordtype">float</span> <a class="code" href="struct_texture2_d.html#abd733074a464ac7033c16527499dcf5f">proportionX</a>;
+<a name="l00097"></a><a class="code" href="struct_texture2_d.html#a7bcff9346f3755d656bb2e7af547b4d6">00097</a>                 <span class="keywordtype">float</span> <a class="code" href="struct_texture2_d.html#a7bcff9346f3755d656bb2e7af547b4d6">proportionY</a>;
+<a name="l00098"></a><a class="code" href="struct_texture2_d.html#a321b46072e5526a20370880ab55dc986">00098</a>                 <span class="keywordtype">int</span> *<a class="code" href="struct_texture2_d.html#a321b46072e5526a20370880ab55dc986">donnees</a>; <span class="comment">// Les donnees de la texture</span>
+<a name="l00099"></a><a class="code" href="struct_texture2_d.html#aa8b0d6b4967b52bd05bf7d45c180d6ac">00099</a>                 <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct_texture2_d.html#aa8b0d6b4967b52bd05bf7d45c180d6ac">numero</a>; <span class="comment">// L&#39;identifiant OpenGL de la texture</span>
+<a name="l00100"></a>00100         } <a class="code" href="struct_texture2_d.html">Texture2D</a>;
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102 
+<a name="l00103"></a>00103 <span class="comment">// Pour initialiser la partie graphie de la bibliotheque</span>
+<a name="l00104"></a>00104 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#a77919c20c558084b1395bd14ee07c956">initialiseGfx</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv);
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106 <span class="comment">/* Prepare une fenetre en specifiant son nom, sa largeur et sa hauteur.</span>
+<a name="l00107"></a>00107 <span class="comment">   La fenetre presente un repere orthonorme classique (premier quadrant),</span>
+<a name="l00108"></a>00108 <span class="comment">   de largeur pixels sur hauteur pixels */</span>
+<a name="l00109"></a>00109 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#ad1c3e2ebfb8722f6a3dace1bb5641ed5">prepareFenetreGraphique</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *nom, <span class="keywordtype">int</span> largeur, <span class="keywordtype">int</span> hauteur);
+<a name="l00110"></a>00110 <span class="comment">/* Lance la boucle de gestion des evenements */</span>
+<a name="l00111"></a>00111 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#ab85ca5473e5eb16809bb99c76c38f99a">lanceBoucleEvenements</a>(<span class="keywordtype">void</span>);
+<a name="l00112"></a>00112 
+<a name="l00113"></a>00113 
+<a name="l00114"></a>00114 <span class="comment">/* Fonction de gestion des evenements graphiques, a definir par l&#39;utilisateur */</span>
+<a name="l00115"></a>00115 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#af99bca1dd29e2d28d9aa01ae22400f05">gestionEvenement</a>(<a class="code" href="_gfx_lib_8h.html#a075d46fafd3b5a6a9c0d925fe4385bd8">EvenementGfx</a> evenement);
+<a name="l00116"></a>00116 
+<a name="l00117"></a>00117 
+<a name="l00118"></a>00118 
+<a name="l00119"></a>00119 <span class="comment">/* Demande la mise a jour du contenu graphique de la fenetre, en lancant un message d&#39;affichage */</span>
+<a name="l00120"></a>00120 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#aefc919256f2db3109a7af243423cbaf5">rafraichisFenetre</a>(<span class="keywordtype">void</span>);
+<a name="l00121"></a>00121 
+<a name="l00122"></a>00122 <span class="comment">/* Efface la fenetre avec la couleur donnee</span>
+<a name="l00123"></a>00123 <span class="comment">        Les composantes rouge, vert et bleu s&#39;etendent de 0 a 255 inclus */</span>
+<a name="l00124"></a>00124 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#af723b89c54aaf8073c35e7bbaf5a3acc">effaceFenetre</a>(<span class="keywordtype">int</span> rouge, <span class="keywordtype">int</span> vert, <span class="keywordtype">int</span> bleu);
+<a name="l00125"></a>00125 
+<a name="l00126"></a>00126 <span class="comment">/* Selectionne la couleur courante de dessin</span>
+<a name="l00127"></a>00127 <span class="comment">        Les composantes rouge, vert et bleu s&#39;etendent de 0 a 255 inclus */</span>
+<a name="l00128"></a>00128 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#ac1c8c83628b472d6f5525230041bd383">couleurCourante</a>(<span class="keywordtype">int</span> rouge, <span class="keywordtype">int</span> vert, <span class="keywordtype">int</span> bleu);
+<a name="l00129"></a>00129 
+<a name="l00130"></a>00130 <span class="comment">/* Definit l&#39;epaisseur de trait EN PIXELS DE LA FENETRE servant a afficher les points et les lignes */</span>
+<a name="l00131"></a>00131 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#a3eb89d1d326afff60895f36465792648">epaisseurDeTrait</a>(<span class="keywordtype">float</span> epaisseur);
+<a name="l00132"></a>00132 
+<a name="l00133"></a>00133 <span class="comment">/* Dessine un point de couleur courante aux coordonnees donnees */</span>
+<a name="l00134"></a>00134 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#a8875b37296efc9ad4a0dd27619b681ae">point</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y);
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136 <span class="comment">/* Dessine une ligne de couleur courante aux coordonnees donnees */</span>
+<a name="l00137"></a>00137 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#a96445dcd8d7ee10df4473f44a0c5bdc7">ligne</a>(<span class="keywordtype">float</span> xDepart, <span class="keywordtype">float</span> yDepart, <span class="keywordtype">float</span> xArrivee, <span class="keywordtype">float</span> yArrivee);
+<a name="l00138"></a>00138 
+<a name="l00139"></a>00139 <span class="comment">// Dessine un triangle de couleur courante aux coordonnees donnees</span>
+<a name="l00140"></a>00140 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#a6f680a180550bc7722a5a87639a3dc26">triangle</a>(<span class="keywordtype">float</span> xCoin1, <span class="keywordtype">float</span> yCoin1, <span class="keywordtype">float</span> xCoin2, <span class="keywordtype">float</span> yCoin2, <span class="keywordtype">float</span> xCoin3, <span class="keywordtype">float</span> yCoin3);
+<a name="l00141"></a>00141 
+<a name="l00142"></a>00142 <span class="comment">/* Dessine un rectangle de couleur courante aux coordonnees donnees */</span>
+<a name="l00143"></a>00143 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#ac7bfb577dc050f8ce11fcbca9eee9633">rectangle</a>(<span class="keywordtype">float</span> xCoin1, <span class="keywordtype">float</span> yCoin1, <span class="keywordtype">float</span> xCoin2, <span class="keywordtype">float</span> yCoin2);
+<a name="l00144"></a>00144 
+<a name="l00145"></a>00145 <span class="comment">/* Affiche une chaine de caracteres de taille donnee a la position specifiee */</span>
+<a name="l00146"></a>00146 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#a9013639b788d12df65e92819a544e053">afficheChaine</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *chaine, <span class="keywordtype">float</span> taille, <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y);
+<a name="l00147"></a>00147 
+<a name="l00148"></a>00148 <span class="comment">/* Renvoie l&#39;espace occupe par la chaine de caracteres de taille donnee */</span>
+<a name="l00149"></a>00149 <span class="keywordtype">float</span> <a class="code" href="_gfx_lib_8h.html#a5926ef01fd5b8162bfc5f5f9d2b3eeaf">tailleChaine</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *chaine, <span class="keywordtype">float</span> taille);
+<a name="l00150"></a>00150 
+<a name="l00151"></a>00151 <span class="comment">/* Envoie un message Affichage apres la duree specifiee */</span>
+<a name="l00152"></a>00152 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#a78174a437080c91dc0b87162518cde65">demandeRedessinDans_ms</a>(<span class="keywordtype">int</span> millisecondes);
+<a name="l00153"></a>00153 
+<a name="l00154"></a>00154 <span class="comment">// Demarre l&#39;envoi periodique de messages Affichage pour assurer un nombre</span>
+<a name="l00155"></a>00155 <span class="comment">// d&#39;images par secondes constant mais inferieur a 100</span>
+<a name="l00156"></a>00156 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#ac717f1643ee9dcc62e4bbda9d228468a">demandeAnimation_ips</a>(<span class="keywordtype">int</span> imagesParSeconde);
+<a name="l00157"></a>00157 
+<a name="l00158"></a>00158 
+<a name="l00159"></a>00159 <span class="comment">/* Lis une portion de la fenetre, couvrant largeur*hauteur et demarrant en (x, y)</span>
+<a name="l00160"></a>00160 <span class="comment">Les donnees lues sont sauvees comme une succession de valeurs B, V, R de type</span>
+<a name="l00161"></a>00161 <span class="comment">unsigned char */</span>
+<a name="l00162"></a>00162 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#a9f204ec9d826b4d2c365b96176896b23">lisImage</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> largeur, <span class="keywordtype">int</span> hauteur, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *donnees);
+<a name="l00163"></a>00163 
+<a name="l00164"></a>00164 <span class="comment">// Ecris dans la fenetre une image BVR couvrant largeur*hauteur et demarrant en (x, y) */</span>
+<a name="l00165"></a>00165 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#a300a1f45342466385f1253282eb2fc6e">ecrisImage</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> largeur, <span class="keywordtype">int</span> hauteur, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *donnees);
+<a name="l00166"></a>00166 
+<a name="l00167"></a>00167 <span class="preprocessor">#ifndef _WIN32</span>
+<a name="l00168"></a>00168 <span class="preprocessor"></span><span class="comment">// Ecris une image couvrant largeur*hauteur, demarrant en (x, y) et faite de</span>
+<a name="l00169"></a>00169 <span class="comment">// pixels ARVB (stockes dans des int little endian) dans la fenetre */</span>
+<a name="l00170"></a>00170 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#aabdfa42533597df083cd6cbc3c4d5993">ecrisImageARVB</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> largeur, <span class="keywordtype">int</span> hauteur, <span class="keyword">const</span> <span class="keywordtype">int</span> *donneesARVB);
+<a name="l00171"></a>00171 
+<a name="l00172"></a>00172 <span class="comment">// Cree une texture reutilisable de largeur et hauteur donnees, faite de pixels ABVR little endian</span>
+<a name="l00173"></a>00173 <a class="code" href="struct_texture2_d.html">Texture2D</a> *<a class="code" href="_gfx_lib_8h.html#a03721280da54f2ccd77a953f5ee8bfaa">creeTexture2D</a>(<span class="keywordtype">int</span> largeur, <span class="keywordtype">int</span> hauteur, <span class="keyword">const</span> <span class="keywordtype">int</span> *pixelsABVR);
+<a name="l00174"></a>00174 <span class="comment">// Permet de modifier les pixels de la texture prealablement definie, en donnant un nouveau tableau de pixels ABVR little endian</span>
+<a name="l00175"></a>00175 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#a8572e88c2d1ca0f3780ca0469e1aa1c9">modifieTexture2D</a>(<span class="keyword">const</span> <a class="code" href="struct_texture2_d.html">Texture2D</a> *texture, <span class="keyword">const</span> <span class="keywordtype">int</span> *pixelsABVR);
+<a name="l00176"></a>00176 <span class="comment">// Affiche la texture passee en parametre aux coordonnees fournies</span>
+<a name="l00177"></a>00177 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#a3a0d5c005455d21311cf69feb97a841e">rectangleSelonTexture</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keyword">const</span> <a class="code" href="struct_texture2_d.html">Texture2D</a> *texture);
+<a name="l00178"></a>00178 <span class="comment">// Libere les ressources associees a la gestion de la texture</span>
+<a name="l00179"></a>00179 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#a557998a4d662052d926eec34e3aea154">libereTexture</a>(<a class="code" href="struct_texture2_d.html">Texture2D</a> **texture);
+<a name="l00180"></a>00180 <span class="preprocessor">#endif</span>
+<a name="l00181"></a>00181 <span class="preprocessor"></span>
+<a name="l00182"></a>00182 
+<a name="l00183"></a>00183 <span class="comment">/* Renvoie l&#39;abscisse de souris correspondant au dernier evenement Clavier, Souris ou BoutonSouris */</span>
+<a name="l00184"></a>00184 <span class="keywordtype">int</span> <a class="code" href="_gfx_lib_8h.html#a894a8c297a5e879a4e3f53e7203ecf78">abscisseSouris</a>(<span class="keywordtype">void</span>);
+<a name="l00185"></a>00185 <span class="comment">/* Renvoie l&#39;ordonnee de souris correspondant au dernier evenement Clavier, Souris ou BoutonSouris */</span>
+<a name="l00186"></a>00186 <span class="keywordtype">int</span> <a class="code" href="_gfx_lib_8h.html#a8317a5623eface006a235cb2784c175c">ordonneeSouris</a>(<span class="keywordtype">void</span>);
+<a name="l00187"></a>00187 <span class="comment">/* Renvoie le dernier etat de bouton souris traite par l&#39;evenement BoutonSouris */</span>
+<a name="l00188"></a>00188 <a class="code" href="_gfx_lib_8h.html#acfe06041f95bdf726bac0cb1854e6431">EtatBoutonSouris</a> <a class="code" href="_gfx_lib_8h.html#aafaac40885568b337a7c6244465226a1">etatBoutonSouris</a>(<span class="keywordtype">void</span>);
+<a name="l00189"></a>00189 <span class="comment">/* Renvoie le dernier caractere clavier traite par l&#39;evenement Clavier */</span>
+<a name="l00190"></a>00190 <span class="keywordtype">char</span> <a class="code" href="_gfx_lib_8h.html#ab03e4aefb7af6924d6128d98f857205b">caractereClavier</a>(<span class="keywordtype">void</span>);
+<a name="l00191"></a>00191 <span class="comment">/* Renvoie la derniere touche speciale du clavier traitee par l&#39;evenement ClavierSpecial */</span>
+<a name="l00192"></a>00192 <span class="keywordtype">int</span> <a class="code" href="_gfx_lib_8h.html#a1cc1d9d74752004941158cc466da41e5">toucheClavier</a>(<span class="keywordtype">void</span>);
+<a name="l00193"></a>00193 
+<a name="l00194"></a>00194 <span class="comment">/* Indique l&#39;etat de la touche Shift lors du dernier evenement Clavier */</span>
+<a name="l00195"></a>00195 <span class="keywordtype">bool</span> <a class="code" href="_gfx_lib_8h.html#a6a68417efe14f2f46364ab42a07544cc">toucheShiftAppuyee</a>(<span class="keywordtype">void</span>);
+<a name="l00196"></a>00196 <span class="comment">/* Indique l&#39;etat de la touche Ctrl lors du dernier evenement Clavier */</span>
+<a name="l00197"></a>00197 <span class="keywordtype">bool</span> <a class="code" href="_gfx_lib_8h.html#a793b7578465cd8499940ac0d90100aad">toucheCtrlAppuyee</a>(<span class="keywordtype">void</span>);
+<a name="l00198"></a>00198 <span class="comment">/* Indique l&#39;etat de la touche Alt lors du dernier evenement Clavier */</span>
+<a name="l00199"></a>00199 <span class="keywordtype">bool</span> <a class="code" href="_gfx_lib_8h.html#ad489c3d2d7b0a5c5a587ada8bdab7bd0">toucheAltAppuyee</a>(<span class="keywordtype">void</span>);
+<a name="l00200"></a>00200 
+<a name="l00201"></a>00201 
+<a name="l00202"></a>00202 <span class="comment">// Renvoie la largeur actuelle de la fenetre</span>
+<a name="l00203"></a>00203 <span class="keywordtype">int</span> <a class="code" href="_gfx_lib_8h.html#a0793aeda7db337da3e8ce45c29b73aa2">largeurFenetre</a>(<span class="keywordtype">void</span>);
+<a name="l00204"></a>00204 <span class="comment">// Renvoie la hauteur actuelle de la fenetre</span>
+<a name="l00205"></a>00205 <span class="keywordtype">int</span> <a class="code" href="_gfx_lib_8h.html#a6b6f070c5d76ca6a0ef8b8435f5ed03b">hauteurFenetre</a>(<span class="keywordtype">void</span>);
+<a name="l00206"></a>00206 <span class="comment">// Demande au systeme de redimensionner la fenetre</span>
+<a name="l00207"></a>00207 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#a8d6475be03a9235fd559f31999550505">redimensionneFenetre</a>(<span class="keywordtype">int</span> largeur, <span class="keywordtype">int</span> hauteur);
+<a name="l00208"></a>00208 <span class="comment">// Demande au systeme de passer la fenetre en plein ecran</span>
+<a name="l00209"></a>00209 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#ac25bbf3212a0d7f0627e9ea717910e7d">modePleinEcran</a>(<span class="keywordtype">void</span>);
+<a name="l00210"></a>00210 <span class="comment">// Affiche un message d&#39;erreur de maniere standard pour l&#39;OS</span>
+<a name="l00211"></a>00211 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#ad32fe7773281f9e6fcc80701e1e792d2">messageDErreur</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *message);
+<a name="l00212"></a>00212 
+<a name="l00213"></a>00213 
+<a name="l00214"></a>00214 <span class="comment">/* Active la gestion du deplacement passif de la souris */</span>
+<a name="l00215"></a>00215 <span class="keywordtype">void</span> <a class="code" href="_gfx_lib_8h.html#a87f187d599d4773fa52d4a1426c78b79">activeGestionDeplacementPassifSouris</a>(<span class="keywordtype">void</span>);
+<a name="l00216"></a>00216 
+<a name="l00217"></a>00217 
+<a name="l00218"></a>00218 
+<a name="l00219"></a>00219 <span class="comment">/* Partie publique elaboree</span>
+<a name="l00220"></a>00220 <span class="comment">   Cette partie est relative a toutes les informations utiles pour</span>
+<a name="l00221"></a>00221 <span class="comment">   personnaliser et mieux controler l&#39;environnement graphique de base */</span>
+<a name="l00222"></a>00222 
+<a name="l00223"></a>00223 
+<a name="l00224"></a>00224 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="_gfx_lib_8h.html">GfxLib.h</a>      </li>
+
+    <li class="footer">Généré le Mercredi Décembre 19 2012 02:02:14 pour Reconnaissance matricielle de caractères par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

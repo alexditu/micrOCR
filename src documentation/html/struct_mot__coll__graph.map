@@ -1,0 +1,4 @@
+<map id="Mot" name="Mot">
+<area shape="rect" id="node2" href="$struct_lettre.html" title="Définit une &quot;lettre&quot; par son éventuelle position en x, son caractère et ses images associées..." alt="" coords="36,101,89,131"/>
+<area shape="rect" id="node4" href="$structimage_matricielle.html" title="Représente une image matricielle binaire." alt="" coords="5,5,120,35"/>
+</map>
