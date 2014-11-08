@@ -1,0 +1,23 @@
+Am eliminat toate functiile legate de glut/spell/spellcheck (nu stiu daca erau utile alea de spell check?)
+
+Toata actiunea e in functia: gestionEvenement()
+
+Functiile ce sunt apelate in procesul de conversie sunt (in ordine):
+
+lisBMPRGB --> BmpLib.c
+
+getBackgroundAndTextColor 
+
+improveImage 
+rotateImage 
+
+getMinRect 
+cropImageToRectangle 
+findBestAngle 
+detectNbrLines 
+newTabMots 
+detectLettersAndWords 
+separateLetters 
+getImageMatricielle 
+resizedCopy 
+compareLettres 
