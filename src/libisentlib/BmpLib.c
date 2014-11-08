@@ -56,7 +56,7 @@ DonneesImageRGB *lisBMPRGB(char *nom)
 		
 		if
 			((fichierBMP = fopen(nom, "rb")) != NULL)
-		{
+		b {
 			/* fichierBMP != NULL */
 
 			/* Si le header commence bien par 'B' et 'M'... */
@@ -158,6 +158,8 @@ DonneesImageRGB *lisBMPRGB(char *nom)
 			
 			/* Quoi qu'il arrive il faut fermer le fichier */
 			fclose(fichierBMP);
+		} else {
+			printf ("[app] Error deschidere fisier: %s\n", nom);
 		}
 		
 		/* Si tout ne s'est pas bien passe on libere les donnees image et on les met a NULL */

@@ -765,13 +765,16 @@ int main(int argc, char **argv)
 			printf("Problème d'initialisation de la police ! Veuillez vérifier que les fichiers de police sont bien présentset au bon endroit !\n");
 			return -1;
 		}
-		//initialiseGfx(argc, argv);
-        //prepareFenetreGraphique("micrOCR - Reconnaissance matricielle de caracteres", LargeurFenetre, HauteurFenetre);
+		initialiseGfx(argc, argv);
+        prepareFenetreGraphique("micrOCR - Reconnaissance matricielle de caracteres", LargeurFenetre, HauteurFenetre);
         //lanceBoucleEvenements();
+        printf ("[debug] 1\n");
         gestionEvenement(Initialisation);
         choose_clavier = 'a';
+        printf ("[debug] 2\n");
         gestionEvenement(Clavier);
         choose_clavier = 'q';
+        printf ("[debug] 3\n");
         gestionEvenement(Clavier);
 
 
@@ -784,29 +787,29 @@ int main(int argc, char **argv)
     return 0;
 }
 
-// Rectangle checkManualRect(Rectangle manualRect, DonneesImageRGB* imageBest) {
+Rectangle checkManualRect(Rectangle manualRect, DonneesImageRGB* imageBest) {
 	
-// 	Rectangle rect = {manualRect.x1, manualRect.y1, manualRect.x2, manualRect.y2, manualRect.w, manualRect.h}; //copie
+	Rectangle rect = {manualRect.x1, manualRect.y1, manualRect.x2, manualRect.y2, manualRect.w, manualRect.h}; //copie
 	
-// 	Rectangle manualRectImg = { rect.x1 - ((largeurFenetre()-imageBest->largeurImage)/2),
-// 								rect.y1 - ((hauteurFenetre()-imageBest->hauteurImage)/2),
-// 								rect.x2 - ((largeurFenetre()-imageBest->largeurImage)/2),
-// 								rect.y2 - ((hauteurFenetre()-imageBest->hauteurImage)/2),
-// 								rect.w,
-// 								rect.h  };
+	Rectangle manualRectImg = { rect.x1 - ((largeurFenetre()-imageBest->largeurImage)/2),
+								rect.y1 - ((hauteurFenetre()-imageBest->hauteurImage)/2),
+								rect.x2 - ((largeurFenetre()-imageBest->largeurImage)/2),
+								rect.y2 - ((hauteurFenetre()-imageBest->hauteurImage)/2),
+								rect.w,
+								rect.h  };
 	
-// 	//printf("manualRectImg : x1:%d, y1:%d, x2:%d, y2:%d, w:%d\n", manualRectImg.x1, manualRectImg.y1, manualRectImg.x2, manualRectImg.y2, manualRectImg.w);    
+	//printf("manualRectImg : x1:%d, y1:%d, x2:%d, y2:%d, w:%d\n", manualRectImg.x1, manualRectImg.y1, manualRectImg.x2, manualRectImg.y2, manualRectImg.w);    
 	
-// 	if (manualRectImg.x1 < 0 || manualRectImg.y1 < 0 || manualRectImg.x2 < 0 || manualRectImg.y2 < 0
-// 		|| manualRectImg.x1 > imageBest->largeurImage || manualRectImg.y1 > imageBest->hauteurImage
-// 		|| manualRectImg.x2 > imageBest->largeurImage || manualRectImg.y2 > imageBest->hauteurImage ) {
-// 			rect.h = -1;
-// 	} else {
-// 		rect.h = abs(rect.y2-rect.y1);
-// 	}
+	if (manualRectImg.x1 < 0 || manualRectImg.y1 < 0 || manualRectImg.x2 < 0 || manualRectImg.y2 < 0
+		|| manualRectImg.x1 > imageBest->largeurImage || manualRectImg.y1 > imageBest->hauteurImage
+		|| manualRectImg.x2 > imageBest->largeurImage || manualRectImg.y2 > imageBest->hauteurImage ) {
+			rect.h = -1;
+	} else {
+		rect.h = abs(rect.y2-rect.y1);
+	}
 	
-// 	return rect;
-// }
+	return rect;
+}
 
 int clicInRect(int x, int y, Rectangle rect) {
 	return (x>=rect.x1 && x<=rect.x2 && y>=rect.y1 && y<=rect.y2); // on sait implicitement que x1<x2 et y1<y2
@@ -875,28 +878,28 @@ void freeCorr(Correspondance* corr) {
     }
 }
 
-// void paintBouton(Bouton b) {
-// 	if (!b.isHidden) {
-// 		epaisseurDeTrait(3);
+void paintBouton(Bouton b) {
+	if (!b.isHidden) {
+		epaisseurDeTrait(3);
 		
-// 		int xOff, yOff ;
-// 		couleurCourante(60, 167, 181);
+		int xOff, yOff ;
+		couleurCourante(60, 167, 181);
 		
-// 		if (b.isActive) {
-// 			xOff = 2; yOff = -2;
-// 		} else {
-// 			xOff = 0; yOff = 0;
-// 		}
-// 		rectangle(largeurFenetre()*b.x+1+xOff, hauteurFenetre()*b.y+1+yOff, largeurFenetre()*(b.x)+b.w-1+xOff, hauteurFenetre()*(b.y)+b.h-1+yOff);
-// 		couleurCourante(40, 147, 161);
-// 		if (b.isActive) epaisseurDeTrait(4);
-// 		drawRect(largeurFenetre()*b.x+xOff, hauteurFenetre()*b.y+yOff, largeurFenetre()*(b.x)+b.w+xOff, hauteurFenetre()*(b.y)+b.h+yOff);
+		if (b.isActive) {
+			xOff = 2; yOff = -2;
+		} else {
+			xOff = 0; yOff = 0;
+		}
+		rectangle(largeurFenetre()*b.x+1+xOff, hauteurFenetre()*b.y+1+yOff, largeurFenetre()*(b.x)+b.w-1+xOff, hauteurFenetre()*(b.y)+b.h-1+yOff);
+		couleurCourante(40, 147, 161);
+		if (b.isActive) epaisseurDeTrait(4);
+		drawRect(largeurFenetre()*b.x+xOff, hauteurFenetre()*b.y+yOff, largeurFenetre()*(b.x)+b.w+xOff, hauteurFenetre()*(b.y)+b.h+yOff);
 		
-// 		epaisseurDeTrait(1);
-// 		couleurCourante(255,255,255);
-// 		afficheChaine(b.txt, b.h/2.25, largeurFenetre()*(b.x)+4+xOff, .5*(2*hauteurFenetre()*(b.y)+b.h)-4+yOff);
-// 	}
-// }
+		epaisseurDeTrait(1);
+		couleurCourante(255,255,255);
+		afficheChaine(b.txt, b.h/2.25, largeurFenetre()*(b.x)+4+xOff, .5*(2*hauteurFenetre()*(b.y)+b.h)-4+yOff);
+	}
+}
 
 
 /* La fonction de gestion des evenements, appelee automatiquement par le systeme
@@ -978,153 +981,153 @@ void gestionEvenement(EvenementGfx evenement)
         //redimensionneFenetre(LargeurFenetre, HauteurFenetre);
         break;
 
-   //  case Affichage:
-   //      effaceFenetre(230,230,230);
+    case Affichage:
+        effaceFenetre(230,230,230);
 
-   //      if (image != NULL) {
+        if (image != NULL) {
 						
-   //          if (rotationManuelle) {
-   //              if (!analysisDone)
-			// 		imageManual = ((tmpAngle%360)!=0) ? rotateImage(imageOriginale, tmpAngle%360, (Couleur){230,230,230}) : imageOriginale;
-   //              image = imageManual;
-   //          } else {
-			// 	if (!analysisDone) 
-			// 		image = imageOriginale;
-			// 	else
-			// 		image = imageBest;
-   //              //rect = minRect;
-   //          }
+            if (rotationManuelle) {
+                if (!analysisDone)
+					imageManual = ((tmpAngle%360)!=0) ? rotateImage(imageOriginale, tmpAngle%360, (Couleur){230,230,230}) : imageOriginale;
+                image = imageManual;
+            } else {
+				if (!analysisDone) 
+					image = imageOriginale;
+				else
+					image = imageBest;
+                //rect = minRect;
+            }
 
-   //          ecrisImage((largeurFenetre()-image->largeurImage)/2, (hauteurFenetre()-image->hauteurImage)/2, image->largeurImage, image->hauteurImage, image->donneesRGB);
+            ecrisImage((largeurFenetre()-image->largeurImage)/2, (hauteurFenetre()-image->hauteurImage)/2, image->largeurImage, image->hauteurImage, image->donneesRGB);
 			
-			// if (image->largeurImage > largeurFenetre()) redimensionneFenetre(image->largeurImage, hauteurFenetre());
-			// if (image->hauteurImage > hauteurFenetre()) redimensionneFenetre(largeurFenetre(), image->hauteurImage);
+			if (image->largeurImage > largeurFenetre()) redimensionneFenetre(image->largeurImage, hauteurFenetre());
+			if (image->hauteurImage > hauteurFenetre()) redimensionneFenetre(largeurFenetre(), image->hauteurImage);
 			
-   //          epaisseurDeTrait(1);
-   //          // affichage du meilleur rectangle
-   //          couleurCourante(255,0,0);
+            epaisseurDeTrait(1);
+            // affichage du meilleur rectangle
+            couleurCourante(255,0,0);
             
-   //          if (analysisDone && !rotationManuelle) {
-			// 	drawRect( (largeurFenetre()-image->largeurImage)/2-1, // on triche en affichant directement (+rapide !) la bordure de l'image,
-			// 			  (hauteurFenetre()-image->hauteurImage)/2-1, // mais ca revient exactement au meme, puisqu'elle est rognée au minRect !
-			// 			  (largeurFenetre()+image->largeurImage)/2+1,
-			// 			  (hauteurFenetre()+image->hauteurImage)/2+1 );
-			// }
+            if (analysisDone && !rotationManuelle) {
+				drawRect( (largeurFenetre()-image->largeurImage)/2-1, // on triche en affichant directement (+rapide !) la bordure de l'image,
+						  (hauteurFenetre()-image->hauteurImage)/2-1, // mais ca revient exactement au meme, puisqu'elle est rognée au minRect !
+						  (largeurFenetre()+image->largeurImage)/2+1,
+						  (hauteurFenetre()+image->hauteurImage)/2+1 );
+			}
             
-   //          if (rotationManuelle && !analysisDone) {
-			// 	if (manualRect.w > 0) {
-			// 		epaisseurDeTrait(1);
-			// 		couleurCourante(0,100,100);
-			// 		if (manualRect.h == -1) couleurCourante(255,0,0);
-			// 		drawRect(manualRect.x1, manualRect.y1, manualRect.x2, manualRect.y2);
-			// 	}
-			// }
-			// couleurCourante(0,0,0);
-			// if (analysisDone) {
-			// 	// coupure mots
-			// 	if (showWordsBounds) {
-			// 		epaisseurDeTrait(4);
-			// 		couleurCourante(0,0,255);
-			// 		for (i=0; i<20; i++)
-			// 			if (tabMots[i])
-			// 				ligne((largeurFenetre()-image->largeurImage)/2+tabMots[i]->x,
-			// 					  (hauteurFenetre()-image->hauteurImage)/2-30,
-			// 					  (largeurFenetre()-image->largeurImage)/2+tabMots[i]->x,
-			// 					  (hauteurFenetre()+image->hauteurImage)/2+30 );
+            if (rotationManuelle && !analysisDone) {
+				if (manualRect.w > 0) {
+					epaisseurDeTrait(1);
+					couleurCourante(0,100,100);
+					if (manualRect.h == -1) couleurCourante(255,0,0);
+					drawRect(manualRect.x1, manualRect.y1, manualRect.x2, manualRect.y2);
+				}
+			}
+			couleurCourante(0,0,0);
+			if (analysisDone) {
+				// coupure mots
+				if (showWordsBounds) {
+					epaisseurDeTrait(4);
+					couleurCourante(0,0,255);
+					for (i=0; i<20; i++)
+						if (tabMots[i])
+							ligne((largeurFenetre()-image->largeurImage)/2+tabMots[i]->x,
+								  (hauteurFenetre()-image->hauteurImage)/2-30,
+								  (largeurFenetre()-image->largeurImage)/2+tabMots[i]->x,
+								  (hauteurFenetre()+image->hauteurImage)/2+30 );
 
-			// 		epaisseurDeTrait(2);
-			// 		couleurCourante(0,255,0);
-			// 		for (i=0; i<20; i++)
-			// 			if (tabMots[i])
-			// 				for (j=0; j<50; j++)
-			// 					if (tabMots[i]->lettres[j].x > 0)
-			// 						ligne((largeurFenetre()-image->largeurImage)/2+tabMots[i]->lettres[j].x,
-			// 							  (hauteurFenetre()-image->hauteurImage)/2-15,
-			// 							  (largeurFenetre()-image->largeurImage)/2+tabMots[i]->lettres[j].x,
-			// 							  (hauteurFenetre()+image->hauteurImage)/2+15 );
-			// 	}
+					epaisseurDeTrait(2);
+					couleurCourante(0,255,0);
+					for (i=0; i<20; i++)
+						if (tabMots[i])
+							for (j=0; j<50; j++)
+								if (tabMots[i]->lettres[j].x > 0)
+									ligne((largeurFenetre()-image->largeurImage)/2+tabMots[i]->lettres[j].x,
+										  (hauteurFenetre()-image->hauteurImage)/2-15,
+										  (largeurFenetre()-image->largeurImage)/2+tabMots[i]->lettres[j].x,
+										  (hauteurFenetre()+image->hauteurImage)/2+15 );
+				}
 
-			// 	if (debugDisplay) {
-			// 		// lettres séparées
-			// 		int prevWidth = 10;
-			// 		for(i=0; i<nbrDeLettres; i++) {
-			// 			ecrisImage(5+prevWidth, 160, tabLettres[i].img->largeurImage, tabLettres[i].img->hauteurImage, tabLettres[i].img->donneesRGB);
-			// 			prevWidth += tabLettres[i].img->largeurImage + 8;
-			// 		}
+				if (debugDisplay) {
+					// lettres séparées
+					int prevWidth = 10;
+					for(i=0; i<nbrDeLettres; i++) {
+						ecrisImage(5+prevWidth, 160, tabLettres[i].img->largeurImage, tabLettres[i].img->hauteurImage, tabLettres[i].img->donneesRGB);
+						prevWidth += tabLettres[i].img->largeurImage + 8;
+					}
 				
-			// 		couleurCourante(0,0,0);
-			// 		epaisseurDeTrait(2);
-			// 		// guesses
-			// 		prevWidth = 10;
-			// 		DonneesImageRGB* tmpImg = NULL;
-			// 		for(i=0; i<nbrDeLettres; i++) {
-			// 			if (isprint(tabCorresp[i].lettrePolice->carac)) { // safe
-			// 				if (tabLettres[i].img && tabCorresp[i].lettrePolice->img) {
-			// 					tmpImg = resizedCopy(tabCorresp[i].lettrePolice->img, tabLettres[i].img->largeurImage, tabLettres[i].img->hauteurImage);
-			// 					ecrisImage(5+prevWidth, (hauteurFenetre()+image->hauteurImage)/2+30,
-			// 							   tabLettres[i].img->largeurImage,
-			// 							   tabLettres[i].img->hauteurImage,
-			// 							   tmpImg->donneesRGB );
-			// 				}
-			// 				//sprintf(carac, "%c", (tabCorresp[i].lettrePolice->carac));
-			// 				//afficheChaine(carac, 16, 20+prevWidth, 90);
-			// 			}
-			// 			prevWidth += tabLettres[i].img->largeurImage + 8;
-			// 		}
-			// 		free(tmpImg);
-			// 	}
+					couleurCourante(0,0,0);
+					epaisseurDeTrait(2);
+					// guesses
+					prevWidth = 10;
+					DonneesImageRGB* tmpImg = NULL;
+					for(i=0; i<nbrDeLettres; i++) {
+						if (isprint(tabCorresp[i].lettrePolice->carac)) { // safe
+							if (tabLettres[i].img && tabCorresp[i].lettrePolice->img) {
+								tmpImg = resizedCopy(tabCorresp[i].lettrePolice->img, tabLettres[i].img->largeurImage, tabLettres[i].img->hauteurImage);
+								ecrisImage(5+prevWidth, (hauteurFenetre()+image->hauteurImage)/2+30,
+										   tabLettres[i].img->largeurImage,
+										   tabLettres[i].img->hauteurImage,
+										   tmpImg->donneesRGB );
+							}
+							//sprintf(carac, "%c", (tabCorresp[i].lettrePolice->carac));
+							//afficheChaine(carac, 16, 20+prevWidth, 90);
+						}
+						prevWidth += tabLettres[i].img->largeurImage + 8;
+					}
+					free(tmpImg);
+				}
 			
-			// 	// textes
-			// 	epaisseurDeTrait(1);
-			// 	couleurCourante(0,0,0);
-			// 	char phrase[200]; // par precaution
-			// 	//unsigned long int surface = rect.w * rect.h;
-			// 	sprintf(phrase, "Angle de rotation: %d deg.", rotationManuelle ? tmpAngle%360 : bestAngle/*, rect.w, rect.h, surface*/);
-			// 	afficheChaine(phrase, 16, 5, hauteurFenetre()-20);
-			// 	sprintf(phrase, "Couleur du fond : (%d,%d,%d)", couleurFondOrig.r, couleurFondOrig.g, couleurFondOrig.b);
-			// 	afficheChaine(phrase, 16, 5, hauteurFenetre()-70);
-			// 	sprintf(phrase, "Couleur du texte : (%d,%d,%d)", couleurTexteOrig.r, couleurTexteOrig.g, couleurTexteOrig.b);
-			// 	afficheChaine(phrase, 16, 5, hauteurFenetre()-45);
-			// 	sprintf(phrase, "Echelle probable du texte : %.2f (par rapport a la police, Arial)", echelleLettres);
-			// 	afficheChaine(phrase, 16, 5, hauteurFenetre()-95);
-			// 	sprintf(phrase, "Texte reconnu : %s", bigStringCorrige);
-			// 	afficheChaine(phrase, 20, 5, hauteurFenetre()-145);
+				// textes
+				epaisseurDeTrait(1);
+				couleurCourante(0,0,0);
+				char phrase[200]; // par precaution
+				//unsigned long int surface = rect.w * rect.h;
+				sprintf(phrase, "Angle de rotation: %d deg.", rotationManuelle ? tmpAngle%360 : bestAngle/*, rect.w, rect.h, surface*/);
+				afficheChaine(phrase, 16, 5, hauteurFenetre()-20);
+				sprintf(phrase, "Couleur du fond : (%d,%d,%d)", couleurFondOrig.r, couleurFondOrig.g, couleurFondOrig.b);
+				afficheChaine(phrase, 16, 5, hauteurFenetre()-70);
+				sprintf(phrase, "Couleur du texte : (%d,%d,%d)", couleurTexteOrig.r, couleurTexteOrig.g, couleurTexteOrig.b);
+				afficheChaine(phrase, 16, 5, hauteurFenetre()-45);
+				sprintf(phrase, "Echelle probable du texte : %.2f (par rapport a la police, Arial)", echelleLettres);
+				afficheChaine(phrase, 16, 5, hauteurFenetre()-95);
+				sprintf(phrase, "Texte reconnu : %s", bigStringCorrige);
+				afficheChaine(phrase, 20, 5, hauteurFenetre()-145);
 				
-			// 	sprintf(phrase, "Affichage des [s]eparations : %s.", showWordsBounds ? "Oui" : "Non");
-			// 	afficheChaine(phrase, 16, 5, 10);
+				sprintf(phrase, "Affichage des [s]eparations : %s.", showWordsBounds ? "Oui" : "Non");
+				afficheChaine(phrase, 16, 5, 10);
 							
-			// 	paintBouton(tabBoutons[4]); // correction
+				paintBouton(tabBoutons[4]); // correction
 								
-   //          } else {
+            } else {
 				
-			// 	epaisseurDeTrait(1);
-			// 	char phrase[250]; // par precaution
-			// 	/*sprintf(phrase, "Appuyez sur [a] a tout moment pour lancer l'analyse de l'image.");
-			// 	afficheChaine(phrase, 16, 5, hauteurFenetre()-20);
-			// 	sprintf(phrase, "Appuyez sur [m] pour %s le mode manuel.", rotationManuelle ? "desactiver" : "activer");
-			// 	afficheChaine(phrase, 16, 5, hauteurFenetre()-50);*/
+				epaisseurDeTrait(1);
+				char phrase[250]; // par precaution
+				/*sprintf(phrase, "Appuyez sur [a] a tout moment pour lancer l'analyse de l'image.");
+				afficheChaine(phrase, 16, 5, hauteurFenetre()-20);
+				sprintf(phrase, "Appuyez sur [m] pour %s le mode manuel.", rotationManuelle ? "desactiver" : "activer");
+				afficheChaine(phrase, 16, 5, hauteurFenetre()-50);*/
 				
-			// 	for (i=0; i<2; i++)
-			// 		paintBouton(tabBoutons[i]);
+				for (i=0; i<2; i++)
+					paintBouton(tabBoutons[i]);
 				
-			// 	if (rotationManuelle) {
-			// 		couleurCourante(0,0,0);
-			// 		sprintf(phrase, "Mode manuel :");
-			// 		afficheChaine(phrase, 16, 5, 72);
-			// 		sprintf(phrase, "_________");
-			// 		afficheChaine(phrase, 16, 5, 68);
-			// 		sprintf(phrase, "Selection manuelle du rectangle de rognage : avec la souris (click&drag)");
-			// 		afficheChaine(phrase, 16, 5, 40);
-			// 		sprintf(phrase, "Rotation manuelle de l'image : fleches ou [+] / [-]. Angle courant = %d", tmpAngle%360);
-			// 		afficheChaine(phrase, 16, 5, 10);
-			// 	}
-			// }
+				if (rotationManuelle) {
+					couleurCourante(0,0,0);
+					sprintf(phrase, "Mode manuel :");
+					afficheChaine(phrase, 16, 5, 72);
+					sprintf(phrase, "_________");
+					afficheChaine(phrase, 16, 5, 68);
+					sprintf(phrase, "Selection manuelle du rectangle de rognage : avec la souris (click&drag)");
+					afficheChaine(phrase, 16, 5, 40);
+					sprintf(phrase, "Rotation manuelle de l'image : fleches ou [+] / [-]. Angle courant = %d", tmpAngle%360);
+					afficheChaine(phrase, 16, 5, 10);
+				}
+			}
 			
-			// for (i=2; i<4; i++)
-			// 	paintBouton(tabBoutons[i]);
+			for (i=2; i<4; i++)
+				paintBouton(tabBoutons[i]);
 			
-   //        }
-   //      break;
+          }
+        break;
 
     case Clavier:
         //printf("%c : ASCII %d\n", caractereClavier(), caractereClavier());
@@ -1157,12 +1160,12 @@ void gestionEvenement(EvenementGfx evenement)
 					imageBest = rotateImage(imageBest, bestAngle, couleurFond);
 					
 					// changment de repere manualRect
-					Rectangle manualRectImg = { manualRect.x1 - ((largeurFenetre()-imageBest->largeurImage)/2),
-												manualRect.y1 - ((hauteurFenetre()-imageBest->hauteurImage)/2),
-												manualRect.x2 - ((largeurFenetre()-imageBest->largeurImage)/2),
-												manualRect.y2 - ((hauteurFenetre()-imageBest->hauteurImage)/2),
-												manualRect.w,
-												manualRect.h  };
+					// Rectangle manualRectImg = { manualRect.x1 - ((largeurFenetre()-imageBest->largeurImage)/2),
+					// 							manualRect.y1 - ((hauteurFenetre()-imageBest->hauteurImage)/2),
+					// 							manualRect.x2 - ((largeurFenetre()-imageBest->largeurImage)/2),
+					// 							manualRect.y2 - ((hauteurFenetre()-imageBest->hauteurImage)/2),
+					// 							manualRect.w,
+					// 							manualRect.h  };
 					
 					//printf(" %d %d %d %d %d %d\n", manualRect.x1, manualRect.y1, manualRect.x2, manualRect.y2, manualRect.w, manualRect.h);
 					//printf(" %d %d %d %d %d %d\n", manualRectImg.x1, manualRectImg.y1, manualRectImg.x2, manualRectImg.y2, manualRectImg.w, manualRectImg.h);
@@ -1369,7 +1372,7 @@ void gestionEvenement(EvenementGfx evenement)
 					//tmpAngle = 0;
 					analysisDone = 1;
 				
-            //rafraichisFenetre();
+            rafraichisFenetre();
 			break;
 		
 			
@@ -1420,192 +1423,191 @@ void gestionEvenement(EvenementGfx evenement)
             exit(0);
             break;
             
-  //       case 'D':
-  //       case 'd':
-		// 	debugDisplay = !debugDisplay;
-		// 	rafraichisFenetre();
-		// 	break;
+        case 'D':
+        case 'd':
+			debugDisplay = !debugDisplay;
+			rafraichisFenetre();
+			break;
 
-  //       case 'F':
-  //       case 'f':
-  //           pleinEcran = !pleinEcran; // Changement de mode plein ecran
-  //           if (pleinEcran)
-  //               modePleinEcran();
-  //           else
-  //               redimensionneFenetre(image ? image->largeurImage : LargeurFenetre, image ? image->hauteurImage : HauteurFenetre);
-		// 	rafraichisFenetre();
-  //           break;
+        case 'F':
+        case 'f':
+            pleinEcran = !pleinEcran; // Changement de mode plein ecran
+            if (pleinEcran)
+                modePleinEcran();
+            else
+                redimensionneFenetre(image ? image->largeurImage : LargeurFenetre, image ? image->hauteurImage : HauteurFenetre);
+			rafraichisFenetre();
+            break;
 
-  //       case 'M':
-  //       case 'm':
-		// 	switchMan:
-		// 	analysisDone = 0;
-		// 	imageBest = imageTraitement;
-		// 	rotationManuelle = !rotationManuelle;
-		// 	if (strcmp(tabBoutons[1].txt, "Passer en [m]ode manuel")==0) {
-		// 		strcpy(tabBoutons[1].txt, "Passer en [m]ode automatique");
-		// 		tabBoutons[1].w += 30;
-		// 	} else {
-		// 		strcpy(tabBoutons[1].txt, "Passer en [m]ode manuel");
-		// 		tabBoutons[1].w -= 30;
-		// 	}
+        case 'M':
+        case 'm':
+			switchMan:
+			analysisDone = 0;
+			imageBest = imageTraitement;
+			rotationManuelle = !rotationManuelle;
+			if (strcmp(tabBoutons[1].txt, "Passer en [m]ode manuel")==0) {
+				strcpy(tabBoutons[1].txt, "Passer en [m]ode automatique");
+				tabBoutons[1].w += 30;
+			} else {
+				strcpy(tabBoutons[1].txt, "Passer en [m]ode manuel");
+				tabBoutons[1].w -= 30;
+			}
 			
-		// 	rafraichisFenetre();
-  //           break;
+			rafraichisFenetre();
+            break;
             
-  //       case 'R':
-  //       case 'r':
-		// 	reset:
-		// 	tmpAngle = 0;
-		// 	analysisDone = 0;
-		// 	manualRect.w = -1;
-		// 	imageBest = imageTraitement;
-		// 	rafraichisFenetre();
-		// 	break;
+        case 'R':
+        case 'r':
+			reset:
+			tmpAngle = 0;
+			analysisDone = 0;
+			manualRect.w = -1;
+			imageBest = imageTraitement;
+			rafraichisFenetre();
+			break;
 
-		// anglePlus:
-  //       case '+':
-  //           tmpAngle += rotationManuelle ? 1 : 0;
-  //           //if (image != imageOriginale) { freeImageRGB(image); } // probleme (crash) si appelé à tres petit intervalle de temps... (touche restée appuyée)
-		// 	analysisDone = 0;
-  //           rafraichisFenetre();
-  //           break;
+		anglePlus:
+        case '+':
+            tmpAngle += rotationManuelle ? 1 : 0;
+            //if (image != imageOriginale) { freeImageRGB(image); } // probleme (crash) si appelé à tres petit intervalle de temps... (touche restée appuyée)
+			analysisDone = 0;
+            rafraichisFenetre();
+            break;
 
-		// angleMoins:
-  //       case '-':
-  //           tmpAngle -= rotationManuelle ? 1 : 0;
-  //           //if (image != imageOriginale) { freeImageRGB(image); } // probleme (crash) si appelé à tres petit intervalle de temps... (touche restée appuyée)
-		// 	analysisDone = 0;
-  //           rafraichisFenetre();
-  //           break;
+		angleMoins:
+        case '-':
+            tmpAngle -= rotationManuelle ? 1 : 0;
+            //if (image != imageOriginale) { freeImageRGB(image); } // probleme (crash) si appelé à tres petit intervalle de temps... (touche restée appuyée)
+			analysisDone = 0;
+            rafraichisFenetre();
+            break;
 
-  //       case 'S':
-  //       case 's':
-  //           //affichage de la séparation des mots/lettres ou non
-  //           showWordsBounds = !showWordsBounds;
-  //           rafraichisFenetre();
-  //           break;
-  //       }
-  //       break;
-
-  //   case ClavierSpecial:
-    
-		// switch( toucheClavier() ) {
-		// 	case 13:
-		// 	case 16:
-		// 		goto anglePlus;
-		// 		break;
-				
-		// 	case 14:
-		// 	case 15:
-		// 		goto angleMoins;
-		// 		break;
-		// }
-			
-  //       break;
-
-  //   case BoutonSouris:
-
-		// 	if (etatBoutonSouris() == GaucheAppuye)
-		// 	{	
-		// 		int stop = 0;
-		// 		for (i=0; i<nbrBoutons; i++) {
-		// 			if (clicInRect(abscisseSouris(), ordonneeSouris(), (Rectangle){largeurFenetre()*tabBoutons[i].x,
-		// 																	   hauteurFenetre()*tabBoutons[i].y,
-		// 																	   largeurFenetre()*tabBoutons[i].x+tabBoutons[i].w,
-		// 																	   hauteurFenetre()*tabBoutons[i].y+tabBoutons[i].h, 0, 0}) ) {
-		// 				tabBoutons[i].isActive = true;
-		// 				stop = 1;
-		// 				break;
-		// 			}
-		// 		}
-		// 		if (rotationManuelle && !analysisDone && !stop) {
-		// 			//printf("GaucheAppuye en : (%d, %d)\n", abscisseSouris(), ordonneeSouris());
-		// 			manualRect = (Rectangle){0,0,0,0,0,0};
-		// 			manualRect.x1 = abscisseSouris();
-		// 			manualRect.y1 = ordonneeSouris();
-		// 		}
-			
-		// 	}
-		// 	else if (etatBoutonSouris() == GaucheRelache)
-		// 	{
-		// 		int stop = 0;
-		// 		for (i=0; i<nbrBoutons; i++) {
-		// 			if (clicInRect(abscisseSouris(), ordonneeSouris(), (Rectangle){largeurFenetre()*tabBoutons[i].x,
-		// 																		   hauteurFenetre()*tabBoutons[i].y,
-		// 																		   largeurFenetre()*tabBoutons[i].x+tabBoutons[i].w,
-		// 																		   hauteurFenetre()*tabBoutons[i].y+tabBoutons[i].h, 0, 0}) ) {
-		// 				if (tabBoutons[i].isActive) {
-		// 					tabBoutons[i].isActive = false;
-		// 					stop = 1;
-		// 					switch (tabBoutons[i].id) {
-		// 						case 0:
-		// 							goto analyse;
-		// 							break;
-		// 						case 1:
-		// 							goto switchMan;
-		// 							break;
-		// 						case 2:
-		// 							goto reset;
-		// 							break;
-		// 						case 3:
-		// 							goto quit;
-		// 							break;
-		// 						case 4:
-		// 							goto correct;
-		// 							break;
-		// 					}
-		// 				break;
-		// 				}
-		// 			}
-		// 			tabBoutons[i].isActive = false;
-		// 		}
-				
-		// 		if (rotationManuelle && !analysisDone && !stop) {
-		// 			//printf("GaucheRelache en : (%d, %d)\n", abscisseSouris(), ordonneeSouris());
-		// 			manualRect.x2 = abscisseSouris();
-		// 			manualRect.y2 = ordonneeSouris();
-		// 			manualRect.w = abs(manualRect.x2-manualRect.x1);
-					
-		// 			if (manualRect.x1 > manualRect.x2) SWAP(manualRect.x1, manualRect.x2);
-		// 			if (manualRect.y1 > manualRect.y2) SWAP(manualRect.y1, manualRect.y2);
-				
-		// 			manualRect = checkManualRect(manualRect, imageBest);
-					
-		// 			if (manualRect.h == -1) {
-		// 				//printf("Rectangle de rognage invalide, merci d'en resélectionner un.\n");
-		// 				manualRect.w = -1; // invalid (will not be drawn)
-		// 			}
-		// 		}
-		// 	}
-			
-		// 	rafraichisFenetre();
-			
-  //       break;
-
-
-  //   case Souris: // Si la souris est deplacee
-  //       //printf("Souris déplacée en : (%d, %d)\n", abscisseSouris(), ordonneeSouris());
-  //       if (rotationManuelle && !analysisDone) {
-		// 	manualRect.x2 = abscisseSouris();
-		// 	manualRect.y2 = ordonneeSouris();
-		// 	manualRect.w = abs(manualRect.x2-manualRect.x1);
-			
-		// 	manualRect = checkManualRect(manualRect, imageBest);
-			
-		// 	rafraichisFenetre();
-		// }
-  //       break;
-
-  //   case Inactivite: // Quand aucun message n'est disponible
-  //       break;
-
-  //   case Redimensionnement: // La taille de la fenetre a ete modifie ou on est passe en plein ecran
-  //       // Donc le systeme nous en informe
-  //       //printf("Largeur : %d\t", largeurFenetre());
-  //       //printf("Hauteur : %d\n", hauteurFenetre());
-  //       break;
+        case 'S':
+        case 's':
+            //affichage de la séparation des mots/lettres ou non
+            showWordsBounds = !showWordsBounds;
+            rafraichisFenetre();
+            break;
         }
+        break;
+
+    case ClavierSpecial:
+    
+		switch( toucheClavier() ) {
+			case 13:
+			case 16:
+				goto anglePlus;
+				break;
+				
+			case 14:
+			case 15:
+				goto angleMoins;
+				break;
+		}
+			
+        break;
+
+    case BoutonSouris:
+
+			if (etatBoutonSouris() == GaucheAppuye)
+			{	
+				int stop = 0;
+				for (i=0; i<nbrBoutons; i++) {
+					if (clicInRect(abscisseSouris(), ordonneeSouris(), (Rectangle){largeurFenetre()*tabBoutons[i].x,
+																			   hauteurFenetre()*tabBoutons[i].y,
+																			   largeurFenetre()*tabBoutons[i].x+tabBoutons[i].w,
+																			   hauteurFenetre()*tabBoutons[i].y+tabBoutons[i].h, 0, 0}) ) {
+						tabBoutons[i].isActive = true;
+						stop = 1;
+						break;
+					}
+				}
+				if (rotationManuelle && !analysisDone && !stop) {
+					//printf("GaucheAppuye en : (%d, %d)\n", abscisseSouris(), ordonneeSouris());
+					manualRect = (Rectangle){0,0,0,0,0,0};
+					manualRect.x1 = abscisseSouris();
+					manualRect.y1 = ordonneeSouris();
+				}
+			
+			}
+			else if (etatBoutonSouris() == GaucheRelache)
+			{
+				int stop = 0;
+				for (i=0; i<nbrBoutons; i++) {
+					if (clicInRect(abscisseSouris(), ordonneeSouris(), (Rectangle){largeurFenetre()*tabBoutons[i].x,
+																				   hauteurFenetre()*tabBoutons[i].y,
+																				   largeurFenetre()*tabBoutons[i].x+tabBoutons[i].w,
+																				   hauteurFenetre()*tabBoutons[i].y+tabBoutons[i].h, 0, 0}) ) {
+						if (tabBoutons[i].isActive) {
+							tabBoutons[i].isActive = false;
+							stop = 1;
+							switch (tabBoutons[i].id) {
+								case 0:
+									goto analyse;
+									break;
+								case 1:
+									goto switchMan;
+									break;
+								case 2:
+									goto reset;
+									break;
+								case 3:
+									goto quit;
+									break;
+								case 4:
+									goto correct;
+									break;
+							}
+						break;
+						}
+					}
+					tabBoutons[i].isActive = false;
+				}
+				
+				if (rotationManuelle && !analysisDone && !stop) {
+					//printf("GaucheRelache en : (%d, %d)\n", abscisseSouris(), ordonneeSouris());
+					manualRect.x2 = abscisseSouris();
+					manualRect.y2 = ordonneeSouris();
+					manualRect.w = abs(manualRect.x2-manualRect.x1);
+					
+					if (manualRect.x1 > manualRect.x2) SWAP(manualRect.x1, manualRect.x2);
+					if (manualRect.y1 > manualRect.y2) SWAP(manualRect.y1, manualRect.y2);
+				
+					manualRect = checkManualRect(manualRect, imageBest);
+					
+					if (manualRect.h == -1) {
+						//printf("Rectangle de rognage invalide, merci d'en resélectionner un.\n");
+						manualRect.w = -1; // invalid (will not be drawn)
+					}
+				}
+			}
+			
+			rafraichisFenetre();
+			
+        break;
+
+
+    case Souris: // Si la souris est deplacee
+        //printf("Souris déplacée en : (%d, %d)\n", abscisseSouris(), ordonneeSouris());
+        if (rotationManuelle && !analysisDone) {
+			manualRect.x2 = abscisseSouris();
+			manualRect.y2 = ordonneeSouris();
+			manualRect.w = abs(manualRect.x2-manualRect.x1);
+			
+			manualRect = checkManualRect(manualRect, imageBest);
+			
+			rafraichisFenetre();
+		}
+        break;
+
+    case Inactivite: // Quand aucun message n'est disponible
+        break;
+
+    case Redimensionnement: // La taille de la fenetre a ete modifie ou on est passe en plein ecran
+        // Donc le systeme nous en informe
+        //printf("Largeur : %d\t", largeurFenetre());
+        //printf("Hauteur : %d\n", hauteurFenetre());
+        break;
     }
 }
 
