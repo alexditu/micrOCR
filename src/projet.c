@@ -12,7 +12,6 @@
  // Toute la documentation se trouve dans le fichier projet.h, optimisée pour Doxygen (voir dossier ./doc/)
  
 #include "projet.h"
-#include "spellCheck.h" // spellChecker
 
 long long int getIfromXYinImage(DonneesImageRGB* image, int x, int y) {
     return (x>=0 && y>=0 && x<image->largeurImage && y<image->hauteurImage) ? (3 * (x + y * image->largeurImage)) : -1;
@@ -50,12 +49,12 @@ int getRectangleSurface(Rectangle rect) {
     return rect.w*rect.h;
 }
 
-void drawRect(int x1, int y1, int x2, int y2) { // draws an empty rect
-    ligne(x1, y1, x2, y1);
-    ligne(x2, y1, x2, y2);
-    ligne(x2, y2, x1, y2);
-    ligne(x1, y2, x1, y1);
-}
+// void drawRect(int x1, int y1, int x2, int y2) { // draws an empty rect
+//     ligne(x1, y1, x2, y1);
+//     ligne(x2, y1, x2, y2);
+//     ligne(x2, y2, x1, y2);
+//     ligne(x1, y2, x1, y1);
+// }
 
 int strEndsWith(const char *str, const char *suffix) {
     if (!str || !suffix)
@@ -768,11 +767,7 @@ int main(int argc, char **argv)
 		//initialiseGfx(argc, argv);
         //prepareFenetreGraphique("micrOCR - Reconnaissance matricielle de caracteres", LargeurFenetre, HauteurFenetre);
         //lanceBoucleEvenements();
-        gestionEvenement(Initialisation);
-        choose_clavier = 'a';
-        gestionEvenement(Clavier);
-        choose_clavier = 'q';
-        gestionEvenement(Clavier);
+        gestionEvenement();
 
 
 
@@ -901,7 +896,7 @@ void freeCorr(Correspondance* corr) {
 
 /* La fonction de gestion des evenements, appelee automatiquement par le systeme
 des qu'une evenement survient */
-void gestionEvenement(EvenementGfx evenement)
+void gestionEvenement()
 {
     static bool pleinEcran = false; // Pour savoir si on est en mode plein ecran ou pas
     static int rotationManuelle = false;
@@ -943,9 +938,9 @@ void gestionEvenement(EvenementGfx evenement)
 	static Bouton tabBoutons[5];
     int i,j;
 
-    switch (evenement)
-    {
-    case Initialisation:
+    // switch (evenement)
+    // {
+    // case Initialisation:
         imageTraitement = lisBMPRGB(nomFichier); // On est en BGR !
 		imageManualOrig = lisBMPRGB(nomFichier); // copy.
 		imageOriginale = lisBMPRGB(nomFichier); // copy
@@ -976,7 +971,7 @@ void gestionEvenement(EvenementGfx evenement)
 
         //demandeAnimation_ips(5);
         //redimensionneFenetre(LargeurFenetre, HauteurFenetre);
-        break;
+        // break;
 
    //  case Affichage:
    //      effaceFenetre(230,230,230);
@@ -1126,15 +1121,15 @@ void gestionEvenement(EvenementGfx evenement)
    //        }
    //      break;
 
-    case Clavier:
+    // case Clavier:
         //printf("%c : ASCII %d\n", caractereClavier(), caractereClavier());
 
-        switch (choose_clavier)
-        {
-		case 'A':
+  //       switch (choose_clavier)
+  //       {
+		// case 'A':
 		
-		analyse: //pour boutons.
-		case 'a':
+		// analyse: //pour boutons.
+		// case 'a':
 			
 			
 			printf("Analyse demandée (mode %s.)\n", rotationManuelle ? "manuel" : "automatique");   
@@ -1370,12 +1365,12 @@ void gestionEvenement(EvenementGfx evenement)
 					analysisDone = 1;
 				
             //rafraichisFenetre();
-			break;
+			// break;
 		
 			
-        case 'Q': /* Pour sortir quelque peu proprement du programme */
-        case 'q':
-			quit:
+   //      case 'Q':  Pour sortir quelque peu proprement du programme 
+   //      case 'q':
+			// quit:
             // Free tous les trucs
             //printf("\n-------- Freeing memory --------\n");
             free(ptrFondOrig);
@@ -1418,7 +1413,9 @@ void gestionEvenement(EvenementGfx evenement)
 			//printf("------- Free() done -------\n");
             
             exit(0);
-            break;
+        }
+
+            // break;
             
   //       case 'D':
   //       case 'd':
@@ -1605,7 +1602,7 @@ void gestionEvenement(EvenementGfx evenement)
   //       //printf("Largeur : %d\t", largeurFenetre());
   //       //printf("Hauteur : %d\n", hauteurFenetre());
   //       break;
-        }
-    }
-}
+//         }
+//     }
+// }
 

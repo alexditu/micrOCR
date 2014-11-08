@@ -56,7 +56,7 @@ DonneesImageRGB *lisBMPRGB(char *nom)
 		
 		if
 			((fichierBMP = fopen(nom, "rb")) != NULL)
-		b {
+		{
 			/* fichierBMP != NULL */
 
 			/* Si le header commence bien par 'B' et 'M'... */

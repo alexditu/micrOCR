@@ -1,15 +1,14 @@
-projet: clean spell.o spellCheck.o projet.o
-	gcc-4.6 -O3 spell.o spellCheck.o projet.o -o projet -lm libisentlib.a -lglut -lX11
-
-spell.o: spell.c spell.h
-	gcc-4.6 -O3 -w -c spell.c
+projet: clean
+	gcc-4.6 -O3 projet.c BmpLib.c OutilsLib.c -o projet -lm
 	
-spellCheck.o: spellCheck.c spellCheck.h
-	gcc-4.6 -O3 -w -c spellCheck.c -lX11
-	
-projet.o: projet.c projet.h spell.h
-	gcc-4.6 -O3 -c projet.c
+projet.o: projet.c projet.h spell.h BmpLib.o
+	gcc-4.6 -O3 -c projet.c BmpLib.c
 
+BmpLib.o: OutilsLib.o
+	gcc-4.6 -Wall -O2 -c BmpLib.c OutilsLib.o -g
+
+OutilsLib.o:
+	gcc-4.6 -Wall -O2 -c OutilsLib.c -g
 
 debug: clean
 	gcc-4.6 -g -c spell.c -Wall -Wextra

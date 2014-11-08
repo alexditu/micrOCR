@@ -19,9 +19,7 @@
 #include <stdio.h> // Pour pouvoir utiliser printf
 #include <math.h> // Pour pouvoir utiliser sin et cos
 #include <string.h>
-#include "GfxLib.h" // Seul cet include est necessaire pour faire du graphique
 #include "BmpLib.h" // Cet include permet de manipuler des fichiers BMP
-#include "ESLib.h" // Pour utiliser valeurAleatoire
 #include <locale.h> //support de l'unicode
 #include <ctype.h> // autres trucs de string/char
 
@@ -439,7 +437,7 @@ void getBackgroundAndTextColor(DonneesImageRGB* image, Couleur* fond, Couleur* t
  * \param      evenement		L'événement en question.
  * \return     
  */
-void gestionEvenement(EvenementGfx evenement);
+void gestionEvenement();
 
 
 // Fonctions de libération de la mémoire :
